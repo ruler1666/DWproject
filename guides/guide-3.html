@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guide 3: Step-by-step tutorial to eliminate YouTube Shorts, addictive infinite scroll feeds, and cookie popups using open-source uBlock Origin on Firefox.">
+  <title>Guide 3: Strip Distraction Feeds with uBlock Origin | ReflectHub</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Accessible Skip to Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Shared Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-link" aria-label="ReflectHub Home">
+        <svg class="brand-logo-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+          <path d="M16 6v10l6 4" stroke="currentColor" stroke-width="2.2"/>
+          <path d="M12 21a5 5 0 0 0 8-3" stroke="currentColor" stroke-width="2"/>
+          <circle cx="16" cy="16" r="2" fill="currentColor"/>
+        </svg>
+        <div>
+          <span class="brand-name">ReflectHub</span>
+          <span class="brand-tagline">Student Digital Wellness Guide</span>
+        </div>
+      </a>
+
+      <div class="nav-and-tools">
+        <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+          <span aria-hidden="true">☰</span>
+          <span>Menu</span>
+        </button>
+
+        <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Primary Navigation">
+          <ul>
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="../find-my-tool.html" class="nav-link">Find My Tool</a></li>
+            <li><a href="../compare.html" class="nav-link">Compare Tools</a></li>
+            <li><a href="index.html" class="nav-link" aria-current="page">Setup Guides</a></li>
+            <li><a href="../privacy-safety.html" class="nav-link">Privacy &amp; Safety</a></li>
+            <li><a href="../testing.html" class="nav-link">Testing &amp; Evidence</a></li>
+            <li><a href="../about.html" class="nav-link">About &amp; Method</a></li>
+          </ul>
+        </nav>
+
+        <button type="button" class="theme-toggle-btn" aria-pressed="false" aria-label="Switch to dark theme">
+          <span aria-hidden="true">🌙</span>
+          <span>Dark Mode</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+    <div class="container">
+      
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" style="margin-bottom: 1.25rem; font-size: 0.875rem;">
+        <ol style="display: flex; list-style: none; gap: 0.5rem; padding: 0;">
+          <li><a href="../index.html">Home</a> <span aria-hidden="true">/</span></li>
+          <li><a href="index.html">Setup Guides</a> <span aria-hidden="true">/</span></li>
+          <li aria-current="page" style="color: var(--text-light); font-weight: 600;">Guide 3: Browser Cleanse</li>
+        </ol>
+      </nav>
+
+      <!-- Guide Header & Meta -->
+      <header class="guide-header">
+        <span class="hero-badge">Guide 03 &bull; Web Distraction Cleanse</span>
+        <h1>Eliminating Algorithmic Infinite Feeds and Ad Traps with uBlock Origin &amp; Firefox</h1>
+        <p class="lead">
+          You open YouTube or a technical tutorial to look up a programming concept, only to get trapped by vertical Shorts, clickbait thumbnails, and autoplay videos. This guide shows you how to surgically remove algorithmic hooks while keeping coursework resources accessible.
+        </p>
+
+        <div class="guide-meta">
+          <span class="guide-meta-item">⏱ <strong>Time needed:</strong> 10 minutes</span>
+          <span class="guide-meta-item">🌐 <strong>Works on:</strong> Firefox &amp; Chromium browsers on Windows &amp; Android</span>
+          <span class="guide-meta-item">💰 <strong>Cost:</strong> ₹0 (100% Free &amp; Open Source non-profit)</span>
+          <span class="guide-meta-item">🔒 <strong>Privacy:</strong> Zero data telemetry, purely local CSS filtering</span>
+        </div>
+      </header>
+
+      <!-- Step-by-Step Instructions -->
+      <section aria-label="Step-by-step setup walkthrough">
+        
+        <!-- Step 1 -->
+        <article class="step-card" id="step-1">
+          <div class="step-card-header">
+            <span class="step-number" aria-hidden="true">1</span>
+            <h2 class="step-title">Install the Official uBlock Origin Extension</h2>
+          </div>
+          <p>
+            uBlock Origin is the gold standard of open-source content blockers, created by Raymond Hill. Unlike commercial adblockers, it accepts no sponsored whitelists and sells no user data.
+          </p>
+          <div class="step-media-container">
+            <img src="../images/guide3-step1-install-ublock.svg" alt="Firefox Add-ons Manager showing uBlock Origin extension installation screen with Add to Firefox button highlighted" width="640" height="360">
+            <div class="step-caption">
+              Figure 3.1: Install uBlock Origin from the official browser add-on store. (Beware of fake copycats!).
+            </div>
+          </div>
+          <p>
+            Visit the official add-on store for your browser (e.g., Firefox Add-ons or Chrome Web Store) and install <strong>uBlock Origin</strong>. On Android phones, you can install Firefox for Android, which natively supports full desktop uBlock Origin extensions.
+          </p>
+        </article>
+
+        <!-- Step 2 -->
+        <article class="step-card" id="step-2">
+          <div class="step-card-header">
+            <span class="step-number" aria-hidden="true">2</span>
+            <h2 class="step-title">Open the Dashboard and Navigate to "My Filters"</h2>
+          </div>
+          <p>
+            Click the maroon uBlock shield icon on your browser toolbar and click the gear/cogs icon to launch the <strong>uBlock Origin Dashboard</strong>.
+          </p>
+          <div class="step-media-container">
+            <img src="../images/guide3-step2-dashboard.svg" alt="uBlock Origin dashboard settings page with My Filters tab open ready for custom cosmetic filter rules" width="640" height="360">
+            <div class="step-caption">
+              Figure 3.2: The My Filters tab in uBlock Origin where custom CSS distraction rules are defined.
+            </div>
+          </div>
+          <p>
+            Click on the <strong>"My filters"</strong> tab at the top. This editor allows you to write custom cosmetic element hiding rules (CSS selectors) that run locally inside your browser to suppress distracting page components.
+          </p>
+        </article>
+
+        <!-- Step 3 -->
+        <article class="step-card" id="step-3">
+          <div class="step-card-header">
+            <span class="step-number" aria-hidden="true">3</span>
+            <h2 class="step-title">Paste the Distraction-Free Student Rules</h2>
+          </div>
+          <p>
+            Copy and paste the verified filter block below directly into your <strong>My Filters</strong> editor:
+          </p>
+          <pre style="background: var(--bg-surface-elevated); padding: 1rem; border-radius: var(--border-radius-sm); border: 1px solid var(--border-subtle); font-family: var(--font-mono); font-size: 0.875rem; overflow-x: auto; margin-bottom: 1.25rem;">
+! === REFLECTHUB DIGITAL WELLNESS COSMETIC FILTERS ===
+! 1. Hide YouTube Shorts shelf on homepage and search results
+www.youtube.com##ytd-rich-shelf-renderer[is-shorts]
+www.youtube.com##ytd-reel-shelf-renderer
+www.youtube.com##[title="Shorts"]
+
+! 2. Hide YouTube related recommendations sidebar on video watch pages
+www.youtube.com###related
+
+! 3. Hide distracting YouTube comment section during lectures
+www.youtube.com###comments
+
+! 4. Hide LinkedIn promoted job feeds and news widgets
+www.linkedin.com##.feed-shared-update-v2:has(.feed-shared-actor__sub-description:has-text(Promoted))
+www.linkedin.com###feed-news-module
+
+! 5. Hide Twitter/X "Trending" and "Who to follow" sidebars
+twitter.com,x.com##[aria-label="Timeline: Trending now"]
+twitter.com,x.com##[aria-label="Who to follow"]</pre>
+          <p>
+            Click the orange <strong>"Apply changes"</strong> button in the top left corner of the dashboard.
+          </p>
+          <div class="step-media-container">
+            <img src="../images/guide3-step3-youtube-shorts.svg" alt="Comparison showing YouTube homepage with algorithmically addictive Shorts shelf hidden by uBlock Origin cosmetic filters" width="640" height="360">
+            <div class="step-caption">
+              Figure 3.3: Before and after applying cosmetic rules. Algorithmic rabbit holes are eliminated.
+            </div>
+          </div>
+        </article>
+
+        <!-- Step 4 -->
+        <article class="step-card" id="step-4">
+          <div class="step-card-header">
+            <span class="step-number" aria-hidden="true">4</span>
+            <h2 class="step-title">Zap Novel Distractions with the Element Picker</h2>
+          </div>
+          <p>
+            When researching coursework, you may encounter academic blogs, coding forums, or news sites covered in "Trending Articles" widgets or animated popovers.
+          </p>
+          <div class="step-media-container">
+            <img src="../images/guide3-step4-element-picker.svg" alt="uBlock Origin element picker eye-dropper tool selecting and zapping a clickbait sidebar recommendation box" width="640" height="360">
+            <div class="step-caption">
+              Figure 3.4: Using the element picker (eye-dropper icon) to permanently zap unwanted page elements.
+            </div>
+          </div>
+          <ol style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-muted);">
+            <li>Click the uBlock shield icon and click the <strong>Eye-dropper icon (Element Picker)</strong>.</li>
+            <li>Hover over the distracting banner or sidebar until it glows in red.</li>
+            <li>Click on the element. In the dialog box that appears in the lower right, preview the change and click <strong>Create</strong>.</li>
+            <li>The element is permanently hidden across all future visits to that domain.</li>
+          </ol>
+        </article>
+
+        <!-- Step 5 -->
+        <article class="step-card" id="step-5">
+          <div class="step-card-header">
+            <span class="step-number" aria-hidden="true">5</span>
+            <h2 class="step-title">Enable Annoyance and Cookie Consent Filter Lists</h2>
+          </div>
+          <p>
+            Few things break study concentration faster than having to click "Accept Cookies", close newsletter prompts, and dismiss mobile app banners every time you open a documentation page.
+          </p>
+          <div class="step-media-container">
+            <img src="../images/guide3-step5-annoyance-lists.svg" alt="uBlock Origin Filter Lists dashboard showing Annoyances checkboxes EasyList Cookie and Fanboy Annoyance checked" width="640" height="360">
+            <div class="step-caption">
+              Figure 3.5: Activating community-maintained Annoyance lists to block cookie popups automatically.
+            </div>
+          </div>
+          <p>
+            In the uBlock dashboard, switch to the <strong>"Filter lists"</strong> tab. Expand the <strong>"Annoyances"</strong> section and check:
+          </p>
+          <ul style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-muted);">
+            <li><strong>EasyList / Adguard Cookie Notices:</strong> Automatically suppresses annoying GDPR/cookie consent overlays.</li>
+            <li><strong>Fanboy's Annoyance List:</strong> Suppresses in-page push notification requests and modal newsletters.</li>
+            <li><strong>uBlock Origin &ndash; Annoyances:</strong> Strips micro-banners and floating social widgets.</li>
+          </ul>
+          <p>
+            Click <strong>"Update now"</strong> at the top of the Filter lists page.
+          </p>
+        </article>
+
+        <!-- Step 6 -->
+        <article class="step-card" id="step-6">
+          <div class="step-card-header">
+            <span class="step-number" aria-hidden="true">6</span>
+            <h2 class="step-title">Enjoy a Tranquil, Battery-Efficient Web</h2>
+          </div>
+          <p>
+            Open YouTube and any technical programming documentation site. Notice how instantly pages load without video popups, sponsored overlays, or infinite vertical reels.
+          </p>
+          <div class="step-media-container">
+            <img src="../images/guide3-step6-clean-browsing.svg" alt="Final clean browsing result showing technical article completely free of animated ads, sidebar clutter, and tracker scripts" width="640" height="360">
+            <div class="step-caption">
+              Figure 3.6: Fast, serene, distraction-free reading environment. Your laptop fan stays quiet and battery lasts longer.
+            </div>
+          </div>
+          <p>
+            By eliminating tracking scripts and intensive video feeds, your laptop processor uses less energy, prolonging battery life during long campus library sessions while preserving your cognitive bandwidth.
+          </p>
+        </article>
+
+      </section>
+
+      <!-- Common Problems Section -->
+      <section class="card" aria-labelledby="problems-title" style="margin-top: 2.5rem; background-color: var(--bg-surface-elevated);">
+        <h2 id="problems-title" style="font-size: 1.35rem; margin-top: 0; margin-bottom: 1rem;">
+          Common Problems &amp; Student Troubleshooting
+        </h2>
+
+        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <div>
+            <h3 style="font-size: 1.05rem; margin: 0 0 0.35rem 0; color: var(--text-main);">
+              1. "What if I need to read comments on a coding video to find a timestamp or bug fix?"
+            </h3>
+            <p style="font-size: 0.95rem; margin: 0;">
+              <strong>Fix:</strong> You do not need to uninstall the rule. Open the uBlock Origin Dashboard &gt; <em>My Filters</em>, place an exclamation mark <code>!</code> at the front of the line <code>! www.youtube.com###comments</code> to temporarily disable it, and click <em>Apply changes</em>. When done studying, remove the <code>!</code>.
+            </p>
+          </div>
+
+          <div>
+            <h3 style="font-size: 1.05rem; margin: 0 0 0.35rem 0; color: var(--text-main);">
+              2. "A university web portal or lab submission page fails to render properly."
+            </h3>
+            <p style="font-size: 0.95rem; margin: 0;">
+              <strong>Fix:</strong> Some poorly maintained college websites break if third-party analytics scripts fail. To whitelist only your university domain without affecting other sites, visit the university portal, click the uBlock shield icon, and click the large blue <strong>Power button</strong>. The power icon grays out, whitelisting that specific site only.
+            </p>
+          </div>
+
+          <div>
+            <h3 style="font-size: 1.05rem; margin: 0 0 0.35rem 0; color: var(--text-main);">
+              3. "Does uBlock Origin consume high RAM or slow down budget student laptops?"
+            </h3>
+            <p style="font-size: 0.95rem; margin: 0;">
+              <strong>Fact:</strong> No. Academic benchmarks consistently show uBlock Origin <em>reduces</em> browser memory usage by 20% to 40% and speeds up page load times by preventing heavy JavaScript ad frameworks and tracking beacons from running in the background.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation Buttons -->
+      <nav class="guide-nav-buttons" aria-label="Setup guide progression">
+        <a href="guide-2.html" class="btn btn-secondary">
+          &larr; Previous: Guide 2 (Android Bedtime)
+        </a>
+        <a href="index.html" class="btn btn-primary">
+          Back to Setup Guides Index &rarr;
+        </a>
+      </nav>
+
+    </div>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+            <svg style="width: 24px; height: 24px; color: var(--accent);" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 6v10l6 4" stroke="currentColor" stroke-width="2.2"/>
+              <circle cx="16" cy="16" r="2" fill="currentColor"/>
+            </svg>
+            <span style="font-weight: 800; font-size: 1.15rem; color: var(--text-main);">ReflectHub</span>
+          </div>
+          <p style="font-size: 0.875rem; margin-bottom: 1rem;">
+            Step-by-step digital wellness setups for student productivity and restorative sleep.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Hub Navigation</h2>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../find-my-tool.html">Find My Tool Quiz</a></li>
+            <li><a href="../compare.html">Compare Tools Table</a></li>
+            <li><a href="index.html">Setup Guides</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Trust &amp; Evidence</h2>
+          <ul class="footer-links">
+            <li><a href="../privacy-safety.html">Privacy &amp; Permissions</a></li>
+            <li><a href="../testing.html">Testing &amp; Accessibility Checklist</a></li>
+            <li><a href="../about.html">Methodology &amp; Criteria</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 ReflectHub Project &bull; Built for Undergraduates &bull; WCAG 2.2 AA Compliant
+        </div>
+        <div>
+          <a href="#main-content">Back to top &uarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

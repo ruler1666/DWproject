@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find My Tool: Answer 5 practical questions to get personalized, free or low-cost digital wellness tool recommendations for your student devices.">
+  <title>Find My Tool Quiz | ReflectHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Accessible Skip to Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Shared Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" aria-label="ReflectHub Home">
+        <svg class="brand-logo-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+          <path d="M16 6v10l6 4" stroke="currentColor" stroke-width="2.2"/>
+          <path d="M12 21a5 5 0 0 0 8-3" stroke="currentColor" stroke-width="2"/>
+          <circle cx="16" cy="16" r="2" fill="currentColor"/>
+        </svg>
+        <div>
+          <span class="brand-name">ReflectHub</span>
+          <span class="brand-tagline">Student Digital Wellness Guide</span>
+        </div>
+      </a>
+
+      <div class="nav-and-tools">
+        <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+          <span aria-hidden="true">☰</span>
+          <span>Menu</span>
+        </button>
+
+        <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Primary Navigation">
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="find-my-tool.html" class="nav-link" aria-current="page">Find My Tool</a></li>
+            <li><a href="compare.html" class="nav-link">Compare Tools</a></li>
+            <li><a href="guides/index.html" class="nav-link">Setup Guides</a></li>
+            <li><a href="privacy-safety.html" class="nav-link">Privacy &amp; Safety</a></li>
+            <li><a href="testing.html" class="nav-link">Testing &amp; Evidence</a></li>
+            <li><a href="about.html" class="nav-link">About &amp; Method</a></li>
+          </ul>
+        </nav>
+
+        <button type="button" class="theme-toggle-btn" aria-pressed="false" aria-label="Switch to dark theme">
+          <span aria-hidden="true">🌙</span>
+          <span>Dark Mode</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+    <div class="container">
+      
+      <header style="margin-bottom: 2rem; max-width: 760px; margin-left: auto; margin-right: auto; text-align: center;">
+        <span class="hero-badge">Decision Support Tool</span>
+        <h1>Find Your Ideal Wellness Tool</h1>
+        <p class="lead">
+          Stop scrolling through dozens of productivity apps. Answer 5 brief questions about your daily study routine, devices, and distraction challenges to discover the tools best suited to you.
+        </p>
+      </header>
+
+      <!-- Noscript Fallback -->
+      <noscript>
+        <div class="callout callout-warning" style="max-width: 760px; margin: 0 auto 2rem auto;">
+          <h2 class="callout-title" style="font-size: 1.1rem;">JavaScript is currently disabled</h2>
+          <p>
+            The interactive recommendation quiz requires JavaScript to compute real-time scores. You can explore all verified tools with full filters, pricing, and limitation breakdowns on our static <a href="compare.html">Comparison Table Page</a> or browse our <a href="guides/index.html">Step-by-Step Setup Guides</a>.
+          </p>
+        </div>
+      </noscript>
+
+      <div class="quiz-container">
+        
+        <!-- Interactive Quiz Form -->
+        <form id="quiz-form" class="quiz-card" aria-label="Digital Wellness Tool Recommendation Quiz">
+          
+          <!-- Question 1: Devices -->
+          <fieldset>
+            <span class="quiz-step-indicator">Question 1 of 5 &bull; Hardware Setup</span>
+            <legend>What hardware do you primarily use for daily college work?</legend>
+            <div class="legend-description">
+              Select the setup where distractions impact your productivity or sleep the most.
+            </div>
+
+            <div class="quiz-options">
+              <label class="quiz-option-label">
+                <input type="radio" name="q_device" value="android" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Android Smartphone Only</span>
+                  <span class="quiz-option-desc">My primary challenge is phone screen time, reels, WhatsApp, and bedside scrolling.</span>
+                </div>
+              </label>
+
+              <label class="quiz-option-label">
+                <input type="radio" name="q_device" value="windows" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Windows Laptop Only</span>
+                  <span class="quiz-option-desc">My challenge is browser rabbit holes, gaming apps, and desktop multitasking during study sprints.</span>
+                </div>
+              </label>
+
+              <label class="quiz-option-label">
+                <input type="radio" name="q_device" value="both" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Both Android Phone and Windows Laptop</span>
+                  <span class="quiz-option-desc">I study with my laptop open and my phone on my desk, getting interrupted on both.</span>
+                </div>
+              </label>
+            </div>
+          </fieldset>
+
+          <hr style="border: 0; border-top: 1px solid var(--border-subtle); margin: 1.75rem 0;">
+
+          <!-- Question 2: Distraction -->
+          <fieldset>
+            <span class="quiz-step-indicator">Question 2 of 5 &bull; Core Problem</span>
+            <legend>What is your single biggest digital wellness struggle right now?</legend>
+            <div class="legend-description">
+              Choose the problem that drains the most hours or harms your health the most.
+            </div>
+
+            <div class="quiz-options">
+              <label class="quiz-option-label">
+                <input type="radio" name="q_distraction" value="social-media" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Compulsive Social Feeds &amp; Short Videos</span>
+                  <span class="quiz-option-desc">Instagram Reels, YouTube Shorts, or Reddit feeds sucking away hours without me realizing it.</span>
+                </div>
+              </label>
+
+              <label class="quiz-option-label">
+                <input type="radio" name="q_distraction" value="bedtime" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Late-Night Screen Use Delaying Sleep</span>
+                  <span class="quiz-option-desc">Staying up past 1:00 AM on bright phone screens, leading to morning exhaustion and missed lectures.</span>
+                </div>
+              </label>
+
+              <label class="quiz-option-label">
+                <input type="radio" name="q_distraction" value="multitasking" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Continuous Tab-Hopping &amp; Notification Pings</span>
+                  <span class="quiz-option-desc">Inability to focus on one coding task or textbook chapter without checking messages every 4 minutes.</span>
+                </div>
+              </label>
+
+              <label class="quiz-option-label">
+                <input type="radio" name="q_distraction" value="procrastination" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Impulsive App Opening &amp; Habitual Procrastination</span>
+                  <span class="quiz-option-desc">Opening distracting apps involuntarily whenever an academic task gets slightly challenging or boring.</span>
+                </div>
+              </label>
+            </div>
+          </fieldset>
+
+          <hr style="border: 0; border-top: 1px solid var(--border-subtle); margin: 1.75rem 0;">
+
+          <!-- Question 3: Strictness -->
+          <fieldset>
+            <span class="quiz-step-indicator">Question 3 of 5 &bull; Enforcement Style</span>
+            <legend>What level of strictness or friction works best for your personality?</legend>
+            <div class="legend-description">
+              Be honest with yourself—some students thrive with gentle nudges, while others need unbreakable locks.
+            </div>
+
+            <div class="quiz-options">
+              <label class="quiz-option-label">
+                <input type="radio" name="q_strictness" value="gentle" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Gentle Mindfulness Nudges &amp; Passive Awareness</span>
+                  <span class="quiz-option-desc">I just need a calm reminder, a deep-breath pause, or clean visual reports. Harsh locks stress me out.</span>
+                </div>
+              </label>
+
+              <label class="quiz-option-label">
+                <input type="radio" name="q_strictness" value="moderate" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Scheduled Timers &amp; Daily Quotas</span>
+                  <span class="quiz-option-desc">I want fixed daily allowances (e.g. 45 min/day) or scheduled focus sprint blocks that shut down distractions.</span>
+                </div>
+              </label>
+
+              <label class="quiz-option-label">
+                <input type="radio" name="q_strictness" value="strict" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Unbreakable / Strict Lockdown Mode</span>
+                  <span class="quiz-option-desc">I will cheat past soft timers. I need high friction (e.g. typing 64 random characters) to keep me accountable during finals.</span>
+                </div>
+              </label>
+            </div>
+          </fieldset>
+
+          <hr style="border: 0; border-top: 1px solid var(--border-subtle); margin: 1.75rem 0;">
+
+          <!-- Question 4: Budget -->
+          <fieldset>
+            <span class="quiz-step-indicator">Question 4 of 5 &bull; Financial Constraints</span>
+            <legend>What is your budget for digital wellness tools?</legend>
+            <div class="legend-description">
+              We never recommend apps where essential features are silently locked behind unexpected paywalls.
+            </div>
+
+            <div class="quiz-options">
+              <label class="quiz-option-label">
+                <input type="radio" name="q_budget" value="free-only" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Strictly ₹0 / 100% Free or Open Source Only</span>
+                  <span class="quiz-option-desc">I cannot or do not want to spend money on subscriptions. Everything must be totally free forever.</span>
+                </div>
+              </label>
+
+              <label class="quiz-option-label">
+                <input type="radio" name="q_budget" value="freemium-ok" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Freemium Is Acceptable If Core Features Work Free</span>
+                  <span class="quiz-option-desc">I'm fine with apps that offer optional paid upgrades, as long as daily blocking and timers are fully usable for ₹0.</span>
+                </div>
+              </label>
+            </div>
+          </fieldset>
+
+          <hr style="border: 0; border-top: 1px solid var(--border-subtle); margin: 1.75rem 0;">
+
+          <!-- Question 5: Privacy -->
+          <fieldset>
+            <span class="quiz-step-indicator">Question 5 of 5 &bull; Privacy &amp; Data Sensitivity</span>
+            <legend>How do you feel about app permissions and data privacy?</legend>
+            <div class="legend-description">
+              Wellness apps sometimes inspect your open windows or browser URLs to enforce limits.
+            </div>
+
+            <div class="quiz-options">
+              <label class="quiz-option-label">
+                <input type="radio" name="q_privacy" value="strict" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Strict Privacy: Open Source or 100% Local Processing Only</span>
+                  <span class="quiz-option-desc">No accounts, no cloud analytics servers, no third-party tracking. My activity data must remain on my device.</span>
+                </div>
+              </label>
+
+              <label class="quiz-option-label">
+                <input type="radio" name="q_privacy" value="standard" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Standard Permissions Are Fine If The Tool Is Trustworthy</span>
+                  <span class="quiz-option-desc">I'm comfortable granting Android Accessibility or standard extension permissions if the developer is reputable.</span>
+                </div>
+              </label>
+            </div>
+          </fieldset>
+
+          <div style="margin-top: 2rem; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+            <button type="submit" class="btn btn-primary" style="font-size: 1.1rem; padding: 0.75rem 1.75rem;">
+              Calculate My Recommendations &rarr;
+            </button>
+            <button type="reset" class="btn btn-secondary btn-sm">Clear Form</button>
+          </div>
+        </form>
+
+        <!-- Quiz Results Container (Initially Hidden) -->
+        <section id="quiz-results" style="display: none;" aria-live="polite">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+            <div>
+              <span class="hero-badge">Your Personalized Match</span>
+              <h2 id="results-heading" tabindex="-1" style="margin: 0.25rem 0 0 0;">Recommended Wellness Tools</h2>
+            </div>
+            <button type="button" id="btn-reset-quiz" class="btn btn-secondary btn-sm">
+              &larr; Retake Quiz
+            </button>
+          </div>
+
+          <div id="recommendations-list">
+            <!-- Populated dynamically via js/main.js -->
+          </div>
+
+          <div class="card" style="margin-top: 2rem; background-color: var(--bg-surface-elevated); border: 1px dashed var(--border-strong);">
+            <h3 style="margin-top: 0; font-size: 1.15rem;">Want to see how other tools stack up?</h3>
+            <p style="margin-bottom: 0.75rem; font-size: 0.95rem;">
+              These recommendations reflect your quiz answers, but digital wellness is personal. You may also want to inspect the full list of tools side-by-side.
+            </p>
+            <div class="btn-group">
+              <a href="compare.html" class="btn btn-secondary btn-sm">Open Full Comparison Table</a>
+              <a href="guides/index.html" class="btn btn-secondary btn-sm">Explore Student Setup Guides</a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+            <svg style="width: 24px; height: 24px; color: var(--accent);" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 6v10l6 4" stroke="currentColor" stroke-width="2.2"/>
+              <circle cx="16" cy="16" r="2" fill="currentColor"/>
+            </svg>
+            <span style="font-weight: 800; font-size: 1.15rem; color: var(--text-main);">ReflectHub</span>
+          </div>
+          <p style="font-size: 0.875rem; margin-bottom: 1rem;">
+            An interactive decision aid for engineering students balancing screen time on Android and Windows devices.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Hub Navigation</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="find-my-tool.html">Find My Tool Quiz</a></li>
+            <li><a href="compare.html">Compare Tools Table</a></li>
+            <li><a href="guides/index.html">Setup Guides</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Trust &amp; Evidence</h2>
+          <ul class="footer-links">
+            <li><a href="privacy-safety.html">Privacy &amp; Permissions</a></li>
+            <li><a href="testing.html">Testing &amp; Accessibility Checklist</a></li>
+            <li><a href="about.html">Methodology &amp; Criteria</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 ReflectHub Project &bull; Built for Undergraduates &bull; WCAG 2.2 AA Compliant
+        </div>
+        <div>
+          <a href="#main-content">Back to top &uarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

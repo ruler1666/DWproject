@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%" role="img" aria-label="Do Not Disturb settings showing emergency call exceptions with Starred Contacts and Repeat Callers turned on">
+  <rect width="640" height="360" fill="#f8fafc" rx="8"/>
+  <rect x="180" y="10" width="280" height="340" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="20"/>
+  <text x="200" y="45" font-family="sans-serif" font-size="16" font-weight="bold" fill="#0f172a">Do Not Disturb exceptions</text>
+  <!-- People item -->
+  <rect x="200" y="65" width="240" height="60" fill="#f8fafc" stroke="#e2e8f0" rx="6"/>
+  <text x="210" y="88" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0f172a">Who can interrupt you?</text>
+  <text x="210" y="108" font-family="sans-serif" font-size="12" fill="#0f766e">Starred contacts only (Parents/Roommate)</text>
+  <!-- Calls item -->
+  <rect x="200" y="135" width="240" height="60" fill="#f8fafc" stroke="#e2e8f0" rx="6"/>
+  <text x="210" y="158" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0f172a">Repeat callers</text>
+  <text x="210" y="178" font-family="sans-serif" font-size="11" fill="#64748b">Allow call if same person calls twice in 15 mins</text>
+  <rect x="390" y="150" width="40" height="20" fill="#0f766e" rx="10"/>
+  <circle cx="420" cy="160" r="7" fill="#ffffff"/>
+  <!-- Safety Banner -->
+  <rect x="200" y="210" width="240" height="110" fill="#ecfdf5" stroke="#a7f3d0" rx="6"/>
+  <text x="210" y="235" font-family="sans-serif" font-size="12" font-weight="bold" fill="#065f46">Safety &amp; Peace of Mind:</text>
+  <text x="210" y="258" font-family="sans-serif" font-size="11" fill="#065f46">You will not miss urgent family calls or hostel</text>
+  <text x="210" y="275" font-family="sans-serif" font-size="11" fill="#065f46">emergencies, while 100% of WhatsApp group</text>
+  <text x="210" y="292" font-family="sans-serif" font-size="11" fill="#065f46">chats and meme pings remain muted.</text>
+</svg>
