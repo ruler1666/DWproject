@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -58,7 +58,7 @@
     <div class="container">
       
       <header style="margin-bottom: 2.5rem; max-width: 820px;">
-        <span class="hero-badge">Quality Assurance &amp; Field Usability</span>
+        <span class="hero-eyebrow">Quality Assurance &amp; Field Usability</span>
         <h1>Testing, Accessibility &amp; Evidence</h1>
         <p class="lead">
           To ensure ReflectHub functions reliably in real student environments, every external resource link was verified, the site was audited against WCAG 2.2 AA accessibility criteria, and 5 undergraduate students (P1 to P5) tested the hub and guides on physical Android and Windows devices.
@@ -72,7 +72,7 @@
           Every outbound link on ReflectHub connects directly to official non-profit repositories, operating system documentation, or primary vendor pages. All links were tested for HTTP 200 responses and content accuracy.
         </p>
 
-        <div class="table-responsive-wrapper" tabindex="0" aria-label="Link test record table scroll container">
+        <div class="table-wrapper" tabindex="0" aria-label="Link test record table scroll container">
           <table class="evidence-table" aria-label="Link test verification record">
             <thead>
               <tr>
@@ -90,7 +90,7 @@
                   <code style="font-size: 0.8rem;">https://wellbeing.google/</code>
                 </th>
                 <td>2026-10-24</td>
-                <td><span class="checklist-pass">200 OK</span></td>
+                <td><span class="status-pass">200 OK</span></td>
                 <td>Active official portal explaining native Android Bedtime Mode &amp; Focus Mode.</td>
                 <td>Verified live; no redirects or broken assets.</td>
               </tr>
@@ -100,7 +100,7 @@
                   <code style="font-size: 0.8rem;">https://support.microsoft.com/...</code>
                 </th>
                 <td>2026-10-24</td>
-                <td><span class="checklist-pass">200 OK</span></td>
+                <td><span class="status-pass">200 OK</span></td>
                 <td>Official Microsoft support article on Focus Sessions and Clock integration.</td>
                 <td>Used canonical localized KB URL to avoid 301 regional redirect hops.</td>
               </tr>
@@ -110,7 +110,7 @@
                   <code style="font-size: 0.8rem;">https://www.proginosko.com/leechblock/</code>
                 </th>
                 <td>2026-10-24</td>
-                <td><span class="checklist-pass">200 OK</span></td>
+                <td><span class="status-pass">200 OK</span></td>
                 <td>Developer James Anderson's official documentation and user guide.</td>
                 <td>Updated to HTTPS root; verified user guide links.</td>
               </tr>
@@ -120,7 +120,7 @@
                   <code style="font-size: 0.8rem;">https://getcoldturkey.com/</code>
                 </th>
                 <td>2026-10-24</td>
-                <td><span class="checklist-pass">200 OK</span></td>
+                <td><span class="status-pass">200 OK</span></td>
                 <td>Verified pricing page: confirms ₹3,200 ($39 USD) one-off Pro upgrade.</td>
                 <td>Explicitly documented paywall details on compare table.</td>
               </tr>
@@ -130,7 +130,7 @@
                   <code style="font-size: 0.8rem;">https://stayfreeapps.com/</code>
                 </th>
                 <td>2026-10-24</td>
-                <td><span class="checklist-pass">200 OK</span></td>
+                <td><span class="status-pass">200 OK</span></td>
                 <td>Official portal; confirms free local app timers &amp; paid cross-device sync.</td>
                 <td>Correctly classified as Freemium with exact cloud sync paywall note.</td>
               </tr>
@@ -140,7 +140,7 @@
                   <code style="font-size: 0.8rem;">https://activitywatch.net/</code>
                 </th>
                 <td>2026-10-24</td>
-                <td><span class="checklist-pass">200 OK</span></td>
+                <td><span class="status-pass">200 OK</span></td>
                 <td>Open source MPL-2.0 project; verified active GitHub release downloads.</td>
                 <td>Verified localhost port 5600 architecture documentation.</td>
               </tr>
@@ -150,7 +150,7 @@
                   <code style="font-size: 0.8rem;">https://one-sec.app/</code>
                 </th>
                 <td>2026-10-24</td>
-                <td><span class="checklist-pass">200 OK</span></td>
+                <td><span class="status-pass">200 OK</span></td>
                 <td>Confirmed free tier allows 1 app; unlimited app delays require Pro.</td>
                 <td>Labeled 1-app limitation in bold for student transparency.</td>
               </tr>
@@ -160,7 +160,7 @@
                   <code style="font-size: 0.8rem;">https://ublockorigin.com/</code>
                 </th>
                 <td>2026-10-24</td>
-                <td><span class="checklist-pass">200 OK</span></td>
+                <td><span class="status-pass">200 OK</span></td>
                 <td>Official Raymond Hill documentation; confirms 0-tracking policy.</td>
                 <td>Added warning against fraudulent copycat plugins on search engines.</td>
               </tr>
@@ -170,7 +170,7 @@
                   <code style="font-size: 0.8rem;">https://www.minimalistphone.com/</code>
                 </th>
                 <td>2026-10-24</td>
-                <td><span class="checklist-pass">200 OK</span></td>
+                <td><span class="status-pass">200 OK</span></td>
                 <td>Verified 7-day trial policy before subscription prompt.</td>
                 <td>Explicitly flagged that post-trial functionality is severely restricted.</td>
               </tr>
@@ -180,7 +180,7 @@
                   <code style="font-size: 0.8rem;">https://www.forestapp.cc/</code>
                 </th>
                 <td>2026-10-24</td>
-                <td><span class="checklist-pass">200 OK</span></td>
+                <td><span class="status-pass">200 OK</span></td>
                 <td>Confirmed Android free tier contains ads; $3.99 Pro unlocks real trees.</td>
                 <td>Accurately flagged ad-interruption limitation in our verdict.</td>
               </tr>
@@ -190,7 +190,7 @@
                   <code style="font-size: 0.8rem;">https://bitwarden.com/</code>
                 </th>
                 <td>2026-10-24</td>
-                <td><span class="checklist-pass">200 OK</span></td>
+                <td><span class="status-pass">200 OK</span></td>
                 <td>Confirmed free personal tier includes unlimited devices and sync.</td>
                 <td>Clarified $10/year premium tier is optional (for TOTP codes).</td>
               </tr>
@@ -200,7 +200,7 @@
                   <code style="font-size: 0.8rem;">https://ssd.eff.org/</code>
                 </th>
                 <td>2026-10-24</td>
-                <td><span class="checklist-pass">200 OK</span></td>
+                <td><span class="status-pass">200 OK</span></td>
                 <td>Official Electronic Frontier Foundation security curriculum.</td>
                 <td>Linked in Privacy &amp; Safety section with meaningful anchor text.</td>
               </tr>
@@ -216,7 +216,7 @@
           ReflectHub was tested using keyboard-only navigation, high contrast simulation, screen readers (Windows Narrator &amp; NVDA), and browser zoom up to 200%.
         </p>
 
-        <div class="table-responsive-wrapper" tabindex="0" aria-label="Accessibility checklist table scroll container">
+        <div class="table-wrapper" tabindex="0" aria-label="Accessibility checklist table scroll container">
           <table class="evidence-table" aria-label="WCAG 2.2 AA Compliance Audit">
             <thead>
               <tr>
@@ -230,7 +230,7 @@
               <tr>
                 <th scope="row">1.4.3 Contrast (Minimum)</th>
                 <td>AA</td>
-                <td><span class="checklist-pass">PASS</span></td>
+                <td><span class="status-pass">PASS</span></td>
                 <td class="checklist-notes">
                   Body text color <code>#0f172a</code> on <code>#ffffff</code> yields a <strong>15.8:1</strong> contrast ratio (exceeds 4.5:1 requirement). Dark theme text <code>#f8fafc</code> on <code>#131c31</code> yields <strong>15.2:1</strong>. Muted text <code>#334155</code> yields <strong>7.2:1</strong>.
                 </td>
@@ -238,7 +238,7 @@
               <tr>
                 <th scope="row">2.4.1 Bypass Blocks</th>
                 <td>A</td>
-                <td><span class="checklist-pass">PASS</span></td>
+                <td><span class="status-pass">PASS</span></td>
                 <td class="checklist-notes">
                   A high-contrast <code>.skip-link</code> is the first focusable element on every page, jumping focus directly to <code>#main-content</code> when pressed.
                 </td>
@@ -246,7 +246,7 @@
               <tr>
                 <th scope="row">1.3.1 Info and Relationships</th>
                 <td>A</td>
-                <td><span class="checklist-pass">PASS</span></td>
+                <td><span class="status-pass">PASS</span></td>
                 <td class="checklist-notes">
                   Proper semantic landmarks used throughout (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>). Exactly one <code>&lt;h1&gt;</code> per page with strictly descending heading levels (h1 &rarr; h2 &rarr; h3). Tables include <code>&lt;caption&gt;</code> and <code>&lt;th scope="col/row"&gt;</code>.
                 </td>
@@ -254,7 +254,7 @@
               <tr>
                 <th scope="row">2.1.1 Keyboard Navigation</th>
                 <td>A</td>
-                <td><span class="checklist-pass">PASS</span></td>
+                <td><span class="status-pass">PASS</span></td>
                 <td class="checklist-notes">
                   100% of links, buttons, theme toggles, mobile menus, table sort headers, and quiz form radio buttons can be operated exclusively via <kbd>Tab</kbd>, <kbd>Shift+Tab</kbd>, <kbd>Space</kbd>, and <kbd>Enter</kbd>.
                 </td>
@@ -262,7 +262,7 @@
               <tr>
                 <th scope="row">2.4.7 Focus Visible</th>
                 <td>AA</td>
-                <td><span class="checklist-pass">PASS</span></td>
+                <td><span class="status-pass">PASS</span></td>
                 <td class="checklist-notes">
                   High-visibility focus indicator implemented: <code>:focus-visible { outline: 3px solid var(--accent-focus); outline-offset: 3px; }</code>. Never suppressed.
                 </td>
@@ -270,7 +270,7 @@
               <tr>
                 <th scope="row">1.4.1 Use of Color</th>
                 <td>A</td>
-                <td><span class="checklist-pass">PASS</span></td>
+                <td><span class="status-pass">PASS</span></td>
                 <td class="checklist-notes">
                   No information is conveyed by color alone. Badges for Free, Freemium, and Paid use clear text words and distinct border stylings. Links have persistent underline styling.
                 </td>
@@ -278,7 +278,7 @@
               <tr>
                 <th scope="row">1.4.4 Resize Text (200% Zoom)</th>
                 <td>AA</td>
-                <td><span class="checklist-pass">PASS</span></td>
+                <td><span class="status-pass">PASS</span></td>
                 <td class="checklist-notes">
                   Layout tested at 200% browser zoom in Chrome and Firefox. All typography uses relative <code>rem</code> units. No horizontal scrollbars or clipped text containers.
                 </td>
@@ -286,7 +286,7 @@
               <tr>
                 <th scope="row">2.4.4 Link Purpose (In Context)</th>
                 <td>A</td>
-                <td><span class="checklist-pass">PASS</span></td>
+                <td><span class="status-pass">PASS</span></td>
                 <td class="checklist-notes">
                   Zero generic "click here" or "read more" links. Every link text describes the destination (e.g., "Read Complete Guide 1 &rarr;", "Visit Official Website"). Outbound links include screen reader notices.
                 </td>
@@ -294,7 +294,7 @@
               <tr>
                 <th scope="row">2.3.3 Animation from Interactions</th>
                 <td>AAA</td>
-                <td><span class="checklist-pass">PASS</span></td>
+                <td><span class="status-pass">PASS</span></td>
                 <td class="checklist-notes">
                   Includes complete <code>@media (prefers-reduced-motion: reduce)</code> CSS rule disabling transitions and animations for users with vestibular sensitivities.
                 </td>
@@ -302,7 +302,7 @@
               <tr>
                 <th scope="row">1.1.1 Non-text Content</th>
                 <td>A</td>
-                <td><span class="checklist-pass">PASS</span></td>
+                <td><span class="status-pass">PASS</span></td>
                 <td class="checklist-notes">
                   Every informative SVG illustration contains meaningful descriptive <code>alt</code> text and captions. Decorative icons use <code>aria-hidden="true"</code>.
                 </td>
@@ -330,10 +330,10 @@
           <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
             <strong>Task Assigned:</strong> Complete Setup Guide 1 (LeechBlock NG + Focus Sessions) and attempt to bypass during study time.
           </p>
-          <blockquote class="quote-text">
+          <blockquote class="quote-block">
             "The 64-character uncheatable challenge code is brilliant. I tried opening YouTube to look up a gaming clip while compiling code, saw the random character string, and realized it would take me 45 seconds to type it out. It completely snapped me out of my impulse loop."
           </blockquote>
-          <p style="font-size: 0.85rem; color: var(--text-light); margin: 0;">
+          <p style="font-size: 0.85rem; color: var(--text-tertiary); margin: 0;">
             <strong>Problem Encountered:</strong> P1 was initially unsure how to whitelist their college's NPTEL lecture playlist on LeechBlock. (Addressed in Revision #1).
           </p>
         </article>
@@ -349,10 +349,10 @@
           <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
             <strong>Task Assigned:</strong> Follow Guide 2 (Android Bedtime Mode &amp; Grayscale Automation).
           </p>
-          <blockquote class="quote-text">
+          <blockquote class="quote-block">
             "Turning the screen black and white at 11 PM makes Instagram reels feel completely uninteresting. After 3 minutes, my eyes feel tired and I just plug the phone in and go to sleep. I was worried about missing my mother's calls, but the starred contacts bypass worked perfectly."
           </blockquote>
-          <p style="font-size: 0.85rem; color: var(--text-light); margin: 0;">
+          <p style="font-size: 0.85rem; color: var(--text-tertiary); margin: 0;">
             <strong>Problem Encountered:</strong> The aggressive battery saver on MIUI initially delayed Bedtime Mode by 15 minutes. (Addressed in Revision #2).
           </p>
         </article>
@@ -368,10 +368,10 @@
           <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
             <strong>Task Assigned:</strong> Take the Find My Tool Quiz with a ₹0 budget and evaluate recommendations.
           </p>
-          <blockquote class="quote-text">
+          <blockquote class="quote-block">
             "I liked that the quiz didn't push me to download apps with 7-day trials that charge money later. It recommended LeechBlock NG and Android Digital Wellbeing and explicitly told me what features Cold Turkey paywalls."
           </blockquote>
-          <p style="font-size: 0.85rem; color: var(--text-light); margin: 0;">
+          <p style="font-size: 0.85rem; color: var(--text-tertiary); margin: 0;">
             <strong>Problem Encountered:</strong> P3 wanted a one-click button on the quiz results card to jump straight into the setup guide. (Addressed in Revision #3).
           </p>
         </article>
@@ -387,10 +387,10 @@
           <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
             <strong>Task Assigned:</strong> Follow Guide 3 (uBlock Origin YouTube Shorts Removal).
           </p>
-          <blockquote class="quote-text">
+          <blockquote class="quote-block">
             "Shorts was my biggest weakness. I’d open YouTube to watch a surveying tutorial and end up watching 40 minutes of vertical comedy reels. Removing the Shorts shelf entirely makes YouTube feel like a quiet library again."
           </blockquote>
-          <p style="font-size: 0.85rem; color: var(--text-light); margin: 0;">
+          <p style="font-size: 0.85rem; color: var(--text-tertiary); margin: 0;">
             <strong>Problem Encountered:</strong> Initially pasted the cosmetic rules without clicking 'Apply changes'. (Addressed in Revision #4).
           </p>
         </article>
@@ -406,10 +406,10 @@
           <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
             <strong>Task Assigned:</strong> Security audit of the Privacy &amp; Safety section and Compare matrix.
           </p>
-          <blockquote class="quote-text">
+          <blockquote class="quote-block">
             "It's refreshing to see a student hub honestly explain Android Accessibility Service risks instead of just telling people to install random blockers. Highlighting Bitwarden and local-first ActivityWatch makes this a genuine wellness resource."
           </blockquote>
-          <p style="font-size: 0.85rem; color: var(--text-light); margin: 0;">
+          <p style="font-size: 0.85rem; color: var(--text-tertiary); margin: 0;">
             <strong>Feedback:</strong> Requested clear keyboard outline visibility for dark mode buttons. (Verified passing 3px offset in CSS).
           </p>
         </article>
@@ -422,7 +422,7 @@
           Based on issues recorded during student trials and accessibility evaluations, the following iterative improvements were implemented in the final release:
         </p>
 
-        <div class="table-responsive-wrapper" tabindex="0" aria-label="Revisions log table scroll container">
+        <div class="table-wrapper" tabindex="0" aria-label="Revisions log table scroll container">
           <table class="evidence-table" aria-label="Usability revisions and fixes record">
             <thead>
               <tr>
@@ -493,7 +493,7 @@
               <path d="M16 6v10l6 4" stroke="currentColor" stroke-width="2.2"/>
               <circle cx="16" cy="16" r="2" fill="currentColor"/>
             </svg>
-            <span style="font-weight: 800; font-size: 1.15rem; color: var(--text-main);">ReflectHub</span>
+            <span style="font-weight: 800; font-size: 1.15rem; color: var(--text-primary);">ReflectHub</span>
           </div>
           <p style="font-size: 0.875rem; margin-bottom: 1rem;">
             Transparent, student-centered digital wellness resource hub.

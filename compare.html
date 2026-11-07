@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -58,7 +58,7 @@
     <div class="container">
       
       <header style="margin-bottom: 2rem;">
-        <span class="hero-badge">Comprehensive Decision Matrix</span>
+        <span class="hero-eyebrow">Comprehensive Decision Matrix</span>
         <h1>Compare Digital Wellness Tools</h1>
         <p class="lead">
           Filter and evaluate 11 verified wellness tools by platform compatibility, actual costs, open-source status, and required permissions. We explicitly state what features are paywalled and each tool's honest limitations so you can make informed choices.
@@ -119,16 +119,16 @@
 
       <!-- Active Count & Instructions -->
       <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
-        <div id="filter-count" class="filter-stats" aria-live="polite">
+        <div id="filter-count" class="filter-count" aria-live="polite">
           Loading verified wellness tools...
         </div>
-        <div style="font-size: 0.8125rem; color: var(--text-light);">
+        <div style="font-size: 0.8125rem; color: var(--text-tertiary);">
           Tip: Click table column headers to sort &bull; Horizontal scroll enabled on small viewports
         </div>
       </div>
 
       <!-- Desktop / Tablet Table View (Collapses to cards on mobile <= 840px) -->
-      <div class="table-responsive-wrapper" tabindex="0" aria-label="Digital wellness tools comparison table scroll container">
+      <div class="table-wrapper" tabindex="0" aria-label="Digital wellness tools comparison table scroll container">
         <table class="compare-table" aria-label="Digital Wellness Resource Comparison">
           <caption>
             Comprehensive evaluation of digital wellness tools tested for undergraduate students (Android &amp; Windows)
@@ -175,12 +175,12 @@
       </div>
 
       <!-- Mobile Card Alternative View (Displayed automatically on <= 840px via CSS) -->
-      <section class="mobile-card-grid" id="tools-mobile-cards" aria-label="Tools card list for mobile devices">
+      <section class="mobile-cards-grid" id="tools-mobile-cards" aria-label="Tools card list for mobile devices">
         <!-- Populated via JavaScript from data/tools.json -->
       </section>
 
       <!-- Note on Evaluation Integrity -->
-      <section class="card" style="margin-top: 2.5rem; background-color: var(--bg-surface-elevated);">
+      <section class="card" style="margin-top: 2.5rem; background-color: var(--bg-elevated);">
         <h2 style="font-size: 1.15rem; margin-top: 0; margin-bottom: 0.5rem;">How We Verify Cost &amp; Paywall Disclosures</h2>
         <p style="font-size: 0.95rem; margin-bottom: 0.75rem;">
           In commercial software directories, apps often advertise themselves as "Free" because the app download itself costs ₹0, only for users to discover during exam revision that core features (such as scheduled app blocking or website limits) require an expensive monthly subscription.
@@ -204,7 +204,7 @@
               <path d="M16 6v10l6 4" stroke="currentColor" stroke-width="2.2"/>
               <circle cx="16" cy="16" r="2" fill="currentColor"/>
             </svg>
-            <span style="font-weight: 800; font-size: 1.15rem; color: var(--text-main);">ReflectHub</span>
+            <span style="font-weight: 800; font-size: 1.15rem; color: var(--text-primary);">ReflectHub</span>
           </div>
           <p style="font-size: 0.875rem; margin-bottom: 1rem;">
             Transparent, peer-evaluated digital wellness guide for undergraduate students.

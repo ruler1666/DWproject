@@ -1,4 +1,4 @@
-/**
+﻿/**
  * REFLECTHUB - STUDENT DIGITAL WELLNESS RESOURCE HUB
  * Main JavaScript Controller
  * Plain Vanilla JS, Zero External Dependencies, Accessible & Fast
@@ -156,7 +156,7 @@
     loadToolsData().then((tools) => {
       if (!tools || tools.length === 0) {
         const errorMsg =
-          '<p class="callout callout-warning">Unable to load tool data. If viewing locally via file:// protocol, please view via a local server (e.g., Python http.server or VS Code Live Server) or on GitHub Pages.</p>';
+          '<p class="callout callout-warn">Unable to load tool data. If viewing locally via file:// protocol, please view via a local server (e.g., Python http.server or VS Code Live Server) or on GitHub Pages.</p>';
         if (tableBody) tableBody.innerHTML = `<tr><td colspan="10">${errorMsg}</td></tr>`;
         if (mobileCardsContainer) mobileCardsContainer.innerHTML = errorMsg;
         return;
@@ -249,8 +249,8 @@
             (tool) => `
           <tr>
             <th scope="row">
-              <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">${tool.name}</div>
-              <div style="font-size: 0.8rem; color: var(--text-light);">${tool.category}</div>
+              <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">${tool.name}</div>
+              <div style="font-size: 0.8rem; color: var(--text-tertiary);">${tool.category}</div>
             </th>
             <td>${tool.purpose}</td>
             <td>
@@ -260,7 +260,7 @@
             </td>
             <td>
               <div>${getCostBadgeHTML(tool.cost)}</div>
-              <div style="font-size: 0.825rem; margin-top: 0.35rem; color: var(--text-muted);">
+              <div style="font-size: 0.825rem; margin-top: 0.35rem; color: var(--text-secondary);">
                 <strong>Paywall details:</strong> ${tool.paywalled_features}
               </div>
             </td>
@@ -275,7 +275,7 @@
                 Official Website <span class="sr-only">(opens in new window)</span>
               </a>
             </td>
-            <td style="font-size: 0.825rem; color: var(--text-light); white-space: nowrap;">
+            <td style="font-size: 0.825rem; color: var(--text-tertiary); white-space: nowrap;">
               ${tool.date_checked}
             </td>
           </tr>
@@ -299,7 +299,7 @@
             <div class="card-header">
               <div>
                 <h3 id="card-title-${tool.id}" class="card-title" style="font-size: 1.15rem;">${tool.name}</h3>
-                <span style="font-size: 0.825rem; color: var(--text-light);">${tool.category}</span>
+                <span style="font-size: 0.825rem; color: var(--text-tertiary);">${tool.category}</span>
               </div>
               <div>${getCostBadgeHTML(tool.cost)}</div>
             </div>
@@ -331,16 +331,16 @@
               <p style="font-size: 0.875rem; margin: 0;">${tool.accessibility_notes}</p>
             </div>
 
-            <div class="tool-detail-row" style="background-color: var(--status-freemium-bg); padding: 0.75rem; border-radius: var(--border-radius-sm);">
+            <div class="tool-detail-row" style="background-color: var(--status-freemium-bg); padding: 0.75rem; border-radius: var(--r-sm);">
               <span class="tool-detail-label" style="color: var(--status-freemium-text);">Honest Limitation</span>
-              <p style="font-size: 0.875rem; margin: 0; color: var(--text-main);">${tool.main_limitation}</p>
+              <p style="font-size: 0.875rem; margin: 0; color: var(--text-primary);">${tool.main_limitation}</p>
             </div>
 
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.25rem; padding-top: 0.75rem; border-top: 1px solid var(--border-subtle); font-size: 0.85rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.25rem; padding-top: 0.75rem; border-top: 1px solid var(--border-weak); font-size: 0.85rem;">
               <a href="${tool.official_source}" target="_blank" rel="noopener noreferrer">
                 Official Source <span class="sr-only">(opens in new window)</span>
               </a>
-              <span style="color: var(--text-light);">Verified: ${tool.date_checked}</span>
+              <span style="color: var(--text-tertiary);">Verified: ${tool.date_checked}</span>
             </div>
           </article>
         `
@@ -411,7 +411,7 @@
 
     loadToolsData().then((tools) => {
       if (!tools) {
-        resultsContainer.innerHTML = '<p class="callout callout-warning">Unable to load recommendation data.</p>';
+        resultsContainer.innerHTML = '<p class="callout callout-warn">Unable to load recommendation data.</p>';
         return;
       }
 
@@ -433,6 +433,7 @@
 
         // Scoring algorithm
         const scoredTools = tools.map((tool) => {
+
           let score = 0;
           const reasons = [];
 
@@ -526,59 +527,59 @@
 
               return `
               <article class="recommendation-card" aria-labelledby="rec-title-${tool.id}">
-                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap;">
+                <div class="rec-card-header">
                   <div>
-                    <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--accent); letter-spacing: 0.05em;">
-                      Top Match #${index + 1}
-                    </span>
-                    <h3 id="rec-title-${tool.id}" style="margin: 0.25rem 0 0.5rem 0; font-size: 1.35rem;">
+                    <span class="rec-rank-pill">Top Match #${index + 1}</span>
+                    <h3 id="rec-title-${tool.id}" style="margin: 0.5rem 0 0.5rem 0; font-size: 1.35rem;">
                       ${tool.name}
                     </h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.75rem;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.5rem;">
                       ${getCostBadgeHTML(tool.cost)}
                       ${getOsBadgeHTML(tool.open_source)}
                       ${tool.platforms.map((p) => `<span class="badge badge-platform">${p}</span>`).join('')}
                     </div>
                   </div>
-                  <div style="font-size: 0.85rem; color: var(--text-light);">
+                  <div style="font-size: 0.85rem; color: var(--text-tertiary);">
                     Verified: ${tool.date_checked}
                   </div>
                 </div>
 
-                <p style="margin-bottom: 0.75rem; font-size: 1rem;">${tool.purpose}</p>
+                <div class="rec-card-body">
+                  <p style="margin-bottom: 0.75rem; font-size: 1rem;">${tool.purpose}</p>
 
-                <div class="match-reason-box">
-                  <strong>Why this fits your answers:</strong>
-                  <ul style="margin: 0.5rem 0 0 1.25rem; font-size: 0.9rem;">
-                    ${reasons.map((r) => `<li>${r}</li>`).join('')}
-                  </ul>
-                </div>
+                  <div class="match-reason">
+                    <strong>Why this fits your answers:</strong>
+                    <ul>
+                      ${reasons.map((r) => `<li>${r}</li>`).join('')}
+                    </ul>
+                  </div>
 
-                <div class="verdict-grid">
-                  <div class="verdict-col verdict-best">
-                    <strong>✓ Best For:</strong>
-                    <p style="margin: 0.35rem 0 0 0;">${tool.best_for}</p>
+                  <div class="verdict-grid">
+                    <div class="verdict-col verdict-best">
+                      <strong>✓ Best For:</strong>
+                      <p>${tool.best_for}</p>
+                    </div>
+                    <div class="verdict-col verdict-warn">
+                      <strong>⚠ Honest Limitation:</strong>
+                      <p>${tool.main_limitation}</p>
+                    </div>
                   </div>
-                  <div class="verdict-col verdict-not">
-                    <strong>⚠ Honest Limitation:</strong>
-                    <p style="margin: 0.35rem 0 0 0;">${tool.main_limitation}</p>
-                  </div>
-                </div>
 
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle); flex-wrap: wrap; gap: 0.75rem;">
-                  <div class="btn-group">
-                    ${
-                      guideLink
-                        ? `<a href="${guideLink}" class="btn btn-primary btn-sm">Read Student Setup Guide</a>`
-                        : ''
-                    }
-                    <a href="${tool.official_source}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
-                      Visit Official Website <span class="sr-only">(opens in new window)</span>
-                    </a>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-weak); flex-wrap: wrap; gap: 0.75rem;">
+                    <div class="btn-group">
+                      ${
+                        guideLink
+                          ? `<a href="${guideLink}" class="btn btn-primary btn-sm">Read Student Setup Guide</a>`
+                          : ''
+                      }
+                      <a href="${tool.official_source}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                        Visit Official Website <span class="sr-only">(opens in new window)</span>
+                      </a>
+                    </div>
+                    <span style="font-size: 0.85rem; color: var(--text-tertiary);">
+                      Paywalls: <em>${tool.paywalled_features}</em>
+                    </span>
                   </div>
-                  <span style="font-size: 0.85rem; color: var(--text-light);">
-                    Paywalls: <em>${tool.paywalled_features}</em>
-                  </span>
                 </div>
               </article>
             `;

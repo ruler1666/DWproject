@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -58,7 +58,7 @@
     <div class="container">
       
       <header style="margin-bottom: 2rem; max-width: 760px; margin-left: auto; margin-right: auto; text-align: center;">
-        <span class="hero-badge">Decision Support Tool</span>
+        <span class="hero-eyebrow">Decision Support Tool</span>
         <h1>Find Your Ideal Wellness Tool</h1>
         <p class="lead">
           Stop scrolling through dozens of productivity apps. Answer 5 brief questions about your daily study routine, devices, and distraction challenges to discover the tools best suited to you.
@@ -82,9 +82,9 @@
           
           <!-- Question 1: Devices -->
           <fieldset>
-            <span class="quiz-step-indicator">Question 1 of 5 &bull; Hardware Setup</span>
+            <span class="quiz-step-label">Question 1 of 5 &bull; Hardware Setup</span>
             <legend>What hardware do you primarily use for daily college work?</legend>
-            <div class="legend-description">
+            <div class="legend-hint">
               Select the setup where distractions impact your productivity or sleep the most.
             </div>
 
@@ -115,13 +115,13 @@
             </div>
           </fieldset>
 
-          <hr style="border: 0; border-top: 1px solid var(--border-subtle); margin: 1.75rem 0;">
+          <hr style="border: 0; border-top: 1px solid var(--border-weak); margin: 1.75rem 0;">
 
           <!-- Question 2: Distraction -->
           <fieldset>
-            <span class="quiz-step-indicator">Question 2 of 5 &bull; Core Problem</span>
+            <span class="quiz-step-label">Question 2 of 5 &bull; Core Problem</span>
             <legend>What is your single biggest digital wellness struggle right now?</legend>
-            <div class="legend-description">
+            <div class="legend-hint">
               Choose the problem that drains the most hours or harms your health the most.
             </div>
 
@@ -160,13 +160,13 @@
             </div>
           </fieldset>
 
-          <hr style="border: 0; border-top: 1px solid var(--border-subtle); margin: 1.75rem 0;">
+          <hr style="border: 0; border-top: 1px solid var(--border-weak); margin: 1.75rem 0;">
 
           <!-- Question 3: Strictness -->
           <fieldset>
-            <span class="quiz-step-indicator">Question 3 of 5 &bull; Enforcement Style</span>
+            <span class="quiz-step-label">Question 3 of 5 &bull; Enforcement Style</span>
             <legend>What level of strictness or friction works best for your personality?</legend>
-            <div class="legend-description">
+            <div class="legend-hint">
               Be honest with yourself—some students thrive with gentle nudges, while others need unbreakable locks.
             </div>
 
@@ -197,13 +197,13 @@
             </div>
           </fieldset>
 
-          <hr style="border: 0; border-top: 1px solid var(--border-subtle); margin: 1.75rem 0;">
+          <hr style="border: 0; border-top: 1px solid var(--border-weak); margin: 1.75rem 0;">
 
           <!-- Question 4: Budget -->
           <fieldset>
-            <span class="quiz-step-indicator">Question 4 of 5 &bull; Financial Constraints</span>
+            <span class="quiz-step-label">Question 4 of 5 &bull; Financial Constraints</span>
             <legend>What is your budget for digital wellness tools?</legend>
-            <div class="legend-description">
+            <div class="legend-hint">
               We never recommend apps where essential features are silently locked behind unexpected paywalls.
             </div>
 
@@ -226,13 +226,13 @@
             </div>
           </fieldset>
 
-          <hr style="border: 0; border-top: 1px solid var(--border-subtle); margin: 1.75rem 0;">
+          <hr style="border: 0; border-top: 1px solid var(--border-weak); margin: 1.75rem 0;">
 
           <!-- Question 5: Privacy -->
           <fieldset>
-            <span class="quiz-step-indicator">Question 5 of 5 &bull; Privacy &amp; Data Sensitivity</span>
+            <span class="quiz-step-label">Question 5 of 5 &bull; Privacy &amp; Data Sensitivity</span>
             <legend>How do you feel about app permissions and data privacy?</legend>
-            <div class="legend-description">
+            <div class="legend-hint">
               Wellness apps sometimes inspect your open windows or browser URLs to enforce limits.
             </div>
 
@@ -267,7 +267,7 @@
         <section id="quiz-results" style="display: none;" aria-live="polite">
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
             <div>
-              <span class="hero-badge">Your Personalized Match</span>
+              <span class="hero-eyebrow">Your Personalized Match</span>
               <h2 id="results-heading" tabindex="-1" style="margin: 0.25rem 0 0 0;">Recommended Wellness Tools</h2>
             </div>
             <button type="button" id="btn-reset-quiz" class="btn btn-secondary btn-sm">
@@ -279,7 +279,7 @@
             <!-- Populated dynamically via js/main.js -->
           </div>
 
-          <div class="card" style="margin-top: 2rem; background-color: var(--bg-surface-elevated); border: 1px dashed var(--border-strong);">
+          <div class="card" style="margin-top: 2rem; background-color: var(--bg-elevated); border: 1px dashed var(--border-strong);">
             <h3 style="margin-top: 0; font-size: 1.15rem;">Want to see how other tools stack up?</h3>
             <p style="margin-bottom: 0.75rem; font-size: 0.95rem;">
               These recommendations reflect your quiz answers, but digital wellness is personal. You may also want to inspect the full list of tools side-by-side.
@@ -307,7 +307,7 @@
               <path d="M16 6v10l6 4" stroke="currentColor" stroke-width="2.2"/>
               <circle cx="16" cy="16" r="2" fill="currentColor"/>
             </svg>
-            <span style="font-weight: 800; font-size: 1.15rem; color: var(--text-main);">ReflectHub</span>
+            <span style="font-weight: 800; font-size: 1.15rem; color: var(--text-primary);">ReflectHub</span>
           </div>
           <p style="font-size: 0.875rem; margin-bottom: 1rem;">
             An interactive decision aid for engineering students balancing screen time on Android and Windows devices.
