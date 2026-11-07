@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -57,7 +57,7 @@
   <main id="main-content" role="main">
     <div class="container">
       
-      <header style="margin-bottom: 2.5rem;">
+      <header style="margin-bottom: 2rem;">
         <span class="hero-eyebrow">Practical Walkthroughs</span>
         <h1>Student-Tested Setup Guides</h1>
         <p class="lead">
@@ -65,15 +65,26 @@
         </p>
       </header>
 
-      <div class="entry-grid" style="grid-template-columns: 1fr; gap: 2rem;">
+      <!-- Quick recommendation prompt banner -->
+      <div class="card" style="margin-bottom: 2.5rem; background: var(--bg-surface); border: 1px solid var(--border-weak); padding: 1.5rem 1.75rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <h2 style="font-size: 1.15rem; margin: 0 0 0.25rem 0;">Not sure which setup you need first?</h2>
+            <p style="margin: 0; font-size: 0.9rem; color: var(--text-secondary);">Answer 5 quick questions about your hardware, distraction habits, and budget to get a tailored recommendation.</p>
+          </div>
+          <a href="../find-my-tool.html" class="btn btn-primary btn-sm">Take 2-Min Quiz &rarr;</a>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 2rem;">
         
         <!-- Guide 1 Card -->
         <article class="card" aria-labelledby="g1-title" style="border-left: 5px solid var(--accent);">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
             <div>
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent); text-transform: uppercase;">Guide 01 &bull; Windows Deep Work</span>
-              <h2 id="g1-title" style="margin: 0.25rem 0 0.5rem 0; font-size: 1.5rem;">
-                <a href="guide-1.html">Zero-Distraction Study Sprints on Windows with LeechBlock NG &amp; Focus Sessions</a>
+              <span class="hero-eyebrow" style="font-size: 0.72rem; padding: 0.2rem 0.65rem; margin-bottom: 0.4rem;">Guide 01 &bull; Windows Deep Work</span>
+              <h2 id="g1-title" style="margin: 0.25rem 0 0.5rem 0; font-size: 1.45rem;">
+                <a href="guide-1.html" style="text-decoration: none; color: inherit;">Zero-Distraction Study Sprints on Windows with LeechBlock NG &amp; Focus Sessions</a>
               </h2>
             </div>
             <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
@@ -82,12 +93,20 @@
               <span class="badge badge-free">100% Free</span>
             </div>
           </div>
-          <p>
+          <p style="font-size: 0.95rem; line-height: 1.6;">
             Learn how to lock down distracting websites (YouTube, Reddit, Twitter) during scheduled lecture and study periods using open-source LeechBlock NG with a 64-character uncheatable challenge code, and combine it with native Windows 11 Focus Sessions to silence notification banners.
           </p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0 0.5rem 0;">
+            <span class="badge badge-platform">Step 1: Browser Add-on</span>
+            <span class="badge badge-platform">Step 2: Domain Rules</span>
+            <span class="badge badge-platform">Step 3: Auto-Schedule</span>
+            <span class="badge badge-platform">Step 4: 64-Char Lock</span>
+            <span class="badge badge-platform">Step 5: Windows DND</span>
+            <span class="badge badge-platform">Step 6: Live Test</span>
+          </div>
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-weak);">
-            <div style="font-size: 0.875rem; color: var(--text-tertiary);">
-              6 numbered steps &bull; Includes 6 UI screenshots/diagrams &bull; Student trouble-shooting included
+            <div style="font-size: 0.85rem; color: var(--text-tertiary);">
+              6 numbered steps &bull; Includes 6 SVG wireframe screenshots &bull; Troubleshooting included
             </div>
             <a href="guide-1.html" class="btn btn-primary btn-sm">Read Complete Guide 1 &rarr;</a>
           </div>
@@ -97,9 +116,9 @@
         <article class="card" aria-labelledby="g2-title" style="border-left: 5px solid var(--accent);">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
             <div>
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent); text-transform: uppercase;">Guide 02 &bull; Sleep Hygiene</span>
-              <h2 id="g2-title" style="margin: 0.25rem 0 0.5rem 0; font-size: 1.5rem;">
-                <a href="guide-2.html">Configuring Android Bedtime Mode &amp; Grayscale Automation for Restful Sleep</a>
+              <span class="hero-eyebrow" style="font-size: 0.72rem; padding: 0.2rem 0.65rem; margin-bottom: 0.4rem;">Guide 02 &bull; Sleep Hygiene</span>
+              <h2 id="g2-title" style="margin: 0.25rem 0 0.5rem 0; font-size: 1.45rem;">
+                <a href="guide-2.html" style="text-decoration: none; color: inherit;">Configuring Android Bedtime Mode &amp; Grayscale Automation for Restful Sleep</a>
               </h2>
             </div>
             <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
@@ -108,12 +127,20 @@
               <span class="badge badge-free">Native OS</span>
             </div>
           </div>
-          <p>
+          <p style="font-size: 0.95rem; line-height: 1.6;">
             Automate a scheduled grayscale screen shift at 11:00 PM to eliminate dopamine-triggering colors from bedtime phone use, silence midnight WhatsApp notifications, configure essential family contact bypasses, and set firm 30-minute daily caps on Instagram and YouTube.
           </p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0 0.5rem 0;">
+            <span class="badge badge-platform">Step 1: Digital Wellbeing</span>
+            <span class="badge badge-platform">Step 2: Bedtime Schedule</span>
+            <span class="badge badge-platform">Step 3: Grayscale Screen</span>
+            <span class="badge badge-platform">Step 4: DND Exceptions</span>
+            <span class="badge badge-platform">Step 5: App Quotas</span>
+            <span class="badge badge-platform">Step 6: Morning Alarms</span>
+          </div>
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-weak);">
-            <div style="font-size: 0.875rem; color: var(--text-tertiary);">
-              6 numbered steps &bull; Includes 6 UI diagrams &bull; Safe emergency call instructions included
+            <div style="font-size: 0.85rem; color: var(--text-tertiary);">
+              6 numbered steps &bull; Includes 6 SVG wireframe screenshots &bull; Emergency bypass instructions
             </div>
             <a href="guide-2.html" class="btn btn-primary btn-sm">Read Complete Guide 2 &rarr;</a>
           </div>
@@ -123,9 +150,9 @@
         <article class="card" aria-labelledby="g3-title" style="border-left: 5px solid var(--accent);">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
             <div>
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent); text-transform: uppercase;">Guide 03 &bull; Browser Cleanse</span>
-              <h2 id="g3-title" style="margin: 0.25rem 0 0.5rem 0; font-size: 1.5rem;">
-                <a href="guide-3.html">Eliminating Algorithmic Infinite Feeds and Ad Traps with uBlock Origin &amp; Firefox</a>
+              <span class="hero-eyebrow" style="font-size: 0.72rem; padding: 0.2rem 0.65rem; margin-bottom: 0.4rem;">Guide 03 &bull; Browser Cleanse</span>
+              <h2 id="g3-title" style="margin: 0.25rem 0 0.5rem 0; font-size: 1.45rem;">
+                <a href="guide-3.html" style="text-decoration: none; color: inherit;">Eliminating Algorithmic Infinite Feeds and Ad Traps with uBlock Origin &amp; Firefox</a>
               </h2>
             </div>
             <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
@@ -134,12 +161,20 @@
               <span class="badge badge-os">Open Source</span>
             </div>
           </div>
-          <p>
+          <p style="font-size: 0.95rem; line-height: 1.6;">
             Use Raymond Hill's open-source uBlock Origin on Firefox to surgically remove algorithmic hooks—such as YouTube Shorts shelves, toxic comment threads, auto-playing video players, and annoying cookie popups—while keeping educational lecture videos fully accessible.
           </p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0 0.5rem 0;">
+            <span class="badge badge-platform">Step 1: Install Extension</span>
+            <span class="badge badge-platform">Step 2: Open Dashboard</span>
+            <span class="badge badge-platform">Step 3: Paste Shorts Filter</span>
+            <span class="badge badge-platform">Step 4: Hide Comments</span>
+            <span class="badge badge-platform">Step 5: Annoyance Lists</span>
+            <span class="badge badge-platform">Step 6: Quiet Browsing</span>
+          </div>
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-weak);">
-            <div style="font-size: 0.875rem; color: var(--text-tertiary);">
-              6 numbered steps &bull; Ready-to-copy cosmetic filter snippets &bull; Annoyance suppression walkthrough
+            <div style="font-size: 0.85rem; color: var(--text-tertiary);">
+              6 numbered steps &bull; Includes copy-paste filter syntax &bull; Zero telemetry guaranteed
             </div>
             <a href="guide-3.html" class="btn btn-primary btn-sm">Read Complete Guide 3 &rarr;</a>
           </div>

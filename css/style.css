@@ -878,7 +878,7 @@ pre {
 
 .filter-select, .search-input {
   width: 100%;
-  padding: 0.6rem 0.875rem;
+  padding: 0.65rem 0.875rem;
   font-size: 0.9rem;
   font-family: var(--font);
   color: var(--text-primary);
@@ -888,6 +888,17 @@ pre {
   transition: border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
   appearance: none;
   -webkit-appearance: none;
+}
+.filter-select {
+  padding-right: 2.25rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+  cursor: pointer;
+}
+[data-theme="dark"] .filter-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237fa5c8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
 }
 .filter-select:focus, .search-input:focus {
   border-color: var(--accent);
@@ -993,6 +1004,21 @@ pre {
   padding: 1.5rem;
   box-shadow: var(--shadow-sm);
 }
+.tool-mobile-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-weak);
+}
+.tool-detail-row {
+  margin-bottom: 0.875rem;
+}
+.tool-detail-row:last-of-type {
+  margin-bottom: 0;
+}
 .tool-detail-label {
   display: block;
   font-size: 0.72rem;
@@ -1007,6 +1033,41 @@ pre {
    20. Quiz
    -------------------------------------------------------------------------- */
 .quiz-container { max-width: 760px; margin-inline: auto; }
+.quiz-progress-bar-wrap {
+  margin-bottom: 2rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-weak);
+  border-radius: var(--r-lg);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+.quiz-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-tertiary);
+  margin-bottom: 0.6rem;
+}
+.quiz-progress-header strong {
+  color: var(--accent);
+}
+.quiz-progress-track {
+  width: 100%;
+  height: 8px;
+  background: var(--bg-elevated);
+  border-radius: var(--r-pill);
+  overflow: hidden;
+  border: 1px solid var(--border-weak);
+}
+.quiz-progress-fill {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-dark), var(--accent));
+  transition: width var(--dur-slow) var(--ease-spring);
+  border-radius: var(--r-pill);
+}
 .quiz-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-weak);
@@ -1214,6 +1275,15 @@ legend {
 /* Permission cards */
 .perm-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 
+/* 4-Stage Methodology Funnel */
+.funnel-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+@media (max-width: 960px) {
+  .funnel-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 540px) {
+  .funnel-grid { grid-template-columns: 1fr; }
+}
+
 /* --------------------------------------------------------------------------
    23. Evidence / Testing Page
    -------------------------------------------------------------------------- */
@@ -1229,7 +1299,58 @@ legend {
 .evidence-table th { background: var(--bg-elevated); font-weight: 700; color: var(--text-primary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; }
 .evidence-table td { color: var(--text-secondary); }
 
-.status-pass { color: var(--free-text); font-weight: 800; }
+.status-pass {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--r-pill);
+  background: var(--free-bg);
+  color: var(--free-text);
+  border: 1px solid var(--free-border);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.status-pass::before {
+  content: '✓';
+  font-weight: 900;
+}
+
+.status-fail {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--r-pill);
+  background: var(--paid-bg);
+  color: var(--paid-text);
+  border: 1px solid var(--paid-border);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.status-fail::before {
+  content: '✕';
+  font-weight: 900;
+}
+
+.status-warn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--r-pill);
+  background: var(--freemium-bg);
+  color: var(--freemium-text);
+  border: 1px solid var(--freemium-border);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
 
 .feedback-card {
   background: var(--bg-surface);

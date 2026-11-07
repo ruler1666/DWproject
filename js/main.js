@@ -1,4 +1,4 @@
-﻿/**
+/**
  * REFLECTHUB - STUDENT DIGITAL WELLNESS RESOURCE HUB
  * Main JavaScript Controller
  * Plain Vanilla JS, Zero External Dependencies, Accessible & Fast
@@ -331,8 +331,8 @@
               <p style="font-size: 0.875rem; margin: 0;">${tool.accessibility_notes}</p>
             </div>
 
-            <div class="tool-detail-row" style="background-color: var(--status-freemium-bg); padding: 0.75rem; border-radius: var(--r-sm);">
-              <span class="tool-detail-label" style="color: var(--status-freemium-text);">Honest Limitation</span>
+            <div class="tool-detail-row" style="background-color: var(--freemium-bg); border: 1px solid var(--freemium-border); padding: 0.75rem; border-radius: var(--r-sm);">
+              <span class="tool-detail-label" style="color: var(--freemium-text);">Honest Limitation</span>
               <p style="font-size: 0.875rem; margin: 0; color: var(--text-primary);">${tool.main_limitation}</p>
             </div>
 
@@ -408,6 +408,45 @@
     const resetQuizBtn = document.getElementById('btn-reset-quiz');
 
     if (!quizForm || !resultsContainer) return;
+
+    const progressFill = document.getElementById('quiz-progress-fill');
+    const progressText = document.getElementById('quiz-progress-text');
+
+    function updateQuizProgress() {
+      const questions = ['q_device', 'q_distraction', 'q_strictness', 'q_budget', 'q_privacy'];
+      let answered = 0;
+      questions.forEach((q) => {
+        if (quizForm.querySelector(`input[name="${q}"]:checked`)) {
+          answered++;
+        }
+      });
+      const pct = Math.round((answered / questions.length) * 100);
+      if (progressFill) progressFill.style.width = `${pct}%`;
+      if (progressText) {
+        progressText.innerHTML = answered === questions.length
+          ? `<strong>All 5 answered (100%)</strong> &bull; Ready to submit!`
+          : `${answered} of 5 answered (${pct}%)`;
+      }
+    }
+
+    // Radio change handlers for visual selection state & progress
+    const allRadioInputs = quizForm.querySelectorAll('input[type="radio"]');
+    allRadioInputs.forEach((radio) => {
+      radio.addEventListener('change', () => {
+        // Clear is-selected from all options in this group
+        const groupRadios = quizForm.querySelectorAll(`input[name="${radio.name}"]`);
+        groupRadios.forEach((r) => {
+          const parentLabel = r.closest('.quiz-option-label');
+          if (parentLabel) parentLabel.classList.remove('is-selected');
+        });
+
+        // Add is-selected to current
+        const currentLabel = radio.closest('.quiz-option-label');
+        if (currentLabel) currentLabel.classList.add('is-selected');
+
+        updateQuizProgress();
+      });
+    });
 
     loadToolsData().then((tools) => {
       if (!tools) {
@@ -613,6 +652,8 @@
       if (resetQuizBtn) {
         resetQuizBtn.addEventListener('click', () => {
           quizForm.reset();
+          quizForm.querySelectorAll('.quiz-option-label').forEach((lbl) => lbl.classList.remove('is-selected'));
+          updateQuizProgress();
           resultsContainer.style.display = 'none';
           quizForm.style.display = 'block';
           quizForm.scrollIntoView({ behavior: 'smooth' });

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -77,6 +77,17 @@
 
       <div class="quiz-container">
         
+        <!-- Live Quiz Progress Bar -->
+        <div class="quiz-progress-bar-wrap" aria-hidden="true">
+          <div class="quiz-progress-header">
+            <span>Quiz Progress</span>
+            <span id="quiz-progress-text">0 of 5 answered (0%)</span>
+          </div>
+          <div class="quiz-progress-track">
+            <div id="quiz-progress-fill" class="quiz-progress-fill"></div>
+          </div>
+        </div>
+
         <!-- Interactive Quiz Form -->
         <form id="quiz-form" class="quiz-card" aria-label="Digital Wellness Tool Recommendation Quiz">
           
