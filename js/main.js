@@ -665,12 +665,93 @@
   }
 
   // -------------------------------------------------------------------------
-  // 6. Global Initialization
+  // 6. 60-Second Breathing Pause Widget Controller
+  // -------------------------------------------------------------------------
+  function initBreathingWidget() {
+    const INHALE_TIME = 4; // seconds
+    const HOLD_TIME   = 4; // seconds
+    const EXHALE_TIME = 6; // seconds
+    const TOTAL_CYCLE = INHALE_TIME + HOLD_TIME + EXHALE_TIME; // 14 seconds
+    const TOTAL_DURATION = 60; // 60 seconds total
+
+    const startBtn = document.getElementById('breathing-start-btn');
+    const stopBtn  = document.getElementById('breathing-stop-btn');
+    const phaseEl  = document.getElementById('breathing-phase');
+    const subtextEl = document.getElementById('breathing-subtext');
+    const circleWrap = document.querySelector('.breathing-circle-wrap');
+
+    if (!startBtn || !stopBtn || !phaseEl) return;
+
+    let timerId = null;
+    let elapsedSeconds = 0;
+
+    function stop() {
+      if (timerId) clearInterval(timerId);
+      timerId = null;
+      elapsedSeconds = 0;
+      startBtn.disabled = false;
+      stopBtn.disabled = true;
+      if (circleWrap) circleWrap.className = 'breathing-circle-wrap';
+      phaseEl.textContent = 'Paused';
+      if (subtextEl) subtextEl.textContent = 'Click Start to begin a 60-second cycle';
+      startBtn.focus();
+    }
+
+    function tick() {
+      elapsedSeconds++;
+      if (elapsedSeconds >= TOTAL_DURATION) {
+        stop();
+        phaseEl.textContent = 'Complete';
+        if (subtextEl) subtextEl.textContent = '60 seconds completed. Focus reset!';
+        return;
+      }
+
+      const cycleSec = elapsedSeconds % TOTAL_CYCLE;
+      let phaseName = '';
+      let countdown = 0;
+
+      if (cycleSec < INHALE_TIME) {
+        phaseName = 'Inhale';
+        countdown = INHALE_TIME - cycleSec;
+        if (circleWrap) circleWrap.className = 'breathing-circle-wrap is-inhale';
+      } else if (cycleSec < INHALE_TIME + HOLD_TIME) {
+        phaseName = 'Hold';
+        countdown = (INHALE_TIME + HOLD_TIME) - cycleSec;
+        if (circleWrap) circleWrap.className = 'breathing-circle-wrap is-hold';
+      } else {
+        phaseName = 'Exhale';
+        countdown = TOTAL_CYCLE - cycleSec;
+        if (circleWrap) circleWrap.className = 'breathing-circle-wrap is-exhale';
+      }
+
+      const remainingTotal = TOTAL_DURATION - elapsedSeconds;
+      phaseEl.textContent = `${phaseName}... ${countdown}`;
+      if (subtextEl) subtextEl.textContent = `${remainingTotal}s remaining in reset`;
+    }
+
+    startBtn.addEventListener('click', () => {
+      if (timerId) clearInterval(timerId);
+      elapsedSeconds = 0;
+      startBtn.disabled = true;
+      stopBtn.disabled = false;
+      phaseEl.textContent = `Inhale... ${INHALE_TIME}`;
+      if (subtextEl) subtextEl.textContent = `${TOTAL_DURATION}s remaining in reset`;
+      if (circleWrap) circleWrap.className = 'breathing-circle-wrap is-inhale';
+      timerId = setInterval(tick, 1000);
+      stopBtn.focus();
+    });
+
+    stopBtn.addEventListener('click', stop);
+  }
+
+  // -------------------------------------------------------------------------
+  // 7. Global Initialization
   // -------------------------------------------------------------------------
   document.addEventListener('DOMContentLoaded', () => {
     initTheme();
     initMobileNav();
     initComparePage();
     initQuizPage();
+    initBreathingWidget();
   });
 })();
