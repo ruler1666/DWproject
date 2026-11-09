@@ -278,7 +278,7 @@
         <section id="quiz-results" style="display: none;" aria-live="polite">
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
             <div>
-              <span class="hero-eyebrow">Your Personalized Match</span>
+              <span class="hero-eyebrow">Personalized Strategy</span>
               <h2 id="results-heading" tabindex="-1" style="margin: 0.25rem 0 0 0;">Recommended Wellness Tools</h2>
             </div>
             <button type="button" id="btn-reset-quiz" class="btn btn-secondary btn-sm">
@@ -286,8 +286,45 @@
             </button>
           </div>
 
+          <!-- Dynamic Diagnostic Assessment Box -->
+          <div id="quiz-diagnostic-feedback"></div>
+
+          <!-- Dynamic Recommendations List -->
           <div id="recommendations-list">
             <!-- Populated dynamically via js/main.js -->
+          </div>
+
+          <!-- Instant Tool Search & Exploration Box -->
+          <div class="card" style="margin-top: 2.5rem; background: var(--bg-surface); border: 1px solid var(--border-weak);">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+              <div>
+                <span class="hero-eyebrow" style="font-size: 0.72rem; padding: 0.15rem 0.6rem; margin-bottom: 0.35rem;">Live Tool Explorer</span>
+                <h3 style="margin: 0; font-size: 1.2rem;">Search Our Verified Directory</h3>
+              </div>
+              <span style="font-size: 0.85rem; color: var(--text-tertiary);">11 student tools tested</span>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;">
+              Want to see what else exists on the internet for your specific routine? Search any keyword or click a quick category tag below to instantly see matching tools, verified paywalls, and official links:
+            </p>
+            
+            <div class="search-input-wrap" style="margin-bottom: 1rem;">
+              <span class="search-icon" aria-hidden="true">🔍</span>
+              <input type="search" id="quiz-tool-search" class="search-input" placeholder="Type a keyword e.g. YouTube, Bedtime, Timer, Android, Open Source..." aria-label="Search verified wellness tools">
+            </div>
+
+            <div style="display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.5rem;" id="quiz-quick-tags" aria-label="Quick category filters">
+              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="YouTube">🎬 YouTube &amp; Shorts</button>
+              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Bedtime">🌙 Bedtime Routines</button>
+              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Timer">⏱️ Focus Timers</button>
+              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Open Source">🔓 Open Source</button>
+              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Free">💰 100% Free</button>
+              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Android">📱 Android Only</button>
+              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Windows">💻 Windows Only</button>
+            </div>
+
+            <div id="quiz-search-results" style="display: none;">
+              <!-- Dynamic live search results rendered here -->
+            </div>
           </div>
 
           <div class="card" style="margin-top: 2rem; background-color: var(--bg-elevated); border: 1px dashed var(--border-strong);">

@@ -1201,6 +1201,66 @@ legend {
 .verdict-col strong { display: block; margin-bottom: 0.4rem; }
 .verdict-col p { margin: 0; color: inherit; font-size: 0.875rem; }
 
+/* Diagnostic Feedback Card */
+.diagnostic-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-weak);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--r-lg);
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+.diagnostic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.diagnostic-title {
+  font-size: 1.25rem;
+  margin: 0;
+  color: var(--text-primary);
+}
+.diagnostic-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+.diagnostic-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.75rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-weak);
+  border-radius: var(--r-pill);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+.diagnostic-text {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0;
+}
+.diagnostic-text strong {
+  color: var(--text-primary);
+}
+.quiz-filter-pill {
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease);
+}
+.quiz-filter-pill:hover {
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  border-color: var(--accent);
+}
+
 /* --------------------------------------------------------------------------
    21. Setup Guides
    -------------------------------------------------------------------------- */
