@@ -1627,6 +1627,15 @@ legend {
   line-height: 1.65;
 }
 
+.evidence-filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
 /* --------------------------------------------------------------------------
    24. Noscript Warning
    -------------------------------------------------------------------------- */
