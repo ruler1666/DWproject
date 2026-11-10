@@ -906,50 +906,125 @@
 
     // Helper: Generate honest diagnostic feedback paragraph
     function generateDiagnosticFeedback(device, distraction, strictness, budget, privacy) {
-      let deviceNote = '';
-      if (device === 'both') {
-        deviceNote = 'Studying with both a Windows laptop and an Android smartphone creates cross-device friction loops: when code compiles or a lecture pauses on PC, you reflexively reach for your phone.';
-      } else if (device === 'android') {
-        deviceNote = 'Your smartphone is designed for continuous engagement, with vertical swipes and push notifications constantly breaking your train of thought.';
-      } else {
-        deviceNote = 'Your primary challenge happens right in your desktop web browser: multi-tab hopping, video recommendations, and distracting sites during study sprints.';
-      }
+      const deviceNote = {
+        android: 'You selected an Android phone as your main device.',
+        windows: 'You selected a Windows laptop as your main device.',
+        both: 'You use both an Android phone and a Windows laptop.'
+      }[device];
 
-      let challengeNote = '';
-      if (distraction === 'social-media') {
-        challengeNote = 'Algorithmic feeds (Shorts and Reels) are engineered to defeat conscious willpower. Relying on self-control is unreliable; you need surgical feed removal or friction barriers.';
-      } else if (distraction === 'bedtime') {
-        challengeNote = 'Late-night blue-light screen exposure suppresses melatonin and delays deep sleep before 8:00 AM lectures. Automating an 11:00 PM black-and-white mode physically drains the appeal of late scrolling.';
-      } else if (distraction === 'multitasking') {
-        challengeNote = 'Continuous tab-hopping fragments working memory. Structured 45-minute focus intervals paired with system-level notification silencing will protect your deep work.';
-      } else {
-        challengeNote = 'Impulsive app opens occur as an automatic reflex. Introducing intentional pause friction gives your rational brain 5 seconds to redirect attention.';
-      }
+      const challengeNote = {
+        'social-media': 'Your main concern is social feeds or short-form video.',
+        bedtime: 'Your main concern is phone use around bedtime; a tool can support a routine but cannot guarantee sleep.',
+        multitasking: 'Your main concern is interruptions, notifications, or switching between tasks.',
+        procrastination: 'Your main concern is opening distracting apps or sites out of habit.'
+      }[distraction];
 
-      let enforcementNote = '';
+      const enforcementNote = {
+        strict: 'You prefer stronger barriers. Test a block on nonessential sites first and keep a way to reach coursework and urgent contacts.',
+        moderate: 'You prefer scheduled timers or limits. Start with one realistic focus period or app limit and adjust it after trying it.',
+        gentle: 'You prefer reminders or low-pressure tools. Choose one small prompt or tracking feature rather than adding several restrictions at once.'
+      }[strictness];
+
+      const budgetPrivacyNote = budget === 'free-only'
+        ? 'Results exclude paid and freemium tools based on the directory listing.'
+        : 'Freemium tools may appear; check the stated paywalls before starting a trial or relying on a paid feature.';
+      const privacyNote = privacy === 'strict'
+        ? 'Results are limited to tools marked local-first or open source in our directory; review the permissions on the official source.'
+        : 'Review each tool’s permission and data notes before enabling access.';
+
+      return { deviceNote, challengeNote, enforcementNote, budgetPrivacyNote, privacyNote };
+    }
+
+    function getPersonalGuidance(distraction, strictness, budget, privacy) {
+      const nextAction = {
+        'social-media': 'Choose the one feed or app that most often interrupts you, then apply one limit or blocker to that target.',
+        bedtime: 'Pick a wind-down time and set one bedtime or quiet-hours routine. Keep an emergency contact route available.',
+        multitasking: 'Choose one short study block, silence non-urgent alerts for it, and keep only the materials for that task open.',
+        procrastination: 'Set a small starting task and add one pause or time limit to the app or site you open by habit.'
+      }[distraction];
+
+      const avoid = [];
       if (strictness === 'strict') {
-        enforcementNote = 'Because you know you can easily dismiss soft reminders, we have prioritized tools with strict, uncheatable locks (such as LeechBlock\'s 64-character challenge lock).';
-      } else if (strictness === 'moderate') {
-        enforcementNote = 'You respond well to structured timetables and daily app allowances that automatically enforce healthy boundaries.';
+        avoid.push('Avoid enabling a long or hard-to-reverse block before testing it with coursework and essential contacts.');
+      } else if (strictness === 'gentle') {
+        avoid.push('Avoid stacking several reminders or blockers at once; it can make the routine feel harder to maintain.');
       } else {
-        enforcementNote = 'You prefer gentle, non-punitive mindfulness pauses that encourage self-awareness without rigid lockouts.';
+        avoid.push('Avoid setting a limit so strict that one missed session makes you abandon the plan.');
+      }
+      if (budget === 'free-only') {
+        avoid.push('Avoid starting a trial or depending on a feature unless the directory lists it as free.');
+      }
+      if (privacy === 'strict') {
+        avoid.push('Avoid granting sensitive permissions until you understand why the tool needs them and what it can access.');
       }
 
-      let budgetPrivacyNote = '';
-      if (budget === 'free-only' && privacy === 'strict') {
-        budgetPrivacyNote = 'Your profile strictly requires ₹0 lifetime cost and zero third-party cloud telemetry, so open-source and native OS utilities are front and center.';
-      } else if (budget === 'free-only') {
-        budgetPrivacyNote = 'Every recommended tool is 100% free with zero essential features locked behind sudden subscription prompts.';
-      } else {
-        budgetPrivacyNote = 'We have highlighted tools with strong free tiers, noting any optional paid tiers with full pricing transparency.';
-      }
+      return { nextAction, avoid };
+    }
 
-      return {
-        deviceNote,
-        challengeNote,
-        enforcementNote,
-        budgetPrivacyNote
+    function getToolQuickStart(tool) {
+      const plans = {
+        'android-digital-wellbeing': [
+          'Open Settings and find Digital Wellbeing (the exact menu name can vary by Android version).',
+          'Set a modest timer for one distracting app, or schedule Bedtime/Do Not Disturb if that is your goal.',
+          'Try the setting for a few days and adjust it if it blocks something important.'
+        ],
+        'windows-focus-sessions': [
+          'Open the Clock app and choose Focus sessions (Windows versions may differ).',
+          'Choose a manageable study interval and enable notification silencing if useful.',
+          'Start a session with your course materials ready; remember this tool does not block websites or apps.'
+        ],
+        'leechblock-ng': [
+          'Install LeechBlock NG from your browser’s official extension store.',
+          'Add only the distracting domains you want to limit and choose a short schedule or study window.',
+          'Test the rules before enabling a strict lock; allowlist any course sites you need.'
+        ],
+        'cold-turkey-blocker': [
+          'Install the desktop app from its official site and review which features are free versus Pro.',
+          'Create a short test block for nonessential sites before setting a longer schedule.',
+          'Check that your study portals and essential work tools remain available before locking a session.'
+        ],
+        stayfree: [
+          'Install StayFree from an official app store and review its requested permissions.',
+          'Choose one app and set a realistic timer or usage alert.',
+          'Check the listed free-tier limits; disable permissions you no longer want the app to use.'
+        ],
+        activitywatch: [
+          'Download ActivityWatch from its official project site and review its local data setup.',
+          'Let it record a typical study day, then inspect the local dashboard for patterns.',
+          'Use the results to choose a small change; ActivityWatch tracks activity but does not block it.'
+        ],
+        'one-sec': [
+          'Install one sec from its official source and select the single app you most often open by habit.',
+          'Try its pause before that app, and review the permission request before enabling it.',
+          'The directory lists the free tier as limited to one target app; check current terms before paying.'
+        ],
+        'ublock-origin': [
+          'Install uBlock Origin from its official project link or the official store for a supported browser.',
+          'Start with its default filter lists and test the sites you need for coursework.',
+          'Only add custom filters from sources you trust; this tool does not limit native mobile apps.'
+        ],
+        'minimalist-phone': [
+          'Review the current trial length, renewal terms, and ongoing price before changing your launcher.',
+          'Try the simpler home screen and check that calls, study apps, and accessibility settings still work for you.',
+          'If you need a permanently free option, compare Android’s built-in Digital Wellbeing settings first.'
+        ],
+        forest: [
+          'Install Forest from its official source and choose a short focus interval to try.',
+          'Start a session only when you are ready to leave your phone unused for that time.',
+          'The directory notes ads and paid features on some platforms; this is a timer, not an unbreakable blocker.'
+        ],
+        bitwarden: [
+          'Get Bitwarden from its official site or app store and create a strong, unique master password.',
+          'Save one account first and verify you can sign in before importing other passwords.',
+          'Never share your master password or enter it on a page reached through an unexpected message.'
+        ]
       };
+
+      return plans[tool.id] || [
+        'Open the official source and confirm the current platform, cost, and permissions.',
+        'Start with one feature that addresses your selected concern.',
+        'Test it with your normal coursework before relying on stricter settings.'
+      ];
     }
 
     // Submit Listener is attached UNCONDITIONALLY and SYNCHRONOUSLY
@@ -974,8 +1049,14 @@
         return;
       }
 
-      // 1. Filter by hardware compatibility first
-      const eligible = tools.filter((tool) => isPlatformCompatible(tool, device));
+      // Respect stated budget and privacy requirements before ranking candidates.
+      const eligible = tools.filter((tool) => {
+        const tags = tool.quiz_tags || {};
+        const privacyTags = tags.privacy || [];
+        const fitsPrivacy = privacy !== 'strict' || privacyTags.includes('strict') || tool.open_source;
+        const fitsBudget = budget !== 'free-only' || (tool.cost || '').toLowerCase() === 'free';
+        return isPlatformCompatible(tool, device) && fitsBudget && fitsPrivacy;
+      });
 
       // 2. Score candidates
       const scoredTools = eligible.map((tool) => {
@@ -994,60 +1075,50 @@
           }
         } else if (devList.includes(device)) {
           score += 18;
-          reasons.push('Directly optimized for your ' + device.toUpperCase() + ' hardware setup');
+          reasons.push('Compatible with your ' + device.toUpperCase() + ' device');
         }
 
         // Distraction match
         if ((tags.distractions || []).includes(distraction)) {
           score += 20;
           if (distraction === 'social-media') {
-            reasons.push('Specialized at eliminating algorithmic feeds, YouTube Shorts & reels');
+            reasons.push('Addresses distracting social feeds or short-form video');
           } else if (distraction === 'bedtime') {
-            reasons.push('Engineered for night routines and eliminating blue-light dopamine stimulation');
+            reasons.push('Supports screen-time or bedtime routines');
           } else if (distraction === 'multitasking') {
-            reasons.push('Protects deep work sprints against desktop multi-window distraction');
+            reasons.push('Can help structure focus or reduce digital interruptions');
           } else {
-            reasons.push('Built to interrupt procrastination reflexes before they take hold');
+            reasons.push('Can add a reminder, timer, or barrier before habitual app or site use');
           }
         }
 
         // Strictness match
         if ((tags.strictness || []).includes(strictness)) {
           score += 14;
-          if (strictness === 'gentle') reasons.push('Offers non-punitive, calm mindfulness cues');
-          if (strictness === 'moderate') reasons.push('Provides automated daily timers & scheduled allowances');
-          if (strictness === 'strict') reasons.push('Provides high-friction, uncheatable access locks');
+          if (strictness === 'gentle') reasons.push('Offers a light-touch reminder, tracker, or focus cue');
+          if (strictness === 'moderate') reasons.push('Supports timers, limits, or scheduled blocks');
+          if (strictness === 'strict') reasons.push('Offers a higher-friction option, which may still be bypassed depending on settings');
         }
 
         // Budget match
         if (budget === 'free-only') {
-          if ((tool.cost || '').toLowerCase() === 'free') {
-            score += 14;
-            reasons.push('100% Free forever with zero paywalled features or upsells');
-          } else {
-            score -= 15;
-          }
+          score += 14;
+          reasons.push('Listed as free in our directory');
         } else {
           score += 8;
         }
 
         // Privacy match
         if (privacy === 'strict') {
-          if ((tags.privacy || []).includes('strict') || tool.open_source) {
-            score += 14;
-            reasons.push('Strict privacy: 100% local processing with zero cloud tracking');
-          } else {
-            score -= 10;
-          }
+          score += 14;
+          reasons.push('Matches your local-first or open-source privacy preference in our directory');
         } else {
           score += 6;
         }
 
-        const pct = Math.min(98, Math.max(68, Math.round(score)));
         return {
           tool,
           score,
-          pct,
           reasons
         };
       });
@@ -1060,6 +1131,7 @@
 
     function renderQuizResults(picks, device, distraction, strictness, budget, privacy, allTools) {
       if (!recommendationsList) return;
+      const guidance = getPersonalGuidance(distraction, strictness, budget, privacy);
 
       // Render Diagnostic Feedback Header
       if (feedbackBox) {
@@ -1093,10 +1165,10 @@
         feedbackBox.innerHTML = `
           <article class="diagnostic-card" aria-labelledby="diagnostic-title">
             <div class="diagnostic-header">
-              <span class="hero-eyebrow" style="font-size: 0.72rem; padding: 0.15rem 0.6rem; margin: 0;">Diagnostic Feedback</span>
+              <span class="hero-eyebrow" style="font-size: 0.72rem; padding: 0.15rem 0.6rem; margin: 0;">Quiz Feedback</span>
               <span style="font-size: 0.825rem; color: var(--text-tertiary);">Personalized for your student routine</span>
             </div>
-            <h3 id="diagnostic-title" class="diagnostic-title" style="margin-bottom: 0.75rem;">Your Digital Wellness Assessment</h3>
+            <h3 id="diagnostic-title" class="diagnostic-title" style="margin-bottom: 0.75rem;">What your answers suggest</h3>
             
             <div class="diagnostic-pills">
               <span class="diagnostic-pill">${deviceLabels[device] || device}</span>
@@ -1107,11 +1179,23 @@
             </div>
 
             <p class="diagnostic-text">
-              <strong>The Student Reality:</strong> ${feedback.deviceNote} ${feedback.challengeNote}
+              <strong>Your answers suggest:</strong> ${feedback.deviceNote} ${feedback.challengeNote}
             </p>
             <p class="diagnostic-text" style="margin-top: 0.5rem;">
-              <strong>Our Strategy for You:</strong> ${feedback.enforcementNote} ${feedback.budgetPrivacyNote}
+              <strong>A practical approach:</strong> ${feedback.enforcementNote} ${feedback.budgetPrivacyNote} ${feedback.privacyNote}
             </p>
+            <div class="quiz-action-grid">
+              <div>
+                <h4>Try this next</h4>
+                <p>${guidance.nextAction}</p>
+              </div>
+              <div>
+                <h4>Keep in mind</h4>
+                <ul>
+                  ${guidance.avoid.map((tip) => `<li>${tip}</li>`).join('')}
+                </ul>
+              </div>
+            </div>
           </article>
         `;
       }
@@ -1120,19 +1204,21 @@
       if (picks.length === 0) {
         recommendationsList.innerHTML = `
           <div class="card">
-            <p>No tools directly matched that specific combination. Please inspect our full <a href="compare.html">comparison table</a> to see all options.</p>
+            <p>No listed tool meets every device, budget, and privacy requirement you selected. You can relax one preference or review the <a href="compare.html">comparison table</a> and check each tool’s limitations.</p>
           </div>
         `;
       } else {
         recommendationsList.innerHTML = picks
-          .map(({ tool, reasons, pct }, index) => {
+          .map(({ tool, reasons }, index) => {
             const guideLink = getGuideLinkForTool(tool.id);
+            const quickStart = getToolQuickStart(tool);
+            const matchLabel = index === 0 ? 'Recommended starting point' : `Alternative ${index + 1}`;
 
             return `
             <article class="recommendation-card" aria-labelledby="rec-title-${tool.id}">
               <div class="rec-card-header">
                 <div>
-                  <span class="rec-rank-pill">Top Match #${index + 1} &bull; ${pct}% Compatibility</span>
+                  <span class="rec-rank-pill">${matchLabel}</span>
                   <h3 id="rec-title-${tool.id}" style="margin: 0.5rem 0 0.5rem 0; font-size: 1.35rem;">
                     ${tool.name}
                   </h3>
@@ -1152,9 +1238,16 @@
 
                 <div class="match-reason">
                   <strong>Why this fits your assessment:</strong>
-                  <ul>
-                    ${reasons.map((r) => `<li>${r}</li>`).join('')}
-                  </ul>
+                  ${reasons.length
+                    ? `<ul>${reasons.map((r) => `<li>${r}</li>`).join('')}</ul>`
+                    : '<p>This is a general option in the directory. Review its limitations and compare it with other matches before choosing.</p>'}
+                </div>
+
+                <div class="tool-quick-start">
+                  <h4>How to get started</h4>
+                  <ol>
+                    ${quickStart.map((step) => `<li>${step}</li>`).join('')}
+                  </ol>
                 </div>
 
                 <div class="verdict-grid">

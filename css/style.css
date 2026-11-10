@@ -1201,6 +1201,16 @@ legend {
 .verdict-col strong { display: block; margin-bottom: 0.4rem; }
 .verdict-col p { margin: 0; color: inherit; font-size: 0.875rem; }
 
+.quiz-method-note {
+  margin: 0 0 1.5rem;
+  padding: 0.875rem 1rem;
+  border-left: 3px solid var(--accent);
+  border-radius: var(--r-sm);
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
 /* Diagnostic Feedback Card */
 .diagnostic-card {
   background: var(--bg-surface);
@@ -1251,6 +1261,44 @@ legend {
 .diagnostic-text strong {
   color: var(--text-primary);
 }
+.quiz-action-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.quiz-action-grid > div,
+.tool-quick-start {
+  padding: 1rem 1.125rem;
+  border: 1px solid var(--border-weak);
+  border-radius: var(--r-md);
+  background: var(--bg-elevated);
+}
+.quiz-action-grid h4,
+.tool-quick-start h4 {
+  margin: 0 0 0.5rem;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+.quiz-action-grid p,
+.quiz-action-grid ul,
+.tool-quick-start ol {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.quiz-action-grid ul,
+.tool-quick-start ol {
+  padding-left: 1.25rem;
+}
+.quiz-action-grid ul { list-style: disc; }
+.tool-quick-start ol { list-style: decimal; }
+.quiz-action-grid li,
+.tool-quick-start li { margin-bottom: 0.35rem; }
+.quiz-action-grid li:last-child,
+.tool-quick-start li:last-child { margin-bottom: 0; }
+.tool-quick-start { margin-top: 1rem; }
 .quiz-filter-pill {
   cursor: pointer;
   transition: all var(--dur-fast) var(--ease);
@@ -1647,6 +1695,7 @@ legend {
   .perm-grid { grid-template-columns: 1fr; }
   .filter-toolbar { grid-template-columns: 1fr; }
   .verdict-grid { grid-template-columns: 1fr; }
+  .quiz-action-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 540px) {
