@@ -55,28 +55,82 @@
 
   <!-- Main Content -->
   <main id="main-content" role="main">
-    <div class="container">
-      
-      <header style="margin-bottom: 2.5rem; max-width: 800px;">
-        <span class="hero-eyebrow">Research Background &amp; Editorial Ethics</span>
-        <h1>About ReflectHub &amp; Research Methodology</h1>
-        <p class="lead">
+
+    <!-- Page Hero Header -->
+    <header class="page-hero" aria-labelledby="about-page-title">
+      <div class="container">
+        <span class="hero-eyebrow">
+          <span>🔬</span> Student Research &amp; Editorial Ethics
+        </span>
+        <h1 id="about-page-title" class="page-hero-title">
+          About ReflectHub &amp;<br>
+          <span class="gradient-text">Research Methodology</span>
+        </h1>
+        <p class="lead" style="max-width: 780px;">
           ReflectHub was created to replace commercial "Top 10 Productivity Apps" listicles with an honest, student-grounded decision aid. Here is our research context, how tools are evaluated, and the genuine limitations of digital wellness technology.
         </p>
-      </header>
+
+        <!-- Research Stats Bar -->
+        <div class="hero-stats hero-stats-subpage">
+          <div>
+            <span class="hero-stat-num">25+</span>
+            <span class="hero-stat-label">Applications screened</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">4-Stage</span>
+            <span class="hero-stat-label">Rigorous evaluation funnel</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">88%</span>
+            <span class="hero-stat-label">Android + Windows cohort</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">Oct 2026</span>
+            <span class="hero-stat-label">Last audited &amp; verified</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
 
       <!-- Section 1: Audience Research Summary -->
       <section aria-labelledby="audience-research-title" style="margin-bottom: 3.5rem;">
-        <h2 id="audience-research-title">1. Student Audience &amp; Needs Assessment</h2>
+        <div class="section-header" style="margin-bottom: 1.5rem;">
+          <span class="section-label">Target Audience Findings</span>
+          <h2 id="audience-research-title" class="section-title">1. Student Audience &amp; Needs Assessment</h2>
+          <p class="section-desc">Our primary audience comprises first- and second-year undergraduates at an Indian engineering college. Through initial student focus discussions and surveys, we established key baseline realities:</p>
+        </div>
+
+        <!-- Demographic Stat Grid -->
+        <div class="stat-card-grid">
+          <div class="stat-card">
+            <div class="stat-card-num">88%</div>
+            <div class="stat-card-label">Android + Windows</div>
+            <div class="stat-card-sub">Budget Core i3 / Ryzen 3 laptops</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-num">6.2h</div>
+            <div class="stat-card-label">Daily Screen Time</div>
+            <div class="stat-card-sub">Instagram Reels &amp; YouTube Shorts</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-num">₹0</div>
+            <div class="stat-card-label">Monthly Budget</div>
+            <div class="stat-card-sub">Subscriptions are impractical</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-num">70%</div>
+            <div class="stat-card-label">Midnight Screen Use</div>
+            <div class="stat-card-sub">In bed past 1:00 AM</div>
+          </div>
+        </div>
         
-        <div class="card" style="background-color: var(--bg-elevated); margin-bottom: 1.5rem;">
-          <h3 style="margin-top: 0; font-size: 1.2rem; color: var(--accent);">Target Demographic Context</h3>
-          <p style="font-size: 0.95rem;">
-            Our primary audience comprises <strong>first- and second-year undergraduates at an Indian engineering college</strong>. Through initial student focus discussions and surveys, we established key baseline realities:
-          </p>
-          <ul style="padding-left: 1.5rem; font-size: 0.925rem; color: var(--text-secondary); margin-bottom: 0;">
-            <li><strong>Hardware Ecosystem:</strong> Over 88% of surveyed students study using an Android smartphone paired with a Windows laptop (often running on budget Intel Core i3 / AMD Ryzen 3 or 5 chipsets). Apple devices represent less than 7% of the cohort.</li>
-            <li><strong>Financial Constraints:</strong> Students live on modest monthly pocket-money allowances or hostel budgets. Recurring subscriptions ($5 to $15 per month for apps like Opal or Freedom) are prohibitive and impractical.</li>
+        <div class="card" style="background: var(--bg-surface); border: 1px solid var(--border-weak); padding: 1.5rem; border-radius: var(--r-xl); box-shadow: var(--shadow-sm); margin-bottom: 1.5rem;">
+          <h3 style="margin-top: 0; font-size: 1.15rem; color: var(--accent);">Target Demographic Insights</h3>
+          <ul style="padding-left: 1.25rem; font-size: 0.925rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li><strong>Hardware Ecosystem:</strong> Over 88% of surveyed students study using an Android smartphone paired with a Windows laptop (often budget Intel Core i3 or AMD Ryzen chipsets). macOS devices represent under 7% of the cohort.</li>
+            <li><strong>Financial Constraints:</strong> Students live on modest monthly pocket-money allowances or hostel budgets. Recurring subscriptions ($5 to $15 per month for apps like Opal or Freedom) are prohibitive and impossible to maintain.</li>
             <li><strong>Primary Distraction Traps:</strong> Students reported an average daily phone screen time of 6.2 hours. Top culprits were Instagram Reels, YouTube Shorts, WhatsApp college section chat groups, and desktop multi-tab hopping while writing lab records or debugging code.</li>
             <li><strong>Sleep Deprivation:</strong> Over 70% of participants reported checking their smartphones in bed in the dark past 1:00 AM, leading to morning fatigue, diminished memory consolidation, and late arrivals at 8:00 AM lectures.</li>
           </ul>
@@ -85,41 +139,42 @@
 
       <!-- Section 2: How Tools Were Chosen -->
       <section aria-labelledby="selection-funnel-title" style="margin-bottom: 3.5rem;">
-        <h2 id="selection-funnel-title">2. Tool Selection Methodology &amp; Criteria</h2>
-        <p>
-          We reviewed more than 25 popular digital wellness and focus applications. To earn a place in ReflectHub's 11-tool directory, every candidate had to pass our 4-stage evaluation funnel:
-        </p>
+        <div class="section-header" style="margin-bottom: 1.5rem;">
+          <span class="section-label">Editorial Process</span>
+          <h2 id="selection-funnel-title" class="section-title">2. Tool Selection Methodology &amp; Criteria</h2>
+          <p class="section-desc">We reviewed more than 25 popular digital wellness and focus applications. To earn a place in ReflectHub's 11-tool directory, every candidate had to pass our 4-stage evaluation funnel:</p>
+        </div>
 
         <div class="funnel-grid">
-          <div class="card">
-            <span style="font-weight: 800; font-size: 1.25rem; color: var(--accent);">Stage 1</span>
-            <h3 style="margin: 0.25rem 0 0.5rem 0; font-size: 1.1rem;">Platform Compatibility</h3>
-            <p style="font-size: 0.875rem; margin: 0;">
+          <div class="card" style="border-top: 3px solid var(--accent);">
+            <span class="funnel-stage-num">Stage 01</span>
+            <h3 style="margin: 0.25rem 0 0.5rem 0; font-size: 1.1rem; color: var(--text-primary);">Platform Compatibility</h3>
+            <p style="font-size: 0.875rem; margin: 0; color: var(--text-secondary); line-height: 1.6;">
               Must run natively on Android or Windows without requiring specialized enterprise MDM servers or closed macOS hardware.
             </p>
           </div>
 
-          <div class="card">
-            <span style="font-weight: 800; font-size: 1.25rem; color: var(--accent);">Stage 2</span>
-            <h3 style="margin: 0.25rem 0 0.5rem 0; font-size: 1.1rem;">Zero Hidden Paywalls</h3>
-            <p style="font-size: 0.875rem; margin: 0;">
+          <div class="card" style="border-top: 3px solid var(--accent);">
+            <span class="funnel-stage-num">Stage 02</span>
+            <h3 style="margin: 0.25rem 0 0.5rem 0; font-size: 1.1rem; color: var(--text-primary);">Zero Hidden Paywalls</h3>
+            <p style="font-size: 0.875rem; margin: 0; color: var(--text-secondary); line-height: 1.6;">
               Tools that advertise themselves as "free" but lock basic timers or domain blocking behind mandatory subscriptions after 3 days were disqualified or reclassified as Freemium with exact prices noted.
             </p>
           </div>
 
-          <div class="card">
-            <span style="font-weight: 800; font-size: 1.25rem; color: var(--accent);">Stage 3</span>
-            <h3 style="margin: 0.25rem 0 0.5rem 0; font-size: 1.1rem;">Privacy &amp; Telemetry Posture</h3>
-            <p style="font-size: 0.875rem; margin: 0;">
+          <div class="card" style="border-top: 3px solid var(--accent);">
+            <span class="funnel-stage-num">Stage 03</span>
+            <h3 style="margin: 0.25rem 0 0.5rem 0; font-size: 1.1rem; color: var(--text-primary);">Privacy &amp; Telemetry</h3>
+            <p style="font-size: 0.875rem; margin: 0; color: var(--text-secondary); line-height: 1.6;">
               Priority given to open-source software (LeechBlock NG, uBlock Origin, ActivityWatch, Bitwarden) and native OS controls with zero third-party cloud analytics.
             </p>
           </div>
 
-          <div class="card">
-            <span style="font-weight: 800; font-size: 1.25rem; color: var(--accent);">Stage 4</span>
-            <h3 style="margin: 0.25rem 0 0.5rem 0; font-size: 1.1rem;">Real Student Utility</h3>
-            <p style="font-size: 0.875rem; margin: 0;">
-              Must directly solve one of our identified student challenges: deep study sprinting, sleep habit restoration, or feed ad-blocking.
+          <div class="card" style="border-top: 3px solid var(--accent);">
+            <span class="funnel-stage-num">Stage 04</span>
+            <h3 style="margin: 0.25rem 0 0.5rem 0; font-size: 1.1rem; color: var(--text-primary);">Real Student Utility</h3>
+            <p style="font-size: 0.875rem; margin: 0; color: var(--text-secondary); line-height: 1.6;">
+              Must directly solve one of our identified student challenges: deep study sprinting, sleep habit restoration, or algorithmic feed ad-blocking.
             </p>
           </div>
         </div>

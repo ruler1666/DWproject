@@ -837,6 +837,54 @@
         });
       });
 
+      // Quick preset filter pills
+      const presetPills = document.querySelectorAll('.quick-preset-pill');
+      presetPills.forEach((pill) => {
+        pill.addEventListener('click', () => {
+          presetPills.forEach((p) => p.classList.remove('active'));
+          pill.classList.add('active');
+
+          const preset = pill.getAttribute('data-preset');
+          if (preset === 'all') {
+            if (platformFilter) platformFilter.value = 'all';
+            if (costFilter) costFilter.value = 'all';
+            if (openSourceFilter) openSourceFilter.value = 'all';
+          } else if (preset === 'android') {
+            if (platformFilter) platformFilter.value = 'Android';
+            if (costFilter) costFilter.value = 'all';
+            if (openSourceFilter) openSourceFilter.value = 'all';
+          } else if (preset === 'windows') {
+            if (platformFilter) platformFilter.value = 'Windows';
+            if (costFilter) costFilter.value = 'all';
+            if (openSourceFilter) openSourceFilter.value = 'all';
+          } else if (preset === 'browser') {
+            if (platformFilter) platformFilter.value = 'Browser Extension';
+            if (costFilter) costFilter.value = 'all';
+            if (openSourceFilter) openSourceFilter.value = 'all';
+          } else if (preset === 'oss') {
+            if (platformFilter) platformFilter.value = 'all';
+            if (costFilter) costFilter.value = 'all';
+            if (openSourceFilter) openSourceFilter.value = 'true';
+          } else if (preset === 'free') {
+            if (platformFilter) platformFilter.value = 'all';
+            if (costFilter) costFilter.value = 'Free';
+            if (openSourceFilter) openSourceFilter.value = 'all';
+          }
+
+          if (searchInput) searchInput.value = '';
+          filterAndRender();
+        });
+      });
+
+      // Reset button clears preset active states
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          presetPills.forEach((p) => p.classList.remove('active'));
+          const allPill = document.querySelector('.quick-preset-pill[data-preset="all"]');
+          if (allPill) allPill.classList.add('active');
+        });
+      }
+
       filterAndRender();
     });
   }

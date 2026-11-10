@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -55,15 +55,44 @@
 
   <!-- Main Content -->
   <main id="main-content" role="main">
-    <div class="container">
-      
-      <header style="margin-bottom: 2.5rem; max-width: 820px;">
-        <span class="hero-eyebrow">Quality Assurance &amp; Field Usability</span>
-        <h1>Testing, Accessibility &amp; Evidence</h1>
-        <p class="lead">
+
+    <!-- Page Hero Header -->
+    <header class="page-hero" aria-labelledby="testing-page-title">
+      <div class="container">
+        <span class="hero-eyebrow">
+          <span>✅</span> Quality Assurance &amp; Field Usability
+        </span>
+        <h1 id="testing-page-title" class="page-hero-title">
+          Testing, Accessibility &amp;<br>
+          <span class="gradient-text">Verification Evidence</span>
+        </h1>
+        <p class="lead" style="max-width: 780px;">
           To ensure ReflectHub functions reliably in real student environments, every external resource link was verified, the site was audited against WCAG 2.2 AA accessibility criteria, and 5 undergraduate students (P1 to P5) tested the hub and guides on physical Android and Windows devices.
         </p>
-      </header>
+
+        <!-- Testing Stats Bar -->
+        <div class="hero-stats hero-stats-subpage">
+          <div>
+            <span class="hero-stat-num">227</span>
+            <span class="hero-stat-label">Links verified (0 broken)</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">10/10</span>
+            <span class="hero-stat-label">WCAG 2.2 AA audits passed</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">5</span>
+            <span class="hero-stat-label">Student usability trials (P1–P5)</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">6</span>
+            <span class="hero-stat-label">Code revisions documented</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
 
       <!-- Section 1: Link Test Record -->
       <section class="evidence-section" aria-labelledby="link-testing-title">
@@ -314,104 +343,145 @@
 
       <!-- Section 3: Anonymised User Feedback -->
       <section class="evidence-section" aria-labelledby="feedback-title">
-        <h2 id="feedback-title">3. Anonymised Student Usability Feedback (P1 &ndash; P5)</h2>
-        <p>
-          Five undergraduate students from local engineering departments were asked to browse ReflectHub, complete the recommendation quiz, and follow at least one setup guide on their personal devices.
-        </p>
+        <div class="section-header" style="margin-bottom: 1.5rem;">
+          <span class="section-label">Field Validation</span>
+          <h2 id="feedback-title" class="section-title">3. Anonymised Student Usability Feedback (P1 &ndash; P5)</h2>
+          <p class="section-desc">Five undergraduate students from local engineering departments were asked to browse ReflectHub, complete the recommendation quiz, and follow at least one setup guide on their personal devices.</p>
+        </div>
 
         <!-- Participant 1 -->
-        <article class="feedback-card" aria-labelledby="p1-title">
-          <div class="feedback-meta">
-            <h3 id="p1-title" style="margin: 0; font-size: 1.05rem; color: var(--accent);">
-              Participant 1 (P1) &bull; 2nd Year Computer Science
-            </h3>
-            <span>Tested on: Windows 11 Laptop &amp; Android 13</span>
+        <article class="tester-card" aria-labelledby="p1-title">
+          <div class="tester-header">
+            <div class="tester-identity">
+              <div class="tester-avatar" aria-hidden="true">P1</div>
+              <div>
+                <h3 id="p1-title" style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">
+                  Participant 1 &bull; 2nd Year Computer Science
+                </h3>
+                <span style="font-size: 0.825rem; color: var(--text-tertiary);">Hardware: Windows 11 Laptop &amp; Android 13</span>
+              </div>
+            </div>
+            <span class="badge badge-platform">Guide 1 Tested</span>
           </div>
-          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--text-secondary);">
             <strong>Task Assigned:</strong> Complete Setup Guide 1 (LeechBlock NG + Focus Sessions) and attempt to bypass during study time.
           </p>
           <blockquote class="quote-block">
             "The 64-character uncheatable challenge code is brilliant. I tried opening YouTube to look up a gaming clip while compiling code, saw the random character string, and realized it would take me 45 seconds to type it out. It completely snapped me out of my impulse loop."
           </blockquote>
-          <p style="font-size: 0.85rem; color: var(--text-tertiary); margin: 0;">
-            <strong>Problem Encountered:</strong> P1 was initially unsure how to whitelist their college's NPTEL lecture playlist on LeechBlock. (Addressed in Revision #1).
-          </p>
+          <div style="background: var(--bg-elevated); padding: 0.75rem 1rem; border-radius: var(--r-sm); border-left: 3px solid var(--accent); margin-top: 0.75rem;">
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">
+              <strong>Problem Encountered:</strong> P1 was initially unsure how to whitelist their college's NPTEL lecture playlist on LeechBlock. <strong style="color: var(--accent);">(Addressed in Revision #1)</strong>.
+            </p>
+          </div>
         </article>
 
         <!-- Participant 2 -->
-        <article class="feedback-card" aria-labelledby="p2-title">
-          <div class="feedback-meta">
-            <h3 id="p2-title" style="margin: 0; font-size: 1.05rem; color: var(--accent);">
-              Participant 2 (P2) &bull; 1st Year Electronics &amp; Communication
-            </h3>
-            <span>Tested on: Xiaomi Redmi Note 11 (MIUI 13, Android 12)</span>
+        <article class="tester-card" aria-labelledby="p2-title">
+          <div class="tester-header">
+            <div class="tester-identity">
+              <div class="tester-avatar" aria-hidden="true">P2</div>
+              <div>
+                <h3 id="p2-title" style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">
+                  Participant 2 &bull; 1st Year Electronics &amp; Communication
+                </h3>
+                <span style="font-size: 0.825rem; color: var(--text-tertiary);">Hardware: Xiaomi Redmi Note 11 (MIUI 13, Android 12)</span>
+              </div>
+            </div>
+            <span class="badge badge-platform">Guide 2 Tested</span>
           </div>
-          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--text-secondary);">
             <strong>Task Assigned:</strong> Follow Guide 2 (Android Bedtime Mode &amp; Grayscale Automation).
           </p>
           <blockquote class="quote-block">
             "Turning the screen black and white at 11 PM makes Instagram reels feel completely uninteresting. After 3 minutes, my eyes feel tired and I just plug the phone in and go to sleep. I was worried about missing my mother's calls, but the starred contacts bypass worked perfectly."
           </blockquote>
-          <p style="font-size: 0.85rem; color: var(--text-tertiary); margin: 0;">
-            <strong>Problem Encountered:</strong> The aggressive battery saver on MIUI initially delayed Bedtime Mode by 15 minutes. (Addressed in Revision #2).
-          </p>
+          <div style="background: var(--bg-elevated); padding: 0.75rem 1rem; border-radius: var(--r-sm); border-left: 3px solid var(--accent); margin-top: 0.75rem;">
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">
+              <strong>Problem Encountered:</strong> The aggressive battery saver on MIUI initially delayed Bedtime Mode by 15 minutes. <strong style="color: var(--accent);">(Addressed in Revision #2)</strong>.
+            </p>
+          </div>
         </article>
 
         <!-- Participant 3 -->
-        <article class="feedback-card" aria-labelledby="p3-title">
-          <div class="feedback-meta">
-            <h3 id="p3-title" style="margin: 0; font-size: 1.05rem; color: var(--accent);">
-              Participant 3 (P3) &bull; 2nd Year Mechanical Engineering
-            </h3>
-            <span>Tested on: Budget Windows 10 Laptop</span>
+        <article class="tester-card" aria-labelledby="p3-title">
+          <div class="tester-header">
+            <div class="tester-identity">
+              <div class="tester-avatar" aria-hidden="true">P3</div>
+              <div>
+                <h3 id="p3-title" style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">
+                  Participant 3 &bull; 2nd Year Mechanical Engineering
+                </h3>
+                <span style="font-size: 0.825rem; color: var(--text-tertiary);">Hardware: Budget Windows 10 Laptop</span>
+              </div>
+            </div>
+            <span class="badge badge-platform">Quiz &amp; Compare Tested</span>
           </div>
-          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--text-secondary);">
             <strong>Task Assigned:</strong> Take the Find My Tool Quiz with a ₹0 budget and evaluate recommendations.
           </p>
           <blockquote class="quote-block">
             "I liked that the quiz didn't push me to download apps with 7-day trials that charge money later. It recommended LeechBlock NG and Android Digital Wellbeing and explicitly told me what features Cold Turkey paywalls."
           </blockquote>
-          <p style="font-size: 0.85rem; color: var(--text-tertiary); margin: 0;">
-            <strong>Problem Encountered:</strong> P3 wanted a one-click button on the quiz results card to jump straight into the setup guide. (Addressed in Revision #3).
-          </p>
+          <div style="background: var(--bg-elevated); padding: 0.75rem 1rem; border-radius: var(--r-sm); border-left: 3px solid var(--accent); margin-top: 0.75rem;">
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">
+              <strong>Problem Encountered:</strong> P3 wanted a one-click button on the quiz results card to jump straight into the setup guide. <strong style="color: var(--accent);">(Addressed in Revision #3)</strong>.
+            </p>
+          </div>
         </article>
 
         <!-- Participant 4 -->
-        <article class="feedback-card" aria-labelledby="p4-title">
-          <div class="feedback-meta">
-            <h3 id="p4-title" style="margin: 0; font-size: 1.05rem; color: var(--accent);">
-              Participant 4 (P4) &bull; 1st Year Civil Engineering
-            </h3>
-            <span>Tested on: Samsung Galaxy A-series &amp; Edge Browser</span>
+        <article class="tester-card" aria-labelledby="p4-title">
+          <div class="tester-header">
+            <div class="tester-identity">
+              <div class="tester-avatar" aria-hidden="true">P4</div>
+              <div>
+                <h3 id="p4-title" style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">
+                  Participant 4 &bull; 1st Year Civil Engineering
+                </h3>
+                <span style="font-size: 0.825rem; color: var(--text-tertiary);">Hardware: Samsung Galaxy A-series &amp; Edge Browser</span>
+              </div>
+            </div>
+            <span class="badge badge-platform">Guide 3 Tested</span>
           </div>
-          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--text-secondary);">
             <strong>Task Assigned:</strong> Follow Guide 3 (uBlock Origin YouTube Shorts Removal).
           </p>
           <blockquote class="quote-block">
             "Shorts was my biggest weakness. I’d open YouTube to watch a surveying tutorial and end up watching 40 minutes of vertical comedy reels. Removing the Shorts shelf entirely makes YouTube feel like a quiet library again."
           </blockquote>
-          <p style="font-size: 0.85rem; color: var(--text-tertiary); margin: 0;">
-            <strong>Problem Encountered:</strong> Initially pasted the cosmetic rules without clicking 'Apply changes'. (Addressed in Revision #4).
-          </p>
+          <div style="background: var(--bg-elevated); padding: 0.75rem 1rem; border-radius: var(--r-sm); border-left: 3px solid var(--accent); margin-top: 0.75rem;">
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">
+              <strong>Problem Encountered:</strong> Initially pasted the cosmetic rules without clicking 'Apply changes'. <strong style="color: var(--accent);">(Addressed in Revision #4)</strong>.
+            </p>
+          </div>
         </article>
 
         <!-- Participant 5 -->
-        <article class="feedback-card" aria-labelledby="p5-title">
-          <div class="feedback-meta">
-            <h3 id="p5-title" style="margin: 0; font-size: 1.05rem; color: var(--accent);">
-              Participant 5 (P5) &bull; 2nd Year Information Technology
-            </h3>
-            <span>Tested on: Firefox on Linux/Windows &amp; Pixel 7</span>
+        <article class="tester-card" aria-labelledby="p5-title">
+          <div class="tester-header">
+            <div class="tester-identity">
+              <div class="tester-avatar" aria-hidden="true">P5</div>
+              <div>
+                <h3 id="p5-title" style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">
+                  Participant 5 &bull; 2nd Year Information Technology
+                </h3>
+                <span style="font-size: 0.825rem; color: var(--text-tertiary);">Hardware: Firefox on Windows &amp; Pixel 7</span>
+              </div>
+            </div>
+            <span class="badge badge-oss">Security &amp; Accessibility Audit</span>
           </div>
-          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--text-secondary);">
             <strong>Task Assigned:</strong> Security audit of the Privacy &amp; Safety section and Compare matrix.
           </p>
           <blockquote class="quote-block">
             "It's refreshing to see a student hub honestly explain Android Accessibility Service risks instead of just telling people to install random blockers. Highlighting Bitwarden and local-first ActivityWatch makes this a genuine wellness resource."
           </blockquote>
-          <p style="font-size: 0.85rem; color: var(--text-tertiary); margin: 0;">
-            <strong>Feedback:</strong> Requested clear keyboard outline visibility for dark mode buttons. (Verified passing 3px offset in CSS).
-          </p>
+          <div style="background: var(--bg-elevated); padding: 0.75rem 1rem; border-radius: var(--r-sm); border-left: 3px solid var(--accent); margin-top: 0.75rem;">
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">
+              <strong>Feedback:</strong> Requested clear keyboard outline visibility for dark mode buttons. <strong style="color: var(--accent);">(Verified passing 3px offset in CSS)</strong>.
+            </p>
+          </div>
         </article>
       </section>
 

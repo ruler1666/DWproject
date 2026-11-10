@@ -82,6 +82,22 @@
           <span class="guide-meta-pill">💰 <strong>Cost:</strong> ₹0 (100% Free &amp; Open Source)</span>
           <span class="guide-meta-pill">🔒 <strong>Privacy:</strong> Local storage only (No account required)</span>
         </div>
+
+        <!-- Visual Step Roadmap Navigation -->
+        <nav class="guide-stepper" aria-label="Quick jump to guide steps">
+          <span style="font-size: 0.75rem; font-weight: 700; color: var(--text-tertiary); text-transform: uppercase; margin-right: 0.25rem;">Steps:</span>
+          <a href="#step-1" class="stepper-item">1. Install</a>
+          <span class="stepper-sep" aria-hidden="true">&rarr;</span>
+          <a href="#step-2" class="stepper-item">2. Blocklist</a>
+          <span class="stepper-sep" aria-hidden="true">&rarr;</span>
+          <a href="#step-3" class="stepper-item">3. Schedule</a>
+          <span class="stepper-sep" aria-hidden="true">&rarr;</span>
+          <a href="#step-4" class="stepper-item">4. Lock Code</a>
+          <span class="stepper-sep" aria-hidden="true">&rarr;</span>
+          <a href="#step-5" class="stepper-item">5. Windows DND</a>
+          <span class="stepper-sep" aria-hidden="true">&rarr;</span>
+          <a href="#step-6" class="stepper-item">6. Verify</a>
+        </nav>
       </header>
 
       <!-- Step-by-Step Instructions -->
@@ -222,36 +238,39 @@ hotstar.com</pre>
       </section>
 
       <!-- Common Problems Section -->
-      <section class="card" aria-labelledby="problems-title" style="margin-top: 2.5rem; background-color: var(--bg-elevated);">
-        <h2 id="problems-title" style="font-size: 1.35rem; margin-top: 0; margin-bottom: 1rem;">
-          Common Problems &amp; Student Troubleshooting
-        </h2>
+      <section class="card" aria-labelledby="problems-title" style="margin-top: 2.5rem; background: var(--bg-surface); border: 1px solid var(--border-weak); border-radius: var(--r-xl); padding: 2rem; box-shadow: var(--shadow-sm);">
+        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.25rem;">
+          <span style="font-size: 1.35rem;" aria-hidden="true">💡</span>
+          <h2 id="problems-title" style="font-size: 1.35rem; margin: 0; color: var(--text-primary);">
+            Common Problems &amp; Student Troubleshooting
+          </h2>
+        </div>
 
-        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
-          <div>
-            <h3 style="font-size: 1.05rem; margin: 0 0 0.35rem 0; color: var(--text-primary);">
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <div style="background: var(--bg-elevated); padding: 1.25rem; border-radius: var(--r-md); border: 1px solid var(--border-weak);">
+            <h3 style="font-size: 1.05rem; margin: 0 0 0.5rem 0; color: var(--text-primary);">
               1. "What if I need YouTube for an urgent assignment or professor lecture?"
             </h3>
-            <p style="font-size: 0.95rem; margin: 0;">
-              <strong>Fix:</strong> In LeechBlock Options &gt; Block Set 1 &gt; <em>"What to Block"</em>, add an exemption rule prefixed with a plus sign, for example: <code>+youtube.com/playlist?list=YOUR_COURSE_PLAYLIST_ID</code> or use the search whitelist feature. Alternatively, install FreeTube or watch lectures embedded on your university portal.
+            <p style="font-size: 0.925rem; margin: 0; color: var(--text-secondary); line-height: 1.6;">
+              <strong style="color: var(--accent);">Fix:</strong> In LeechBlock Options &gt; Block Set 1 &gt; <em>"What to Block"</em>, add an exemption rule prefixed with a plus sign, for example: <code>+youtube.com/playlist?list=YOUR_COURSE_PLAYLIST_ID</code> or use the search whitelist feature. Alternatively, install FreeTube or watch lectures embedded on your university portal.
             </p>
           </div>
 
-          <div>
-            <h3 style="font-size: 1.05rem; margin: 0 0 0.35rem 0; color: var(--text-primary);">
+          <div style="background: var(--bg-elevated); padding: 1.25rem; border-radius: var(--r-md); border: 1px solid var(--border-weak);">
+            <h3 style="font-size: 1.05rem; margin: 0 0 0.5rem 0; color: var(--text-primary);">
               2. "Can I bypass LeechBlock by simply opening a Private / Incognito window?"
             </h3>
-            <p style="font-size: 0.95rem; margin: 0;">
-              <strong>Fix:</strong> By default, extensions are disabled in private windows. To close this loophole, open your browser's Extension Settings (<code>about:addons</code> in Firefox or <code>chrome://extensions</code> in Edge/Chrome), click LeechBlock NG, and toggle <strong>"Run in Private Windows"</strong> to <em>Allow</em>.
+            <p style="font-size: 0.925rem; margin: 0; color: var(--text-secondary); line-height: 1.6;">
+              <strong style="color: var(--accent);">Fix:</strong> By default, extensions are disabled in private windows. To close this loophole, open your browser's Extension Settings (<code>about:addons</code> in Firefox or <code>chrome://extensions</code> in Edge/Chrome), click LeechBlock NG, and toggle <strong>"Run in Private Windows"</strong> to <em>Allow</em>.
             </p>
           </div>
 
-          <div>
-            <h3 style="font-size: 1.05rem; margin: 0 0 0.35rem 0; color: var(--text-primary);">
+          <div style="background: var(--bg-elevated); padding: 1.25rem; border-radius: var(--r-md); border: 1px solid var(--border-weak);">
+            <h3 style="font-size: 1.05rem; margin: 0 0 0.5rem 0; color: var(--text-primary);">
               3. "I also have Steam and Discord desktop installed—LeechBlock doesn't block .exe files."
             </h3>
-            <p style="font-size: 0.95rem; margin: 0;">
-              <strong>Fix:</strong> LeechBlock is strictly a browser extension. If desktop PC games or native Discord are major distractions, pair this setup with Windows Focus Sessions (Step 5) and turn off auto-start on boot for gaming apps in Windows Task Manager &gt; Startup Apps.
+            <p style="font-size: 0.925rem; margin: 0; color: var(--text-secondary); line-height: 1.6;">
+              <strong style="color: var(--accent);">Fix:</strong> LeechBlock is strictly a browser extension. If desktop PC games or native Discord are major distractions, pair this setup with Windows Focus Sessions (Step 5) and turn off auto-start on boot for gaming apps in Windows Task Manager &gt; Startup Apps.
             </p>
           </div>
         </div>

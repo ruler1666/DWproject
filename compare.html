@@ -55,15 +55,44 @@
 
   <!-- Main Content -->
   <main id="main-content" role="main">
-    <div class="container">
-      
-      <header style="margin-bottom: 2rem;">
-        <span class="hero-eyebrow">Comprehensive Decision Matrix</span>
-        <h1>Compare Digital Wellness Tools</h1>
-        <p class="lead">
-          Filter and evaluate 11 verified wellness tools by platform compatibility, actual costs, open-source status, and required permissions. We explicitly state what features are paywalled and each tool's honest limitations so you can make informed choices.
+    
+    <!-- Page Hero Header -->
+    <header class="page-hero" aria-labelledby="compare-page-title">
+      <div class="container">
+        <span class="hero-eyebrow">
+          <span>📊</span> Transparent Evaluation Matrix
+        </span>
+        <h1 id="compare-page-title" class="page-hero-title">
+          Compare Digital Wellness Tools<br>
+          <span class="gradient-text">Without Paywall Surprises</span>
+        </h1>
+        <p class="lead" style="max-width: 780px;">
+          Filter and evaluate 11 verified wellness tools by platform compatibility, actual costs, open-source status, and required system permissions. We explicitly document what is paywalled and each tool's honest limitations so you can make informed choices before installing.
         </p>
-      </header>
+
+        <!-- Trust Stats Bar -->
+        <div class="hero-stats hero-stats-subpage">
+          <div>
+            <span class="hero-stat-num">11</span>
+            <span class="hero-stat-label">Verified tools</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">₹0</span>
+            <span class="hero-stat-label">Minimum cost</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">100%</span>
+            <span class="hero-stat-label">Paywall transparency</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">0</span>
+            <span class="hero-stat-label">Sponsored listings</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
 
       <!-- Noscript Fallback -->
       <noscript>
@@ -74,6 +103,17 @@
           </p>
         </div>
       </noscript>
+
+      <!-- Quick Preset Filter Pills -->
+      <div class="quick-presets-bar" role="toolbar" aria-label="Quick category filters">
+        <span class="quick-preset-label">Quick Presets:</span>
+        <button type="button" class="quick-preset-pill active" data-preset="all">All (11)</button>
+        <button type="button" class="quick-preset-pill" data-preset="android">Android Apps</button>
+        <button type="button" class="quick-preset-pill" data-preset="windows">Windows Native</button>
+        <button type="button" class="quick-preset-pill" data-preset="browser">Browser Extensions</button>
+        <button type="button" class="quick-preset-pill" data-preset="oss">Open Source Only</button>
+        <button type="button" class="quick-preset-pill" data-preset="free">100% Free Only</button>
+      </div>
 
       <!-- Filter & Search Toolbar -->
       <section class="filter-toolbar" aria-label="Filter and Search Tools">
@@ -183,13 +223,19 @@
       </section>
 
       <!-- Note on Evaluation Integrity -->
-      <section class="card" style="margin-top: 2.5rem; background-color: var(--bg-elevated);">
-        <h2 style="font-size: 1.15rem; margin-top: 0; margin-bottom: 0.5rem;">How We Verify Cost &amp; Paywall Disclosures</h2>
-        <p style="font-size: 0.95rem; margin-bottom: 0.75rem;">
-          In commercial software directories, apps often advertise themselves as "Free" because the app download itself costs ₹0, only for users to discover during exam revision that core features (such as scheduled app blocking or website limits) require an expensive monthly subscription.
+      <section class="card" style="margin-top: 2.5rem; background: var(--bg-surface); border: 1px solid var(--border-weak); border-left: 4px solid var(--accent); padding: 1.75rem;">
+        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem;">
+          <svg style="width: 24px; height: 24px; color: var(--accent); flex-shrink: 0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+          <h2 style="font-size: 1.2rem; margin: 0; color: var(--text-primary);">Our Guarantee: Transparent Cost &amp; Paywall Auditing</h2>
+        </div>
+        <p style="font-size: 0.95rem; margin-bottom: 0.75rem; color: var(--text-secondary); line-height: 1.65;">
+          In commercial software directories, apps often advertise themselves as "Free" because the APK download itself costs ₹0, only for students to discover during exam revision that core features (such as scheduled app blocking or website limits) require an expensive monthly subscription.
         </p>
-        <p style="font-size: 0.95rem; margin-bottom: 0;">
-          <strong>ReflectHub's Rule:</strong> Any tool that requires payment for essential blocking, scheduling, or analytics features is classified as <strong>Freemium</strong>, and the exact paywalled tier is documented above. Only tools with 100% unrestricted core capability are labeled <strong>Free</strong>.
+        <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--text-secondary); line-height: 1.65;">
+          <strong style="color: var(--text-primary);">ReflectHub's Strict Editorial Rule:</strong> Any tool that requires payment for essential blocking, scheduling, or analytics features is classified as <strong>Freemium</strong>, and the exact paywalled tier is documented in the table above. Only tools with 100% unrestricted core capability are labeled <strong>Free</strong>.
         </p>
       </section>
 

@@ -55,24 +55,56 @@
 
   <!-- Main Content -->
   <main id="main-content" role="main">
+
+    <!-- Page Hero Header -->
+    <header class="page-hero" aria-labelledby="guides-page-title">
+      <div class="container">
+        <span class="hero-eyebrow">
+          <span>📖</span> Practical Walkthroughs
+        </span>
+        <h1 id="guides-page-title" class="page-hero-title">
+          Student-Tested<br>
+          <span class="gradient-text">Setup Guides</span>
+        </h1>
+        <p class="lead" style="max-width: 780px;">
+          Three detailed, field-tested guides designed to solve the three biggest digital friction points reported by engineering undergraduates: deep study distraction on Windows laptops, late-night phone doomscrolling before sleep, and algorithmic clickbait rabbit holes on browsers.
+        </p>
+
+        <!-- Guide Stats Bar -->
+        <div class="hero-stats hero-stats-subpage">
+          <div>
+            <span class="hero-stat-num">3</span>
+            <span class="hero-stat-label">Complete walkthroughs</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">18</span>
+            <span class="hero-stat-label">Wireframe screenshots</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">₹0</span>
+            <span class="hero-stat-label">Cost to implement</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">~10m</span>
+            <span class="hero-stat-label">Average setup time</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <div class="container">
       
-      <header style="margin-bottom: 2rem;">
-        <span class="hero-eyebrow">Practical Walkthroughs</span>
-        <h1>Student-Tested Setup Guides</h1>
-        <p class="lead">
-          Three detailed, field-tested guides designed to solve the three biggest digital friction points reported by engineering undergraduates: deep study session distraction on Windows laptops, late-night phone doomscrolling before sleep, and algorithmic clickbait rabbit holes on browsers.
-        </p>
-      </header>
-
       <!-- Quick recommendation prompt banner -->
-      <div class="card" style="margin-bottom: 2.5rem; background: var(--bg-surface); border: 1px solid var(--border-weak); padding: 1.5rem 1.75rem;">
+      <div class="card" style="margin-bottom: 2.5rem; background: var(--bg-surface); border: 1px solid var(--border-weak); border-left: 4px solid var(--accent); padding: 1.5rem 1.75rem; box-shadow: var(--shadow-sm);">
         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
           <div>
-            <h2 style="font-size: 1.15rem; margin: 0 0 0.25rem 0;">Not sure which setup you need first?</h2>
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+              <span aria-hidden="true">🎯</span>
+              <h2 style="font-size: 1.15rem; margin: 0; color: var(--text-primary);">Not sure which setup you need first?</h2>
+            </div>
             <p style="margin: 0; font-size: 0.9rem; color: var(--text-secondary);">Answer 5 quick questions about your hardware, distraction habits, and budget to get a tailored recommendation.</p>
           </div>
-          <a href="../find-my-tool.html" class="btn btn-primary btn-sm">Take 2-Min Quiz &rarr;</a>
+          <a href="../find-my-tool.html" class="btn btn-primary btn-sm">Take 60-Sec Quiz &rarr;</a>
         </div>
       </div>
 

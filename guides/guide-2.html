@@ -82,6 +82,22 @@
           <span class="guide-meta-pill">💰 <strong>Cost:</strong> ₹0 (Built-in Operating System feature)</span>
           <span class="guide-meta-pill">🔒 <strong>Privacy:</strong> On-device processing (Zero cloud telemetry)</span>
         </div>
+
+        <!-- Visual Step Roadmap Navigation -->
+        <nav class="guide-stepper" aria-label="Quick jump to guide steps">
+          <span style="font-size: 0.75rem; font-weight: 700; color: var(--text-tertiary); text-transform: uppercase; margin-right: 0.25rem;">Steps:</span>
+          <a href="#step-1" class="stepper-item">1. Settings</a>
+          <span class="stepper-sep" aria-hidden="true">&rarr;</span>
+          <a href="#step-2" class="stepper-item">2. Schedule</a>
+          <span class="stepper-sep" aria-hidden="true">&rarr;</span>
+          <a href="#step-3" class="stepper-item">3. Grayscale</a>
+          <span class="stepper-sep" aria-hidden="true">&rarr;</span>
+          <a href="#step-4" class="stepper-item">4. DND Bypass</a>
+          <span class="stepper-sep" aria-hidden="true">&rarr;</span>
+          <a href="#step-5" class="stepper-item">5. App Timers</a>
+          <span class="stepper-sep" aria-hidden="true">&rarr;</span>
+          <a href="#step-6" class="stepper-item">6. Wake Routine</a>
+        </nav>
       </header>
 
       <!-- Step-by-Step Instructions -->
@@ -217,36 +233,39 @@
       </section>
 
       <!-- Common Problems Section -->
-      <section class="card" aria-labelledby="problems-title" style="margin-top: 2.5rem; background-color: var(--bg-elevated);">
-        <h2 id="problems-title" style="font-size: 1.35rem; margin-top: 0; margin-bottom: 1rem;">
-          Common Problems &amp; Student Troubleshooting
-        </h2>
+      <section class="card" aria-labelledby="problems-title" style="margin-top: 2.5rem; background: var(--bg-surface); border: 1px solid var(--border-weak); border-radius: var(--r-xl); padding: 2rem; box-shadow: var(--shadow-sm);">
+        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.25rem;">
+          <span style="font-size: 1.35rem;" aria-hidden="true">💡</span>
+          <h2 id="problems-title" style="font-size: 1.35rem; margin: 0; color: var(--text-primary);">
+            Common Problems &amp; Student Troubleshooting
+          </h2>
+        </div>
 
-        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
-          <div>
-            <h3 style="font-size: 1.05rem; margin: 0 0 0.35rem 0; color: var(--text-primary);">
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <div style="background: var(--bg-elevated); padding: 1.25rem; border-radius: var(--r-md); border: 1px solid var(--border-weak);">
+            <h3 style="font-size: 1.05rem; margin: 0 0 0.5rem 0; color: var(--text-primary);">
               1. "My phone manufacturer's aggressive battery saver stops Bedtime Mode from turning on."
             </h3>
-            <p style="font-size: 0.95rem; margin: 0;">
-              <strong>Fix:</strong> Certain budget skins (MIUI, Realme UI) terminate background system tasks. Go to <em>Settings &gt; Apps &gt; Digital Wellbeing &gt; Battery</em> and set it to <strong>"Unrestricted"</strong> or <strong>"No restrictions"</strong> so the schedule triggers reliably at 11:00 PM.
+            <p style="font-size: 0.925rem; margin: 0; color: var(--text-secondary); line-height: 1.6;">
+              <strong style="color: var(--accent);">Fix:</strong> Certain budget skins (MIUI, Realme UI) terminate background system tasks. Go to <em>Settings &gt; Apps &gt; Digital Wellbeing &gt; Battery</em> and set it to <strong>"Unrestricted"</strong> or <strong>"No restrictions"</strong> so the schedule triggers reliably at 11:00 PM.
             </p>
           </div>
 
-          <div>
-            <h3 style="font-size: 1.05rem; margin: 0 0 0.35rem 0; color: var(--text-primary);">
+          <div style="background: var(--bg-elevated); padding: 1.25rem; border-radius: var(--r-md); border: 1px solid var(--border-weak);">
+            <h3 style="font-size: 1.05rem; margin: 0 0 0.5rem 0; color: var(--text-primary);">
               2. "What if I listen to sleep audio (podcasts, white noise, or ambient rain) to fall asleep?"
             </h3>
-            <p style="font-size: 0.95rem; margin: 0;">
-              <strong>Fix:</strong> Bedtime Mode silences notification sounds, but it does NOT silence active media playback. Your Spotify, Audible, or YouTube Music audio will continue playing normally in the background. Use the sleep timer feature built into Spotify/audio apps so it turns off automatically after 30 minutes.
+            <p style="font-size: 0.925rem; margin: 0; color: var(--text-secondary); line-height: 1.6;">
+              <strong style="color: var(--accent);">Fix:</strong> Bedtime Mode silences notification sounds, but it does NOT silence active media playback. Your Spotify, Audible, or YouTube Music audio will continue playing normally in the background. Use the sleep timer feature built into Spotify/audio apps so it turns off automatically after 30 minutes.
             </p>
           </div>
 
-          <div>
-            <h3 style="font-size: 1.05rem; margin: 0 0 0.35rem 0; color: var(--text-primary);">
+          <div style="background: var(--bg-elevated); padding: 1.25rem; border-radius: var(--r-md); border: 1px solid var(--border-weak);">
+            <h3 style="font-size: 1.05rem; margin: 0 0 0.5rem 0; color: var(--text-primary);">
               3. "I keep pausing the 30-minute timer whenever I reach the limit."
             </h3>
-            <p style="font-size: 0.95rem; margin: 0;">
-              <strong>Fix:</strong> Built-in app timers can be unpaused in 2 taps. If you lack the self-control to respect the timer, pair Digital Wellbeing with <strong>one sec</strong> (which adds a mandatory 10-second breathing exercise before opening the app) or <strong>StayFree</strong> with PIN protection enabled by a trusted roommate.
+            <p style="font-size: 0.925rem; margin: 0; color: var(--text-secondary); line-height: 1.6;">
+              <strong style="color: var(--accent);">Fix:</strong> Built-in app timers can be unpaused in 2 taps. If you lack the self-control to respect the timer, pair Digital Wellbeing with <strong>one sec</strong> (which adds a mandatory 10-second breathing exercise before opening the app) or <strong>StayFree</strong> with PIN protection enabled by a trusted roommate.
             </p>
           </div>
         </div>
