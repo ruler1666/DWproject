@@ -4,7 +4,9 @@
     "name": "Android Digital Wellbeing & Bedtime Mode",
     "purpose": "Operating system level screen time tracking, daily app timers, focus mode, and grayscale bedtime routine automation.",
     "category": "Screen Time & Bedtime Routines",
-    "platforms": ["Android"],
+    "platforms": [
+      "Android"
+    ],
     "cost": "Free",
     "paywalled_features": "None (built into Android OS)",
     "open_source": false,
@@ -16,16 +18,48 @@
     "official_source": "https://support.google.com/android/answer/9346420",
     "date_checked": "2026-10-24",
     "quiz_tags": {
-      "devices": ["android", "both"],
-      "distractions": ["social-media", "bedtime", "procrastination"],
-      "strictness": ["gentle", "moderate"],
-      "budget": ["free-only", "freemium-ok"],
-      "privacy": ["strict", "standard"],
-      "goals": ["blocking", "tracking", "focus-habit"],
-      "targets": ["apps", "notifications", "combined"],
-      "schedules": ["scheduled", "daily-limits"],
-      "setup": ["simple"],
-      "feedback": ["reports", "reminders"]
+      "devices": [
+        "android",
+        "both"
+      ],
+      "distractions": [
+        "social-media",
+        "bedtime",
+        "procrastination"
+      ],
+      "strictness": [
+        "gentle",
+        "moderate"
+      ],
+      "budget": [
+        "free-only",
+        "freemium-ok"
+      ],
+      "privacy": [
+        "strict",
+        "standard"
+      ],
+      "goals": [
+        "blocking",
+        "tracking",
+        "focus-habit"
+      ],
+      "targets": [
+        "apps",
+        "notifications",
+        "combined"
+      ],
+      "schedules": [
+        "scheduled",
+        "daily-limits"
+      ],
+      "setup": [
+        "simple"
+      ],
+      "feedback": [
+        "reports",
+        "reminders"
+      ]
     }
   },
   {
@@ -33,7 +67,9 @@
     "name": "Windows 11 Focus Sessions & Do Not Disturb",
     "purpose": "Native Pomodoro-style study timer integrated into the Windows Clock app with automatic notification silencing and Spotify study playlist support.",
     "category": "Focus & Session Timers",
-    "platforms": ["Windows"],
+    "platforms": [
+      "Windows"
+    ],
     "cost": "Free",
     "paywalled_features": "None (built into Windows 11 / Windows 10 Focus Assist)",
     "open_source": false,
@@ -45,16 +81,43 @@
     "official_source": "https://support.microsoft.com/en-us/windows/experience/focus-stay-on-task-without-distractions-in-windows",
     "date_checked": "2026-10-24",
     "quiz_tags": {
-      "devices": ["windows", "both"],
-      "distractions": ["multitasking", "procrastination"],
-      "strictness": ["gentle"],
-      "budget": ["free-only", "freemium-ok"],
-      "privacy": ["strict", "standard"],
-      "goals": ["focus-habit"],
-      "targets": ["notifications"],
-      "schedules": ["scheduled", "on-demand"],
-      "setup": ["simple"],
-      "feedback": ["reminders", "minimal"]
+      "devices": [
+        "windows",
+        "both"
+      ],
+      "distractions": [
+        "multitasking",
+        "procrastination"
+      ],
+      "strictness": [
+        "gentle",
+        "moderate"
+      ],
+      "budget": [
+        "free-only",
+        "freemium-ok"
+      ],
+      "privacy": [
+        "strict",
+        "standard"
+      ],
+      "goals": [
+        "focus-habit"
+      ],
+      "targets": [
+        "notifications"
+      ],
+      "schedules": [
+        "scheduled",
+        "on-demand"
+      ],
+      "setup": [
+        "simple"
+      ],
+      "feedback": [
+        "reminders",
+        "minimal"
+      ]
     }
   },
   {
@@ -62,7 +125,9 @@
     "name": "LeechBlock NG",
     "purpose": "Highly customizable, lightweight browser extension designed to block time-wasting sites with time limits, schedules, and strict lockdown modes.",
     "category": "Distraction & Web Blockers",
-    "platforms": ["Browser Extension (Firefox, Chrome, Edge)"],
+    "platforms": [
+      "Browser Extension (Firefox, Chrome, Edge)"
+    ],
     "cost": "Free",
     "paywalled_features": "None (100% free community project)",
     "open_source": true,
@@ -74,16 +139,46 @@
     "official_source": "https://www.proginosko.com/leechblock/",
     "date_checked": "2026-10-24",
     "quiz_tags": {
-      "devices": ["windows", "both"],
-      "distractions": ["social-media", "procrastination"],
-      "strictness": ["moderate", "strict"],
-      "budget": ["free-only", "freemium-ok"],
-      "privacy": ["strict", "standard"],
-      "goals": ["blocking"],
-      "targets": ["websites", "combined"],
-      "schedules": ["scheduled", "on-demand"],
-      "setup": ["configurable"],
-      "feedback": ["minimal"]
+      "devices": [
+        "windows",
+        "android",
+        "both"
+      ],
+      "distractions": [
+        "social-media",
+        "procrastination",
+        "multitasking"
+      ],
+      "strictness": [
+        "moderate",
+        "strict"
+      ],
+      "budget": [
+        "free-only",
+        "freemium-ok"
+      ],
+      "privacy": [
+        "strict",
+        "standard"
+      ],
+      "goals": [
+        "blocking"
+      ],
+      "targets": [
+        "websites",
+        "combined"
+      ],
+      "schedules": [
+        "scheduled",
+        "on-demand",
+        "daily-limits"
+      ],
+      "setup": [
+        "configurable"
+      ],
+      "feedback": [
+        "minimal"
+      ]
     }
   },
   {
@@ -91,7 +186,10 @@
     "name": "Cold Turkey Blocker",
     "purpose": "Heavy-duty desktop distraction blocker that locks down websites, games, and applications with unbreakable timers and random-text passwords.",
     "category": "Distraction & Web Blockers",
-    "platforms": ["Windows", "macOS"],
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
     "cost": "Freemium",
     "paywalled_features": "Free version allows unlimited website blocking and basic timers. Pro version ($39 / approx ₹3,200 one-off) paywalls application blocking (.exe blocking), scheduled recurring blocks, user-switch blocking, and Pomodoro breaks.",
     "open_source": false,
@@ -103,16 +201,47 @@
     "official_source": "https://getcoldturkey.com/",
     "date_checked": "2026-10-24",
     "quiz_tags": {
-      "devices": ["windows", "both"],
-      "distractions": ["multitasking", "procrastination", "social-media"],
-      "strictness": ["strict"],
-      "budget": ["freemium-ok"],
-      "privacy": ["strict", "standard"],
-      "goals": ["blocking"],
-      "targets": ["websites", "apps", "combined"],
-      "schedules": ["scheduled"],
-      "setup": ["configurable"],
-      "feedback": ["minimal"]
+      "devices": [
+        "windows",
+        "both"
+      ],
+      "distractions": [
+        "multitasking",
+        "procrastination",
+        "social-media"
+      ],
+      "strictness": [
+        "strict",
+        "moderate"
+      ],
+      "budget": [
+        "free-only",
+        "freemium-ok"
+      ],
+      "privacy": [
+        "strict",
+        "standard"
+      ],
+      "goals": [
+        "blocking"
+      ],
+      "targets": [
+        "websites",
+        "apps",
+        "combined"
+      ],
+      "schedules": [
+        "scheduled",
+        "on-demand",
+        "daily-limits"
+      ],
+      "setup": [
+        "configurable"
+      ],
+      "feedback": [
+        "minimal",
+        "reports"
+      ]
     }
   },
   {
@@ -120,7 +249,11 @@
     "name": "StayFree - Screen Time & Limit",
     "purpose": "Comprehensive cross-platform app usage tracker and website blocker with usage alert thresholds and pin-protected focus modes.",
     "category": "Screen Time & App Blocking",
-    "platforms": ["Android", "Windows", "Browser Extension"],
+    "platforms": [
+      "Android",
+      "Windows",
+      "Browser Extension"
+    ],
     "cost": "Freemium",
     "paywalled_features": "Free tier gives full Android app timers, website tracking, and local reports. Premium subscription (approx ₹149/mo or ₹799/yr) paywalls cross-device cloud sync, CSV historical exports, and sub-category analytics.",
     "open_source": false,
@@ -132,16 +265,54 @@
     "official_source": "https://stayfreeapps.com/",
     "date_checked": "2026-10-24",
     "quiz_tags": {
-      "devices": ["android", "windows", "both"],
-      "distractions": ["social-media", "procrastination"],
-      "strictness": ["moderate"],
-      "budget": ["free-only", "freemium-ok"],
-      "privacy": ["standard"],
-      "goals": ["blocking", "tracking"],
-      "targets": ["websites", "apps", "combined"],
-      "schedules": ["scheduled", "daily-limits"],
-      "setup": ["configurable", "cross-device"],
-      "feedback": ["reports", "reminders"]
+      "devices": [
+        "android",
+        "windows",
+        "both"
+      ],
+      "distractions": [
+        "social-media",
+        "bedtime",
+        "procrastination",
+        "multitasking"
+      ],
+      "strictness": [
+        "moderate",
+        "strict",
+        "gentle"
+      ],
+      "budget": [
+        "free-only",
+        "freemium-ok"
+      ],
+      "privacy": [
+        "strict",
+        "standard"
+      ],
+      "goals": [
+        "tracking",
+        "blocking",
+        "focus-habit"
+      ],
+      "targets": [
+        "apps",
+        "websites",
+        "combined"
+      ],
+      "schedules": [
+        "daily-limits",
+        "scheduled",
+        "on-demand"
+      ],
+      "setup": [
+        "simple",
+        "configurable",
+        "cross-device"
+      ],
+      "feedback": [
+        "reports",
+        "reminders"
+      ]
     }
   },
   {
@@ -149,7 +320,12 @@
     "name": "ActivityWatch",
     "purpose": "Automated, private, open-source personal time tracking system that records active applications, window titles, and web browsing locally on your computer.",
     "category": "Screen Time & Self-Auditing",
-    "platforms": ["Windows", "Android", "macOS", "Linux"],
+    "platforms": [
+      "Windows",
+      "Android",
+      "macOS",
+      "Linux"
+    ],
     "cost": "Free",
     "paywalled_features": "None (100% free and open-source under MPL-2.0)",
     "open_source": true,
@@ -161,16 +337,47 @@
     "official_source": "https://activitywatch.net/",
     "date_checked": "2026-10-24",
     "quiz_tags": {
-      "devices": ["windows", "android", "both"],
-      "distractions": ["multitasking", "procrastination"],
-      "strictness": ["gentle"],
-      "budget": ["free-only", "freemium-ok"],
-      "privacy": ["strict"],
-      "goals": ["tracking"],
-      "targets": ["websites", "apps", "combined"],
-      "schedules": [],
-      "setup": ["configurable", "cross-device"],
-      "feedback": ["reports"]
+      "devices": [
+        "windows",
+        "android",
+        "both"
+      ],
+      "distractions": [
+        "multitasking",
+        "procrastination",
+        "social-media"
+      ],
+      "strictness": [
+        "gentle",
+        "moderate"
+      ],
+      "budget": [
+        "free-only",
+        "freemium-ok"
+      ],
+      "privacy": [
+        "strict",
+        "standard"
+      ],
+      "goals": [
+        "tracking"
+      ],
+      "targets": [
+        "websites",
+        "apps",
+        "combined"
+      ],
+      "schedules": [
+        "daily-limits",
+        "scheduled"
+      ],
+      "setup": [
+        "configurable",
+        "cross-device"
+      ],
+      "feedback": [
+        "reports"
+      ]
     }
   },
   {
@@ -178,7 +385,10 @@
     "name": "one sec",
     "purpose": "Psychology-backed friction app that forces you to take a deep breath before opening habitual social media apps, breaking compulsive dopamine loops.",
     "category": "Mindfulness & Habit Breaking",
-    "platforms": ["Android", "Browser Extension"],
+    "platforms": [
+      "Android",
+      "Browser Extension"
+    ],
     "cost": "Freemium",
     "paywalled_features": "Free version allows configuring 1 target app with the breathing delay. Pro subscription ($2.99/mo or $19.99/yr) paywalls multiple apps, custom reflection exercises, and scheduled morning delay routines.",
     "open_source": false,
@@ -190,16 +400,48 @@
     "official_source": "https://one-sec.app/",
     "date_checked": "2026-10-24",
     "quiz_tags": {
-      "devices": ["android", "both"],
-      "distractions": ["social-media", "procrastination"],
-      "strictness": ["gentle"],
-      "budget": ["freemium-ok"],
-      "privacy": ["strict", "standard"],
-      "goals": ["blocking", "focus-habit"],
-      "targets": ["websites", "apps", "combined"],
-      "schedules": ["on-demand"],
-      "setup": ["simple"],
-      "feedback": ["reminders"]
+      "devices": [
+        "android",
+        "windows",
+        "both"
+      ],
+      "distractions": [
+        "social-media",
+        "procrastination",
+        "bedtime"
+      ],
+      "strictness": [
+        "gentle",
+        "moderate"
+      ],
+      "budget": [
+        "free-only",
+        "freemium-ok"
+      ],
+      "privacy": [
+        "strict",
+        "standard"
+      ],
+      "goals": [
+        "focus-habit",
+        "blocking"
+      ],
+      "targets": [
+        "apps",
+        "websites",
+        "combined"
+      ],
+      "schedules": [
+        "on-demand",
+        "daily-limits"
+      ],
+      "setup": [
+        "simple"
+      ],
+      "feedback": [
+        "reminders",
+        "minimal"
+      ]
     }
   },
   {
@@ -207,7 +449,9 @@
     "name": "uBlock Origin",
     "purpose": "High-efficiency open-source content blocker that eliminates video ads, sponsored distraction feeds, algorithmic recommendations, and web trackers.",
     "category": "Distraction & Ad Removal",
-    "platforms": ["Browser Extension (Firefox, Chrome, Edge)"],
+    "platforms": [
+      "Browser Extension (Firefox, Chrome, Edge)"
+    ],
     "cost": "Free",
     "paywalled_features": "None (100% free non-profit project; does not accept donations)",
     "open_source": true,
@@ -219,16 +463,47 @@
     "official_source": "https://ublockorigin.com/",
     "date_checked": "2026-10-24",
     "quiz_tags": {
-      "devices": ["windows", "android", "both"],
-      "distractions": ["social-media", "multitasking"],
-      "strictness": ["gentle", "moderate"],
-      "budget": ["free-only", "freemium-ok"],
-      "privacy": ["strict"],
-      "goals": ["blocking"],
-      "targets": ["websites"],
-      "schedules": [],
-      "setup": ["simple", "configurable"],
-      "feedback": ["minimal"]
+      "devices": [
+        "windows",
+        "android",
+        "both"
+      ],
+      "distractions": [
+        "social-media",
+        "multitasking",
+        "procrastination"
+      ],
+      "strictness": [
+        "gentle",
+        "moderate"
+      ],
+      "budget": [
+        "free-only",
+        "freemium-ok"
+      ],
+      "privacy": [
+        "strict",
+        "standard"
+      ],
+      "goals": [
+        "blocking",
+        "focus-habit"
+      ],
+      "targets": [
+        "websites",
+        "combined"
+      ],
+      "schedules": [
+        "on-demand",
+        "scheduled"
+      ],
+      "setup": [
+        "simple",
+        "configurable"
+      ],
+      "feedback": [
+        "minimal"
+      ]
     }
   },
   {
@@ -236,7 +511,9 @@
     "name": "minimalist phone: focus launcher",
     "purpose": "A streamlined, monochrome Android home screen launcher replacing colorful app icons with a plain text list, app hide options, and block reminders.",
     "category": "Screen Time & App Blocking",
-    "platforms": ["Android"],
+    "platforms": [
+      "Android"
+    ],
     "cost": "Freemium",
     "paywalled_features": "Offers a 7-day free trial. After trial, essential features (in-app blocking, notification filters, customized fonts) require paywalled subscription (approx ₹240/month or ₹1,650 lifetime purchase). Free mode after trial is severely restricted.",
     "open_source": false,
@@ -248,16 +525,50 @@
     "official_source": "https://www.minimalistphone.com/",
     "date_checked": "2026-10-24",
     "quiz_tags": {
-      "devices": ["android"],
-      "distractions": ["social-media", "bedtime", "procrastination"],
-      "strictness": ["moderate"],
-      "budget": ["freemium-ok"],
-      "privacy": ["standard"],
-      "goals": ["blocking", "focus-habit"],
-      "targets": ["apps"],
-      "schedules": ["scheduled", "daily-limits"],
-      "setup": ["simple"],
-      "feedback": ["reminders", "minimal"]
+      "devices": [
+        "android",
+        "both"
+      ],
+      "distractions": [
+        "social-media",
+        "bedtime",
+        "procrastination",
+        "multitasking"
+      ],
+      "strictness": [
+        "gentle",
+        "moderate",
+        "strict"
+      ],
+      "budget": [
+        "free-only",
+        "freemium-ok"
+      ],
+      "privacy": [
+        "strict",
+        "standard"
+      ],
+      "goals": [
+        "focus-habit",
+        "blocking"
+      ],
+      "targets": [
+        "apps",
+        "notifications",
+        "combined"
+      ],
+      "schedules": [
+        "on-demand",
+        "daily-limits",
+        "scheduled"
+      ],
+      "setup": [
+        "simple"
+      ],
+      "feedback": [
+        "reminders",
+        "minimal"
+      ]
     }
   },
   {
@@ -265,7 +576,11 @@
     "name": "Forest: Focus for Work",
     "purpose": "Gamified Pomodoro focus timer where staying off your phone grows virtual trees that form a personal forest, with optional real-world tree planting.",
     "category": "Focus & Session Timers",
-    "platforms": ["Android", "Browser Extension", "iOS"],
+    "platforms": [
+      "Android",
+      "Browser Extension",
+      "iOS"
+    ],
     "cost": "Freemium",
     "paywalled_features": "Free version on Android is ad-supported and includes single-timer tree planting. Paid Pro upgrade ($3.99 / approx ₹340 one-time) paywalls planting real trees via Trees for the Future, custom app whitelist, cloud syncing, and collaborative study rooms.",
     "open_source": false,
@@ -277,16 +592,49 @@
     "official_source": "https://www.forestapp.cc/",
     "date_checked": "2026-10-24",
     "quiz_tags": {
-      "devices": ["android", "windows", "both"],
-      "distractions": ["procrastination", "social-media"],
-      "strictness": ["gentle", "moderate"],
-      "budget": ["freemium-ok"],
-      "privacy": ["standard"],
-      "goals": ["focus-habit"],
-      "targets": ["apps"],
-      "schedules": ["on-demand"],
-      "setup": ["simple"],
-      "feedback": ["reminders"]
+      "devices": [
+        "android",
+        "windows",
+        "both"
+      ],
+      "distractions": [
+        "procrastination",
+        "social-media",
+        "multitasking"
+      ],
+      "strictness": [
+        "gentle",
+        "moderate"
+      ],
+      "budget": [
+        "free-only",
+        "freemium-ok"
+      ],
+      "privacy": [
+        "strict",
+        "standard"
+      ],
+      "goals": [
+        "focus-habit",
+        "blocking"
+      ],
+      "targets": [
+        "apps",
+        "websites",
+        "combined"
+      ],
+      "schedules": [
+        "on-demand",
+        "scheduled"
+      ],
+      "setup": [
+        "simple"
+      ],
+      "feedback": [
+        "reminders",
+        "reports",
+        "minimal"
+      ]
     }
   },
   {
@@ -294,7 +642,11 @@
     "name": "Bitwarden Password Manager",
     "purpose": "Open-source, end-to-end encrypted password manager that secures accounts, prevents credential reuse, and protects against phishing traps.",
     "category": "Privacy & Digital Safety",
-    "platforms": ["Android", "Windows", "Browser Extension"],
+    "platforms": [
+      "Android",
+      "Windows",
+      "Browser Extension"
+    ],
     "cost": "Freemium",
     "paywalled_features": "Free tier includes unlimited passwords, unlimited devices, and cross-platform sync. Premium tier ($10/year / approx ₹850/yr) paywalls integrated TOTP authenticator codes and 1GB encrypted file attachments.",
     "open_source": true,
@@ -306,16 +658,33 @@
     "official_source": "https://bitwarden.com/",
     "date_checked": "2026-10-24",
     "quiz_tags": {
-      "devices": ["android", "windows", "both"],
-      "distractions": ["multitasking"],
-      "strictness": ["gentle"],
-      "budget": ["free-only", "freemium-ok"],
-      "privacy": ["strict"],
+      "devices": [
+        "android",
+        "windows",
+        "both"
+      ],
+      "distractions": [
+        "multitasking"
+      ],
+      "strictness": [
+        "gentle"
+      ],
+      "budget": [
+        "free-only",
+        "freemium-ok"
+      ],
+      "privacy": [
+        "strict"
+      ],
       "goals": [],
       "targets": [],
       "schedules": [],
-      "setup": ["simple"],
-      "feedback": ["minimal"]
+      "setup": [
+        "simple"
+      ],
+      "feedback": [
+        "minimal"
+      ]
     }
   }
 ]

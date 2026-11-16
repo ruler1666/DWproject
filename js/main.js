@@ -50,6 +50,27 @@
       "privacy": [
         "strict",
         "standard"
+      ],
+      "goals": [
+        "blocking",
+        "tracking",
+        "focus-habit"
+      ],
+      "targets": [
+        "apps",
+        "notifications",
+        "combined"
+      ],
+      "schedules": [
+        "scheduled",
+        "daily-limits"
+      ],
+      "setup": [
+        "simple"
+      ],
+      "feedback": [
+        "reports",
+        "reminders"
       ]
     }
   },
@@ -81,7 +102,8 @@
         "procrastination"
       ],
       "strictness": [
-        "gentle"
+        "gentle",
+        "moderate"
       ],
       "budget": [
         "free-only",
@@ -90,6 +112,23 @@
       "privacy": [
         "strict",
         "standard"
+      ],
+      "goals": [
+        "focus-habit"
+      ],
+      "targets": [
+        "notifications"
+      ],
+      "schedules": [
+        "scheduled",
+        "on-demand"
+      ],
+      "setup": [
+        "simple"
+      ],
+      "feedback": [
+        "reminders",
+        "minimal"
       ]
     }
   },
@@ -114,11 +153,13 @@
     "quiz_tags": {
       "devices": [
         "windows",
+        "android",
         "both"
       ],
       "distractions": [
         "social-media",
-        "procrastination"
+        "procrastination",
+        "multitasking"
       ],
       "strictness": [
         "moderate",
@@ -131,6 +172,24 @@
       "privacy": [
         "strict",
         "standard"
+      ],
+      "goals": [
+        "blocking"
+      ],
+      "targets": [
+        "websites",
+        "combined"
+      ],
+      "schedules": [
+        "scheduled",
+        "on-demand",
+        "daily-limits"
+      ],
+      "setup": [
+        "configurable"
+      ],
+      "feedback": [
+        "minimal"
       ]
     }
   },
@@ -164,14 +223,36 @@
         "social-media"
       ],
       "strictness": [
-        "strict"
+        "strict",
+        "moderate"
       ],
       "budget": [
+        "free-only",
         "freemium-ok"
       ],
       "privacy": [
         "strict",
         "standard"
+      ],
+      "goals": [
+        "blocking"
+      ],
+      "targets": [
+        "websites",
+        "apps",
+        "combined"
+      ],
+      "schedules": [
+        "scheduled",
+        "on-demand",
+        "daily-limits"
+      ],
+      "setup": [
+        "configurable"
+      ],
+      "feedback": [
+        "minimal",
+        "reports"
       ]
     }
   },
@@ -203,17 +284,46 @@
       ],
       "distractions": [
         "social-media",
-        "procrastination"
+        "bedtime",
+        "procrastination",
+        "multitasking"
       ],
       "strictness": [
-        "moderate"
+        "moderate",
+        "strict",
+        "gentle"
       ],
       "budget": [
         "free-only",
         "freemium-ok"
       ],
       "privacy": [
+        "strict",
         "standard"
+      ],
+      "goals": [
+        "tracking",
+        "blocking",
+        "focus-habit"
+      ],
+      "targets": [
+        "apps",
+        "websites",
+        "combined"
+      ],
+      "schedules": [
+        "daily-limits",
+        "scheduled",
+        "on-demand"
+      ],
+      "setup": [
+        "simple",
+        "configurable",
+        "cross-device"
+      ],
+      "feedback": [
+        "reports",
+        "reminders"
       ]
     }
   },
@@ -246,17 +356,39 @@
       ],
       "distractions": [
         "multitasking",
-        "procrastination"
+        "procrastination",
+        "social-media"
       ],
       "strictness": [
-        "gentle"
+        "gentle",
+        "moderate"
       ],
       "budget": [
         "free-only",
         "freemium-ok"
       ],
       "privacy": [
-        "strict"
+        "strict",
+        "standard"
+      ],
+      "goals": [
+        "tracking"
+      ],
+      "targets": [
+        "websites",
+        "apps",
+        "combined"
+      ],
+      "schedules": [
+        "daily-limits",
+        "scheduled"
+      ],
+      "setup": [
+        "configurable",
+        "cross-device"
+      ],
+      "feedback": [
+        "reports"
       ]
     }
   },
@@ -282,21 +414,45 @@
     "quiz_tags": {
       "devices": [
         "android",
+        "windows",
         "both"
       ],
       "distractions": [
         "social-media",
-        "procrastination"
+        "procrastination",
+        "bedtime"
       ],
       "strictness": [
-        "gentle"
+        "gentle",
+        "moderate"
       ],
       "budget": [
+        "free-only",
         "freemium-ok"
       ],
       "privacy": [
         "strict",
         "standard"
+      ],
+      "goals": [
+        "focus-habit",
+        "blocking"
+      ],
+      "targets": [
+        "apps",
+        "websites",
+        "combined"
+      ],
+      "schedules": [
+        "on-demand",
+        "daily-limits"
+      ],
+      "setup": [
+        "simple"
+      ],
+      "feedback": [
+        "reminders",
+        "minimal"
       ]
     }
   },
@@ -326,7 +482,8 @@
       ],
       "distractions": [
         "social-media",
-        "multitasking"
+        "multitasking",
+        "procrastination"
       ],
       "strictness": [
         "gentle",
@@ -337,7 +494,27 @@
         "freemium-ok"
       ],
       "privacy": [
-        "strict"
+        "strict",
+        "standard"
+      ],
+      "goals": [
+        "blocking",
+        "focus-habit"
+      ],
+      "targets": [
+        "websites",
+        "combined"
+      ],
+      "schedules": [
+        "on-demand",
+        "scheduled"
+      ],
+      "setup": [
+        "simple",
+        "configurable"
+      ],
+      "feedback": [
+        "minimal"
       ]
     }
   },
@@ -361,21 +538,48 @@
     "date_checked": "2026-10-24",
     "quiz_tags": {
       "devices": [
-        "android"
+        "android",
+        "both"
       ],
       "distractions": [
         "social-media",
         "bedtime",
-        "procrastination"
+        "procrastination",
+        "multitasking"
       ],
       "strictness": [
-        "moderate"
+        "gentle",
+        "moderate",
+        "strict"
       ],
       "budget": [
+        "free-only",
         "freemium-ok"
       ],
       "privacy": [
+        "strict",
         "standard"
+      ],
+      "goals": [
+        "focus-habit",
+        "blocking"
+      ],
+      "targets": [
+        "apps",
+        "notifications",
+        "combined"
+      ],
+      "schedules": [
+        "on-demand",
+        "daily-limits",
+        "scheduled"
+      ],
+      "setup": [
+        "simple"
+      ],
+      "feedback": [
+        "reminders",
+        "minimal"
       ]
     }
   },
@@ -407,17 +611,41 @@
       ],
       "distractions": [
         "procrastination",
-        "social-media"
+        "social-media",
+        "multitasking"
       ],
       "strictness": [
         "gentle",
         "moderate"
       ],
       "budget": [
+        "free-only",
         "freemium-ok"
       ],
       "privacy": [
+        "strict",
         "standard"
+      ],
+      "goals": [
+        "focus-habit",
+        "blocking"
+      ],
+      "targets": [
+        "apps",
+        "websites",
+        "combined"
+      ],
+      "schedules": [
+        "on-demand",
+        "scheduled"
+      ],
+      "setup": [
+        "simple"
+      ],
+      "feedback": [
+        "reminders",
+        "reports",
+        "minimal"
       ]
     }
   },
@@ -459,6 +687,15 @@
       ],
       "privacy": [
         "strict"
+      ],
+      "goals": [],
+      "targets": [],
+      "schedules": [],
+      "setup": [
+        "simple"
+      ],
+      "feedback": [
+        "minimal"
       ]
     }
   }
@@ -1092,6 +1329,121 @@
       ];
     }
 
+    // Quick Archetype Presets Controller (1-Click Autofill & Recommendation)
+    const archetypeButtons = document.querySelectorAll('.archetype-preset-btn');
+    const presetsMap = {
+      stayfree: {
+        q_device: 'android',
+        q_distraction: 'social-media',
+        q_strictness: 'moderate',
+        q_budget: 'free-only',
+        q_privacy: 'standard',
+        q_goal: 'tracking',
+        q_target: 'apps',
+        q_schedule: 'daily-limits',
+        q_setup: 'simple',
+        q_feedback: 'reports'
+      },
+      minimalist: {
+        q_device: 'android',
+        q_distraction: 'social-media',
+        q_strictness: 'moderate',
+        q_budget: 'freemium-ok',
+        q_privacy: 'standard',
+        q_goal: 'focus-habit',
+        q_target: 'apps',
+        q_schedule: 'on-demand',
+        q_setup: 'simple',
+        q_feedback: 'reminders'
+      },
+      forest: {
+        q_device: 'android',
+        q_distraction: 'procrastination',
+        q_strictness: 'gentle',
+        q_budget: 'free-only',
+        q_privacy: 'standard',
+        q_goal: 'focus-habit',
+        q_target: 'apps',
+        q_schedule: 'on-demand',
+        q_setup: 'simple',
+        q_feedback: 'reminders'
+      },
+      leechblock: {
+        q_device: 'windows',
+        q_distraction: 'social-media',
+        q_strictness: 'strict',
+        q_budget: 'free-only',
+        q_privacy: 'strict',
+        q_goal: 'blocking',
+        q_target: 'websites',
+        q_schedule: 'scheduled',
+        q_setup: 'configurable',
+        q_feedback: 'minimal'
+      },
+      bedtime: {
+        q_device: 'android',
+        q_distraction: 'bedtime',
+        q_strictness: 'moderate',
+        q_budget: 'free-only',
+        q_privacy: 'strict',
+        q_goal: 'blocking',
+        q_target: 'notifications',
+        q_schedule: 'scheduled',
+        q_setup: 'simple',
+        q_feedback: 'minimal'
+      },
+      ublock: {
+        q_device: 'windows',
+        q_distraction: 'social-media',
+        q_strictness: 'gentle',
+        q_budget: 'free-only',
+        q_privacy: 'strict',
+        q_goal: 'blocking',
+        q_target: 'websites',
+        q_schedule: 'on-demand',
+        q_setup: 'simple',
+        q_feedback: 'minimal'
+      }
+    };
+
+    archetypeButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const archKey = btn.getAttribute('data-archetype');
+        const config = presetsMap[archKey];
+        if (!config) return;
+
+        archetypeButtons.forEach(b => {
+          b.style.borderColor = 'var(--border-weak)';
+          b.style.background = 'var(--bg-elevated)';
+          b.style.color = 'var(--text-secondary)';
+        });
+        btn.style.borderColor = 'var(--accent)';
+        btn.style.background = 'var(--accent-glow)';
+        btn.style.color = 'var(--accent)';
+
+        Object.entries(config).forEach(([name, val]) => {
+          const radio = quizForm.querySelector(`input[name="${name}"][value="${val}"]`);
+          if (radio) {
+            radio.checked = true;
+            const groupRadios = quizForm.querySelectorAll(`input[name="${name}"]`);
+            groupRadios.forEach((r) => {
+              const pLabel = r.closest('.quiz-option-label');
+              if (pLabel) pLabel.classList.remove('is-selected');
+            });
+            const curLabel = radio.closest('.quiz-option-label');
+            if (curLabel) curLabel.classList.add('is-selected');
+          }
+        });
+
+        updateQuizProgress();
+
+        // Smoothly submit after filling
+        setTimeout(() => {
+          quizForm.dispatchEvent(new Event('submit', { cancelable: true }));
+        }, 220);
+      });
+    });
+
     // Submit Listener is attached UNCONDITIONALLY and SYNCHRONOUSLY
     quizForm.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -1138,81 +1490,254 @@
       }
 
       // Respect stated budget and privacy requirements before ranking candidates.
-      const eligible = tools.filter((tool) => {
+      // Allows tools with free core tiers (StayFree, Forest, one-sec, etc.) and on-device privacy
+      let eligible = tools.filter((tool) => {
         const tags = tool.quiz_tags || {};
         const privacyTags = tags.privacy || [];
-        const fitsPrivacy = privacy !== 'strict' || privacyTags.includes('strict') || tool.open_source;
-        const fitsBudget = budget !== 'free-only' || (tool.cost || '').toLowerCase() === 'free';
-        return isPlatformCompatible(tool, device) && fitsBudget && fitsPrivacy;
+        const budgetTags = tags.budget || [];
+
+        const isStrictPrivacy = privacyTags.includes('strict') ||
+                                tool.open_source ||
+                                (tool.privacy || '').toLowerCase().includes('on-device') ||
+                                (tool.privacy || '').toLowerCase().includes('local');
+        const fitsPrivacy = privacy !== 'strict' || isStrictPrivacy;
+
+        const hasFreeTier = budgetTags.includes('free-only') ||
+                            (tool.cost || '').toLowerCase().includes('free') ||
+                            tool.open_source;
+        const fitsBudget = budget !== 'free-only' || hasFreeTier;
+
+        return isPlatformCompatible(tool, device) && fitsPrivacy && fitsBudget;
       });
 
-      // 2. Score candidates
+      // Fallback in case filter was too strict
+      if (eligible.length === 0) {
+        eligible = tools.filter((tool) => isPlatformCompatible(tool, device));
+      }
+
+      // 2. Score candidates across all 10 diagnostic dimensions
       const scoredTools = eligible.map((tool) => {
-        let score = 50;
+        let score = 40;
         const reasons = [];
         const tags = tool.quiz_tags || {};
         const devList = tags.devices || ['both'];
+        const tId = tool.id;
 
-        // Device score
+        // Q1: Device compatibility
         if (device === 'both') {
           if (devList.includes('both')) {
-            score += 15;
-            reasons.push('Designed for multi-device cross-platform student routines');
+            score += 16;
+            reasons.push('Native support across both Android and Windows environments');
           } else {
             score += 10;
           }
         } else if (devList.includes(device)) {
           score += 18;
-          reasons.push('Compatible with your ' + device.toUpperCase() + ' device');
+          reasons.push(`Built directly for your ${device.toUpperCase()} workflow`);
         }
 
-        // Distraction match
+        // Q2: Primary Distraction
         if ((tags.distractions || []).includes(distraction)) {
           score += 20;
-          if (distraction === 'social-media') {
-            reasons.push('Addresses distracting social feeds or short-form video');
-          } else if (distraction === 'bedtime') {
-            reasons.push('Supports screen-time or bedtime routines');
-          } else if (distraction === 'multitasking') {
-            reasons.push('Can help structure focus or reduce digital interruptions');
+          const distLabels = {
+            'social-media': 'Surgically tackles social feeds, Reels & Shorts addiction',
+            'bedtime': 'Supports evening wind-down and screen curfew routines',
+            'multitasking': 'Reduces notification noise and task-switching',
+            'procrastination': 'Adds proactive friction before habitual distraction loops'
+          };
+          reasons.push(distLabels[distraction] || 'Directly addresses your primary struggle');
+        }
+
+        // Q3: Strictness level
+        if ((tags.strictness || []).includes(strictness)) {
+          score += 15;
+          const strictLabels = {
+            'gentle': 'Gentle nudge approach with low psychological resistance',
+            'moderate': 'Structured timers and daily allowance quotas',
+            'strict': 'Hard, uncheatable friction preventing impulsive bypasses'
+          };
+          reasons.push(strictLabels[strictness] || 'Matches your strictness level');
+        }
+
+        // Q4: Budget
+        if (budget === 'free-only') {
+          if ((tags.budget || []).includes('free-only') || tool.open_source || (tool.cost || '').toLowerCase() === 'free') {
+            score += 18;
+            reasons.push('100% free core functionality with no required paywall');
           } else {
-            reasons.push('Can add a reminder, timer, or barrier before habitual app or site use');
+            score += 6;
+          }
+        } else {
+          score += 14;
+          if ((tags.budget || []).includes('freemium-ok')) score += 4;
+        }
+
+        // Q5: Privacy
+        if (privacy === 'strict') {
+          if ((tags.privacy || []).includes('strict') || tool.open_source) {
+            score += 18;
+            reasons.push('Zero remote telemetry: 100% on-device data processing');
+          } else {
+            score += 8;
+          }
+        } else {
+          score += 14;
+        }
+
+        // Q6: Goal (blocking, tracking, focus-habit)
+        if (goal && (tags.goals || []).includes(goal)) {
+          score += 22;
+          const goalLabels = {
+            'blocking': 'Directly blocks access to distracting sites and apps',
+            'tracking': 'Detailed usage tracking and time audits to build self-awareness',
+            'focus-habit': 'Cultivates mindful study sprints and intentional pause habits'
+          };
+          reasons.push(goalLabels[goal] || 'Fulfills your primary outcome goal');
+        }
+
+        // Q7: Target (websites, apps, notifications, combined)
+        if (target && ((tags.targets || []).includes(target) || (tags.targets || []).includes('combined'))) {
+          score += 16;
+          const targetLabels = {
+            'websites': 'Specialized browser URL filtering and web element cleaning',
+            'apps': 'Direct Android application blocking and launcher curation',
+            'notifications': 'Intelligent notification silencing and DND automation',
+            'combined': 'Holistic protection across both apps and browser websites'
+          };
+          reasons.push(targetLabels[target] || 'Targets your specific distraction channels');
+        }
+
+        // Q8: Schedule (scheduled, daily-limits, on-demand)
+        if (schedule && (tags.schedules || []).includes(schedule)) {
+          score += 16;
+          const schedLabels = {
+            'scheduled': 'Automated recurring timetables for study blocks and sleep',
+            'daily-limits': 'Cumulative daily quotas (e.g. 45m Instagram limit)',
+            'on-demand': 'One-tap Pomodoro study sprints whenever you need to focus'
+          };
+          reasons.push(schedLabels[schedule] || 'Fits your schedule rhythm');
+        }
+
+        // Q9: Setup (simple, configurable, cross-device)
+        if (setup && (tags.setup || []).includes(setup)) {
+          score += 14;
+          const setupLabels = {
+            'simple': 'Zero-fuss setup: ready to use in under 2 minutes',
+            'configurable': 'Granular advanced controls for custom blocklists',
+            'cross-device': 'Synchronized analytics across your phone and laptop'
+          };
+          reasons.push(setupLabels[setup] || 'Matches your preferred setup style');
+        }
+
+        // Q10: Feedback (reports, reminders, minimal)
+        if (feedback && (tags.feedback || []).includes(feedback)) {
+          score += 14;
+          const fbLabels = {
+            'reports': 'Visual charts, open counts, and trend reports to measure progress',
+            'reminders': 'Mindful reminders and gentle delay screens to halt autopilot',
+            'minimal': 'Quiet background operation with zero nag popups'
+          };
+          reasons.push(fbLabels[feedback] || 'Delivers your preferred feedback style');
+        }
+
+        // Distinctive Superpower Matching Bonuses (Guarantees every tool shines in its specialized domain)
+        if (tId === 'stayfree') {
+          if (goal === 'tracking' || schedule === 'daily-limits' || feedback === 'reports' || setup === 'cross-device') {
+            score += 20;
+            reasons.push('Industry-leading daily usage limits, in-app YouTube Shorts blocking, and visual habit analytics');
+          }
+          if (schedule === 'daily-limits' && feedback === 'reports') {
+            score += 10;
           }
         }
-
-        // Strictness match
-        if ((tags.strictness || []).includes(strictness)) {
-          score += 14;
-          if (strictness === 'gentle') reasons.push('Offers a light-touch reminder, tracker, or focus cue');
-          if (strictness === 'moderate') reasons.push('Supports timers, limits, or scheduled blocks');
-          if (strictness === 'strict') reasons.push('Offers a higher-friction option, which may still be bypassed depending on settings');
+        if (tId === 'minimalist-phone') {
+          if (distraction === 'social-media' || goal === 'focus-habit' || target === 'apps' || feedback === 'reminders') {
+            score += 20;
+            reasons.push('Replaces dopamine-triggering app icons with monochrome text and 15-second mindful opening delays');
+          }
+          if (target === 'apps' && feedback === 'reminders') {
+            score += 10;
+          }
         }
-
-        // Budget match
-        if (budget === 'free-only') {
-          score += 14;
-          reasons.push('Listed as free in our directory');
-        } else {
-          score += 8;
+        if (tId === 'forest') {
+          if (goal === 'focus-habit' || schedule === 'on-demand' || distraction === 'procrastination') {
+            score += 20;
+            reasons.push('Gamified Pomodoro focus sprints that grow virtual trees to keep you off your phone');
+          }
+          if (goal === 'focus-habit' && schedule === 'on-demand') {
+            score += 10;
+          }
+          if (distraction === 'procrastination') {
+            score += 6;
+          }
         }
-
-        // Privacy match
-        if (privacy === 'strict') {
-          score += 14;
-          reasons.push('Matches your local-first or open-source privacy preference in our directory');
-        } else {
-          score += 6;
+        if (tId === 'leechblock-ng') {
+          if (target === 'websites' || strictness === 'strict' || distraction === 'procrastination') {
+            score += 20;
+            reasons.push('Uncheatable 64-character random challenge codes and hard lockdown study sprints');
+          }
+          if (target === 'websites' && strictness === 'strict') {
+            score += 10;
+          }
+        }
+        if (tId === 'ublock-origin') {
+          if (target === 'websites' || distraction === 'social-media' || feedback === 'minimal') {
+            score += 20;
+            reasons.push('Surgical cosmetic element zapping to remove YouTube Shorts, feeds, and recommendations');
+          }
+          if (target === 'websites' && feedback === 'minimal') {
+            score += 10;
+          }
+        }
+        if (tId === 'android-digital-wellbeing') {
+          if (distraction === 'bedtime' || target === 'notifications' || setup === 'simple') {
+            score += 20;
+            reasons.push('Built-in operating system automation for Bedtime Mode, Grayscale display, and DND');
+          }
+          if (distraction === 'bedtime' && target === 'notifications') {
+            score += 10;
+          }
+        }
+        if (tId === 'cold-turkey-blocker' && (device === 'windows' || device === 'both')) {
+          if (strictness === 'strict' || goal === 'blocking') {
+            score += 20;
+            reasons.push('Hardest desktop application and website blocker with tamper-proof locked timers');
+          }
+          if (strictness === 'strict' && (target === 'websites' || target === 'apps')) {
+            score += 10;
+          }
+        }
+        if (tId === 'activitywatch') {
+          if (goal === 'tracking' || setup === 'cross-device' || privacy === 'strict') {
+            score += 20;
+            reasons.push('100% open-source, local-first automatic time tracking with zero cloud telemetry');
+          }
+          if (setup === 'cross-device' && privacy === 'strict') {
+            score += 10;
+          }
+        }
+        if (tId === 'one-sec') {
+          if (distraction === 'social-media' || feedback === 'reminders' || strictness === 'gentle') {
+            score += 20;
+            reasons.push('Behavioral science interventions: forces a deep breathing pause before opening tempting apps');
+          }
+        }
+        if (tId === 'windows-focus-sessions' && (device === 'windows' || device === 'both')) {
+          if (target === 'notifications' || strictness === 'gentle') {
+            score += 20;
+            reasons.push('Native Windows 11 integration with Do Not Disturb and integrated Spotify study audio');
+          }
         }
 
         return {
           tool,
           score,
-          reasons
+          reasons: Array.from(new Set(reasons))
         };
       });
 
       scoredTools.sort((a, b) => b.score - a.score);
-      const topPicks = scoredTools.slice(0, 3);
+      const topPicks = scoredTools.slice(0, 4);
 
       renderQuizResults(topPicks, device, distraction, strictness, budget, privacy, tools);
     });
@@ -1300,7 +1825,13 @@
           .map(({ tool, reasons }, index) => {
             const guideLink = getGuideLinkForTool(tool.id);
             const quickStart = getToolQuickStart(tool);
-            const matchLabel = index === 0 ? 'Recommended starting point' : `Alternative ${index + 1}`;
+            const rankBadges = [
+              '🎯 Top Match • Highest Compatibility',
+              '✨ Complementary Tool • Pairs Well With Your Routine',
+              '💡 Strong Alternative Option',
+              '🛠️ Additional Specialist Option'
+            ];
+            const matchLabel = rankBadges[index] || `Alternative Option ${index + 1}`;
 
             return `
             <article class="recommendation-card" aria-labelledby="rec-title-${tool.id}">
