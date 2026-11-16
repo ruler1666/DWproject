@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%" fill="none" role="img" aria-label="Testing verification and accessibility evidence illustration">
+  <defs>
+    <linearGradient id="tst-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="tst-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f0fdf4"/>
+    </linearGradient>
+    <filter id="tst-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="360" rx="20" fill="url(#tst-bg)"/>
+
+  <!-- Left: The Master Audit Clipboard -->
+  <g transform="translate(80, 50)" filter="url(#tst-shadow)">
+    <!-- Clipboard body -->
+    <rect width="240" height="260" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+    <!-- Clip on top -->
+    <rect x="75" y="-12" width="90" height="24" rx="6" fill="#1e293b"/>
+    <circle cx="120" cy="0" r="5" fill="#f8fafc"/>
+
+    <!-- Checklist header -->
+    <text x="24" y="38" font-family="system-ui,sans-serif" font-size="14" font-weight="900" fill="#0f172a">WCAG 2.2 AA Audit</text>
+    <rect x="160" y="24" width="60" height="18" rx="9" fill="#ecfdf5"/>
+    <text x="190" y="36" font-family="system-ui,sans-serif" font-size="9" font-weight="bold" fill="#059669" text-anchor="middle">10/10 PASS</text>
+
+    <!-- Checklist rows -->
+    <g transform="translate(24, 60)">
+      <circle cx="8" cy="8" r="8" fill="#ecfdf5"/>
+      <path d="M5 8 L7 10 L11 6" stroke="#059669" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="24" y="11" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#0f172a">High Contrast (15.8:1)</text>
+
+      <circle cx="8" cy="38" r="8" fill="#ecfdf5"/>
+      <path d="M5 38 L7 40 L11 36" stroke="#059669" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="24" y="41" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#0f172a">Full Keyboard Navigation</text>
+
+      <circle cx="8" cy="68" r="8" fill="#ecfdf5"/>
+      <path d="M5 68 L7 70 L11 66" stroke="#059669" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="24" y="71" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#0f172a">Screen Reader Labels</text>
+
+      <circle cx="8" cy="98" r="8" fill="#ecfdf5"/>
+      <path d="M5 98 L7 100 L11 96" stroke="#059669" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="24" y="101" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#0f172a">Mobile Viewport Reflow</text>
+
+      <circle cx="8" cy="128" r="8" fill="#ecfdf5"/>
+      <path d="M5 128 L7 130 L11 126" stroke="#059669" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="24" y="131" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#0f172a">227 Links Verified 200 OK</text>
+
+      <circle cx="8" cy="158" r="8" fill="#ecfdf5"/>
+      <path d="M5 158 L7 160 L11 156" stroke="#059669" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="24" y="161" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#0f172a">Reduced Motion Support</text>
+    </g>
+  </g>
+
+  <!-- Right: Usability Trial Badge &amp; Live Metric -->
+  <g transform="translate(360, 60)" filter="url(#tst-shadow)">
+    <rect width="180" height="110" rx="14" fill="#ffffff"/>
+    <text x="20" y="32" font-family="system-ui,sans-serif" font-size="12" font-weight="800" fill="#0f172a">Student Trials</text>
+    <text x="20" y="46" font-family="system-ui,sans-serif" font-size="9" fill="#64748b">Participants P1 to P5</text>
+    <g transform="translate(20, 60)">
+      <circle cx="12" cy="12" r="12" fill="#0d9488"/><text x="12" y="16" font-family="system-ui,sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">P1</text>
+      <circle cx="40" cy="12" r="12" fill="#0284c7"/><text x="40" y="16" font-family="system-ui,sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">P2</text>
+      <circle cx="68" cy="12" r="12" fill="#6366f1"/><text x="68" y="16" font-family="system-ui,sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">P3</text>
+      <circle cx="96" cy="12" r="12" fill="#0f766e"/><text x="96" y="16" font-family="system-ui,sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">P4</text>
+      <circle cx="124" cy="12" r="12" fill="#8b5cf6"/><text x="124" y="16" font-family="system-ui,sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">P5</text>
+    </g>
+  </g>
+
+  <g transform="translate(360, 195)" filter="url(#tst-shadow)">
+    <rect width="180" height="115" rx="14" fill="#ffffff"/>
+    <text x="20" y="30" font-family="system-ui,sans-serif" font-size="12" font-weight="800" fill="#0f172a">Link Health Index</text>
+    <text x="20" y="65" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#0d9488">100%</text>
+    <text x="95" y="62" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#059669">0 Dead Links</text>
+    <text x="20" y="92" font-family="system-ui,sans-serif" font-size="8.5" fill="#64748b">Verified directly with curl HEAD 200</text>
+  </g>
+</svg>

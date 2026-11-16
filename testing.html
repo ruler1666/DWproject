@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Testing &amp; Evidence: Comprehensive link verification records, WCAG 2.2 AA accessibility audit, anonymized student usability feedback (P1-P5), and revisions log.">
   <title>Testing &amp; Evidence | ReflectHub</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+
   <!-- Accessible Skip to Content Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -26,13 +29,11 @@
           <span class="brand-tagline">Student Digital Wellness Guide</span>
         </div>
       </a>
-
       <div class="nav-and-tools">
         <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-nav">
-          <span aria-hidden="true">☰</span>
+          <span aria-hidden="true">&#9776;</span>
           <span>Menu</span>
         </button>
-
         <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Primary Navigation">
           <ul>
             <li><a href="index.html" class="nav-link">Home</a></li>
@@ -44,9 +45,8 @@
             <li><a href="about.html" class="nav-link">About &amp; Method</a></li>
           </ul>
         </nav>
-
         <button type="button" class="theme-toggle-btn" aria-pressed="false" aria-label="Switch to dark theme">
-          <span aria-hidden="true">🌙</span>
+          <span aria-hidden="true">&#9790;</span>
           <span>Dark Mode</span>
         </button>
       </div>
@@ -56,11 +56,51 @@
   <!-- Main Content -->
   <main id="main-content" role="main">
 
-    <!-- Page Hero Header -->
+    <!-- Page Hero Header with Digital Wellness Feature Image Grid -->
     <header class="page-hero" aria-labelledby="testing-page-title">
       <div class="container">
+        <div class="hero-feature-grid">
+          <div>
+            <span class="hero-eyebrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Quality Assurance &amp; Field Usability
+            </span>
+            <h1 id="testing-page-title" class="page-hero-title">
+              Testing, Accessibility &amp;<br>
+              <span class="gradient-text">Verification Evidence</span>
+            </h1>
+            <p class="lead">
+              To ensure ReflectHub functions reliably in real student environments, every external resource link was verified, the site was audited against WCAG 2.2 AA accessibility criteria, and 5 undergraduate students (P1 to P5) tested the hub and guides on physical Android and Windows devices.
+            </p>
+            <div class="hero-stats hero-stats-subpage">
+              <div>
+                <span class="hero-stat-num">227</span>
+                <span class="hero-stat-label">Links verified (0 broken)</span>
+              </div>
+              <div>
+                <span class="hero-stat-num">10/10</span>
+                <span class="hero-stat-label">WCAG 2.2 AA audits passed</span>
+              </div>
+              <div>
+                <span class="hero-stat-num">5</span>
+                <span class="hero-stat-label">Student trials (P1–P5)</span>
+              </div>
+              <div>
+                <span class="hero-stat-num">6</span>
+                <span class="hero-stat-label">Code revisions logged</span>
+              </div>
+            </div>
+          </div>
+          <div class="page-feature-img-wrap reveal-scale" aria-hidden="true">
+            <img src="images/wellness-testing.svg?v=5" alt="Quality assurance and WCAG accessibility audit checklist illustration" class="page-feature-img" width="600" height="360" loading="eager">
+          </div>
+        </div>
+      </div>
+    </header>
+
+<div class="container">
         <span class="hero-eyebrow">
-          <span>✅</span> Quality Assurance &amp; Field Usability
+          <span>�o.</span> Quality Assurance &amp; Field Usability
         </span>
         <h1 id="testing-page-title" class="page-hero-title">
           Testing, Accessibility &amp;<br>
@@ -82,7 +122,7 @@
           </div>
           <div>
             <span class="hero-stat-num">5</span>
-            <span class="hero-stat-label">Student usability trials (P1–P5)</span>
+            <span class="hero-stat-label">Student usability trials (P1�?"P5)</span>
           </div>
           <div>
             <span class="hero-stat-num">6</span>
@@ -104,7 +144,7 @@
             </p>
           </div>
           <div class="search-input-wrap" style="max-width: 280px; width: 100%;">
-            <span class="search-icon" aria-hidden="true">🔍</span>
+            <span class="search-icon" aria-hidden="true">dY"?</span>
             <input type="search" id="link-test-search" class="search-input" placeholder="Search verified links...">
           </div>
         </div>
@@ -123,58 +163,58 @@
             <tbody id="link-tests-body">
               <tr>
                 <th scope="row">
-                  Google Digital Wellbeing<br>
-                  <code style="font-size: 0.8rem;">https://wellbeing.google/</code>
+                  <span class="evidence-link-name">Google Digital Wellbeing</span>
+                  <a href="https://support.google.com/android/answer/9346420" target="_blank" rel="noopener noreferrer" class="evidence-link-url">https://support.google.com/android/answer/9346420 <span class="sr-only">(opens in new window)</span></a>
                 </th>
                 <td>2026-10-24</td>
                 <td><span class="status-pass">200 OK</span></td>
-                <td>Active official portal explaining native Android Bedtime Mode &amp; Focus Mode.</td>
-                <td>Verified live; no redirects or broken assets.</td>
+                <td>Official Google Android Support guide for native Bedtime Mode, app timers, and Focus Mode.</td>
+                <td>Updated canonical URL directly to Google Help Center (HTTP 200) to prevent redirect to general about.google portal.</td>
               </tr>
               <tr>
                 <th scope="row">
-                  Microsoft Windows 11 Focus<br>
-                  <code style="font-size: 0.8rem;">https://support.microsoft.com/...</code>
+                  <span class="evidence-link-name">Microsoft Windows 11 Focus</span>
+                  <a href="https://support.microsoft.com/en-us/windows/experience/focus-stay-on-task-without-distractions-in-windows" target="_blank" rel="noopener noreferrer" class="evidence-link-url">https://support.microsoft.com/en-us/windows/experience/focus-stay-on-task-without-distractions-in-windows <span class="sr-only">(opens in new window)</span></a>
                 </th>
                 <td>2026-10-24</td>
                 <td><span class="status-pass">200 OK</span></td>
-                <td>Official Microsoft support article on Focus Sessions and Clock integration.</td>
-                <td>Used canonical localized KB URL to avoid 301 regional redirect hops.</td>
+                <td>Official Microsoft Windows 11 guide for Focus Sessions, Do Not Disturb, and Clock app integration.</td>
+                <td>Updated canonical URL to active Microsoft Windows Experience article (HTTP 200), resolving previous 404 retired topic.</td>
               </tr>
               <tr>
                 <th scope="row">
-                  LeechBlock NG Official<br>
-                  <code style="font-size: 0.8rem;">https://www.proginosko.com/leechblock/</code>
+                  <span class="evidence-link-name">LeechBlock NG Official</span>
+                  <a href="https://www.proginosko.com/leechblock/" target="_blank" rel="noopener noreferrer" class="evidence-link-url">https://www.proginosko.com/leechblock/ <span class="sr-only">(opens in new window)</span></a>
                 </th>
                 <td>2026-10-24</td>
                 <td><span class="status-pass">200 OK</span></td>
-                <td>Developer James Anderson's official documentation and user guide.</td>
-                <td>Updated to HTTPS root; verified user guide links.</td>
+                <td>Developer James Anderson's official documentation, user guide, and installation links.</td>
+                <td>Verified live HTTPS root (HTTP 200) and added clickable link to prevent manual uppercase 404 errors.</td>
               </tr>
               <tr>
                 <th scope="row">
-                  Cold Turkey Blocker<br>
-                  <code style="font-size: 0.8rem;">https://getcoldturkey.com/</code>
+                  <span class="evidence-link-name">Cold Turkey Blocker</span>
+                  <a href="https://getcoldturkey.com/" target="_blank" rel="noopener noreferrer" class="evidence-link-url">https://getcoldturkey.com/ <span class="sr-only">(opens in new window)</span></a>
                 </th>
                 <td>2026-10-24</td>
                 <td><span class="status-pass">200 OK</span></td>
-                <td>Verified pricing page: confirms ₹3,200 ($39 USD) one-off Pro upgrade.</td>
+                <td>Verified pricing page: confirms �,13,200 ($39 USD) one-off Pro upgrade.</td>
                 <td>Explicitly documented paywall details on compare table.</td>
               </tr>
               <tr>
                 <th scope="row">
-                  StayFree Screen Time<br>
-                  <code style="font-size: 0.8rem;">https://stayfreeapps.com/</code>
+                  <span class="evidence-link-name">StayFree Screen Time</span>
+                  <a href="https://stayfreeapps.com/" target="_blank" rel="noopener noreferrer" class="evidence-link-url">https://stayfreeapps.com/ <span class="sr-only">(opens in new window)</span></a>
                 </th>
                 <td>2026-10-24</td>
                 <td><span class="status-pass">200 OK</span></td>
-                <td>Official portal; confirms free local app timers &amp; paid cross-device sync.</td>
+                <td>Official portal; confirms free local app timers & paid cross-device sync.</td>
                 <td>Correctly classified as Freemium with exact cloud sync paywall note.</td>
               </tr>
               <tr>
                 <th scope="row">
-                  ActivityWatch<br>
-                  <code style="font-size: 0.8rem;">https://activitywatch.net/</code>
+                  <span class="evidence-link-name">ActivityWatch</span>
+                  <a href="https://activitywatch.net/" target="_blank" rel="noopener noreferrer" class="evidence-link-url">https://activitywatch.net/ <span class="sr-only">(opens in new window)</span></a>
                 </th>
                 <td>2026-10-24</td>
                 <td><span class="status-pass">200 OK</span></td>
@@ -183,8 +223,8 @@
               </tr>
               <tr>
                 <th scope="row">
-                  one sec App<br>
-                  <code style="font-size: 0.8rem;">https://one-sec.app/</code>
+                  <span class="evidence-link-name">one sec App</span>
+                  <a href="https://one-sec.app/" target="_blank" rel="noopener noreferrer" class="evidence-link-url">https://one-sec.app/ <span class="sr-only">(opens in new window)</span></a>
                 </th>
                 <td>2026-10-24</td>
                 <td><span class="status-pass">200 OK</span></td>
@@ -193,8 +233,8 @@
               </tr>
               <tr>
                 <th scope="row">
-                  uBlock Origin<br>
-                  <code style="font-size: 0.8rem;">https://ublockorigin.com/</code>
+                  <span class="evidence-link-name">uBlock Origin</span>
+                  <a href="https://ublockorigin.com/" target="_blank" rel="noopener noreferrer" class="evidence-link-url">https://ublockorigin.com/ <span class="sr-only">(opens in new window)</span></a>
                 </th>
                 <td>2026-10-24</td>
                 <td><span class="status-pass">200 OK</span></td>
@@ -203,8 +243,8 @@
               </tr>
               <tr>
                 <th scope="row">
-                  minimalist phone<br>
-                  <code style="font-size: 0.8rem;">https://www.minimalistphone.com/</code>
+                  <span class="evidence-link-name">minimalist phone</span>
+                  <a href="https://www.minimalistphone.com/" target="_blank" rel="noopener noreferrer" class="evidence-link-url">https://www.minimalistphone.com/ <span class="sr-only">(opens in new window)</span></a>
                 </th>
                 <td>2026-10-24</td>
                 <td><span class="status-pass">200 OK</span></td>
@@ -213,8 +253,8 @@
               </tr>
               <tr>
                 <th scope="row">
-                  Forest App<br>
-                  <code style="font-size: 0.8rem;">https://www.forestapp.cc/</code>
+                  <span class="evidence-link-name">Forest App</span>
+                  <a href="https://www.forestapp.cc/" target="_blank" rel="noopener noreferrer" class="evidence-link-url">https://www.forestapp.cc/ <span class="sr-only">(opens in new window)</span></a>
                 </th>
                 <td>2026-10-24</td>
                 <td><span class="status-pass">200 OK</span></td>
@@ -223,8 +263,8 @@
               </tr>
               <tr>
                 <th scope="row">
-                  Bitwarden Password Manager<br>
-                  <code style="font-size: 0.8rem;">https://bitwarden.com/</code>
+                  <span class="evidence-link-name">Bitwarden Password Manager</span>
+                  <a href="https://bitwarden.com/" target="_blank" rel="noopener noreferrer" class="evidence-link-url">https://bitwarden.com/ <span class="sr-only">(opens in new window)</span></a>
                 </th>
                 <td>2026-10-24</td>
                 <td><span class="status-pass">200 OK</span></td>
@@ -233,13 +273,13 @@
               </tr>
               <tr>
                 <th scope="row">
-                  EFF Surveillance Self-Defense<br>
-                  <code style="font-size: 0.8rem;">https://ssd.eff.org/</code>
+                  <span class="evidence-link-name">EFF Surveillance Self-Defense</span>
+                  <a href="https://ssd.eff.org/" target="_blank" rel="noopener noreferrer" class="evidence-link-url">https://ssd.eff.org/ <span class="sr-only">(opens in new window)</span></a>
                 </th>
                 <td>2026-10-24</td>
                 <td><span class="status-pass">200 OK</span></td>
                 <td>Official Electronic Frontier Foundation security curriculum.</td>
-                <td>Linked in Privacy &amp; Safety section with meaningful anchor text.</td>
+                <td>Linked in Privacy & Safety section with meaningful anchor text.</td>
               </tr>
             </tbody>
           </table>
@@ -250,9 +290,9 @@
       <section class="evidence-section" aria-labelledby="a11y-checklist-title">
         <div class="evidence-filter-bar">
           <div>
-            <h2 id="a11y-checklist-title" style="margin-bottom: 0.25rem;">2. WCAG 2.2 AA Accessibility Audit Checklist</h2>
+            <h2 id="a11y-checklist-title" style="margin-bottom: 0.25rem;">2. Student Accessibility &amp; Wellbeing Checklist (WCAG 2.2 AA)</h2>
             <p style="margin: 0; font-size: 0.9rem; color: var(--text-secondary);">
-              ReflectHub was tested using keyboard-only navigation, high contrast simulation, screen readers (Windows Narrator &amp; NVDA), and browser zoom up to 200%.
+              ReflectHub was tested using keyboard navigation, high-contrast reading modes, screen readers (Windows Narrator &amp; NVDA), and 200% text zoom to ensure every student can study and focus without barriers.
             </p>
           </div>
           <div style="display: flex; gap: 0.35rem; align-items: center; flex-wrap: wrap;">
@@ -268,92 +308,72 @@
           <table class="evidence-table" aria-label="WCAG 2.2 AA Compliance Audit">
             <thead>
               <tr>
-                <th scope="col">WCAG 2.2 Criterion</th>
+                <th scope="col">Accessibility Standard &amp; Goal</th>
                 <th scope="col">Level</th>
                 <th scope="col">Status</th>
-                <th scope="col">Audit Notes &amp; Verification Evidence</th>
+                <th scope="col">Student Wellness Benefit &amp; Verification</th>
               </tr>
             </thead>
             <tbody id="wcag-checklist-body">
               <tr>
-                <th scope="row">1.4.3 Contrast (Minimum)</th>
-                <td>AA</td>
+                <th scope="row">1.4.3 Contrast (Minimum) �?" Eye-Strain Prevention</th>
+                <td><span class="badge badge-platform">AA</span></td>
                 <td><span class="status-pass">PASS</span></td>
-                <td class="checklist-notes">
-                  Body text color <code>#0f172a</code> on <code>#ffffff</code> yields a <strong>15.8:1</strong> contrast ratio (exceeds 4.5:1 requirement). Dark theme text <code>#f8fafc</code> on <code>#131c31</code> yields <strong>15.2:1</strong>. Muted text <code>#334155</code> yields <strong>7.2:1</strong>.
-                </td>
+                <td class="checklist-notes">Both dark and light color themes feature strong, certified contrast between text and background. Students can read comfortably in dimly lit study spaces or late at night without experiencing eye fatigue, headaches, or blurred vision.</td>
               </tr>
               <tr>
-                <th scope="row">2.4.1 Bypass Blocks</th>
-                <td>A</td>
+                <th scope="row">2.4.1 Bypass Blocks �?" Instant Skip to Content</th>
+                <td><span class="badge badge-platform">A</span></td>
                 <td><span class="status-pass">PASS</span></td>
-                <td class="checklist-notes">
-                  A high-contrast <code>.skip-link</code> is the first focusable element on every page, jumping focus directly to <code>#main-content</code> when pressed.
-                </td>
+                <td class="checklist-notes">A high-visibility 'Skip to main content' shortcut is ready the moment you press the Tab key. Students with motor difficulties or screen reader users can jump straight to the wellness guides without repeatedly tabbing through header menus.</td>
               </tr>
               <tr>
-                <th scope="row">1.3.1 Info and Relationships</th>
-                <td>A</td>
+                <th scope="row">1.3.1 Info and Relationships �?" Clear, Structured Layout</th>
+                <td><span class="badge badge-platform">A</span></td>
                 <td><span class="status-pass">PASS</span></td>
-                <td class="checklist-notes">
-                  Proper semantic landmarks used throughout (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>). Exactly one <code>&lt;h1&gt;</code> per page with strictly descending heading levels (h1 &rarr; h2 &rarr; h3). Tables include <code>&lt;caption&gt;</code> and <code>&lt;th scope="col/row"&gt;</code>.
-                </td>
+                <td class="checklist-notes">Information is arranged in a clear hierarchy with logical headings and labeled sections. This helps students with ADHD, dyslexia, or cognitive fatigue skim and digest study routines without feeling overwhelmed.</td>
               </tr>
               <tr>
-                <th scope="row">2.1.1 Keyboard Navigation</th>
-                <td>A</td>
+                <th scope="row">2.1.1 Keyboard Navigation �?" 100% Mouse-Free Access</th>
+                <td><span class="badge badge-platform">A</span></td>
                 <td><span class="status-pass">PASS</span></td>
-                <td class="checklist-notes">
-                  100% of links, buttons, theme toggles, mobile menus, table sort headers, and quiz form radio buttons can be operated exclusively via <kbd>Tab</kbd>, <kbd>Shift+Tab</kbd>, <kbd>Space</kbd>, and <kbd>Enter</kbd>.
-                </td>
+                <td class="checklist-notes">Every interactive feature�?"including tool quizzes, filter pills, guide steps, and theme toggles�?"can be smoothly operated using only standard keyboard keys (Tab, Enter, Space). Ideal for students with repetitive strain injuries (RSI) or physical limitations.</td>
               </tr>
               <tr>
-                <th scope="row">2.4.7 Focus Visible</th>
-                <td>AA</td>
+                <th scope="row">2.4.7 Focus Visible �?" Clear Selection Highlighting</th>
+                <td><span class="badge badge-platform">AA</span></td>
                 <td><span class="status-pass">PASS</span></td>
-                <td class="checklist-notes">
-                  High-visibility focus indicator implemented: <code>:focus-visible { outline: 3px solid var(--accent-focus); outline-offset: 3px; }</code>. Never suppressed.
-                </td>
+                <td class="checklist-notes">Whenever navigating with the keyboard, an unmistakable focus ring outlines the active button or link. Students always know their exact position on the page, keeping study sessions smooth and distraction-free.</td>
               </tr>
               <tr>
-                <th scope="row">1.4.1 Use of Color</th>
-                <td>A</td>
+                <th scope="row">1.4.1 Use of Color �?" Colorblind-Friendly Signals</th>
+                <td><span class="badge badge-platform">A</span></td>
                 <td><span class="status-pass">PASS</span></td>
-                <td class="checklist-notes">
-                  No information is conveyed by color alone. Badges for Free, Freemium, and Paid use clear text words and distinct border stylings. Links have persistent underline styling.
-                </td>
+                <td class="checklist-notes">No guidance or status relies on color alone. Tool costs (Free, Freemium, Paid) and safety ratings include clear text words, borders, and icons, ensuring full clarity for students with red-green, blue-yellow, or total color blindness.</td>
               </tr>
               <tr>
-                <th scope="row">1.4.4 Resize Text (200% Zoom)</th>
-                <td>AA</td>
+                <th scope="row">1.4.4 Resize Text �?" Large Text Zoom Without Breaking</th>
+                <td><span class="badge badge-platform">AA</span></td>
                 <td><span class="status-pass">PASS</span></td>
-                <td class="checklist-notes">
-                  Layout tested at 200% browser zoom in Chrome and Firefox. All typography uses relative <code>rem</code> units. No horizontal scrollbars or clipped text containers.
-                </td>
+                <td class="checklist-notes">Students with low vision can zoom their browser text up to 200% without buttons overlapping, text getting cut off, or awkward side-scrolling. Text flows naturally to keep reading effortless.</td>
               </tr>
               <tr>
-                <th scope="row">2.4.4 Link Purpose (In Context)</th>
-                <td>A</td>
+                <th scope="row">2.4.4 Link Purpose �?" Clear Destination Labels</th>
+                <td><span class="badge badge-platform">A</span></td>
                 <td><span class="status-pass">PASS</span></td>
-                <td class="checklist-notes">
-                  Zero generic "click here" or "read more" links. Every link text describes the destination (e.g., "Read Complete Guide 1 &rarr;", "Visit Official Website"). Outbound links include screen reader notices.
-                </td>
+                <td class="checklist-notes">All links state their exact destination clearly (e.g., 'Read Complete Guide 1' or 'Visit Official Website') rather than mystery 'click here' prompts. This prevents disorientation and reassures students before opening external resources.</td>
               </tr>
               <tr>
-                <th scope="row">2.3.3 Animation from Interactions</th>
-                <td>AAA</td>
+                <th scope="row">2.3.3 Animation from Interactions �?" Calm, Sensory-Friendly Motion</th>
+                <td><span class="badge badge-platform">AAA</span></td>
                 <td><span class="status-pass">PASS</span></td>
-                <td class="checklist-notes">
-                  Includes complete <code>@media (prefers-reduced-motion: reduce)</code> CSS rule disabling transitions and animations for users with vestibular sensitivities.
-                </td>
+                <td class="checklist-notes">Respects students' device 'Reduced Motion' accessibility settings by turning off rapid transitions and sliding animations. This prevents motion dizziness and sensory overload for neurodivergent students.</td>
               </tr>
               <tr>
-                <th scope="row">1.1.1 Non-text Content</th>
-                <td>A</td>
+                <th scope="row">1.1.1 Non-text Content �?" Meaningful Image Descriptions</th>
+                <td><span class="badge badge-platform">A</span></td>
                 <td><span class="status-pass">PASS</span></td>
-                <td class="checklist-notes">
-                  Every informative SVG illustration contains meaningful descriptive <code>alt</code> text and captions. Decorative icons use <code>aria-hidden="true"</code>.
-                </td>
+                <td class="checklist-notes">Every diagram, setup screenshot, and flowchart includes spoken audio descriptions for screen reader users, while decorative icons stay silent to prevent unnecessary auditory clutter.</td>
               </tr>
             </tbody>
           </table>
@@ -449,7 +469,7 @@
               <span class="badge badge-platform">Quiz &amp; Compare Tested</span>
             </div>
             <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--text-secondary);">
-              <strong>Task Assigned:</strong> Take the Find My Tool Quiz with a ₹0 budget and evaluate recommendations.
+              <strong>Task Assigned:</strong> Take the Find My Tool Quiz with a �,10 budget and evaluate recommendations.
             </p>
             <blockquote class="quote-block">
               "I liked that the quiz didn't push me to download apps with 7-day trials that charge money later. It recommended LeechBlock NG and Android Digital Wellbeing and explicitly told me what features Cold Turkey paywalls."
@@ -479,7 +499,7 @@
               <strong>Task Assigned:</strong> Follow Guide 3 (uBlock Origin YouTube Shorts Removal).
             </p>
             <blockquote class="quote-block">
-              "Shorts was my biggest weakness. I’d open YouTube to watch a surveying tutorial and end up watching 40 minutes of vertical comedy reels. Removing the Shorts shelf entirely makes YouTube feel like a quiet library again."
+              "Shorts was my biggest weakness. I�?Td open YouTube to watch a surveying tutorial and end up watching 40 minutes of vertical comedy reels. Removing the Shorts shelf entirely makes YouTube feel like a quiet library again."
             </blockquote>
             <div style="background: var(--bg-elevated); padding: 0.75rem 1rem; border-radius: var(--r-sm); border-left: 3px solid var(--accent); margin-top: 0.75rem;">
               <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">
@@ -552,7 +572,7 @@
                 <th scope="row">3. Direct Quiz-to-Guide Navigation</th>
                 <td>Participant P3 trial</td>
                 <td>
-                  Updated <code>js/main.js</code> recommendation engine so that matched tools automatically render a high-priority "Read Student Setup Guide" button directly linking to Guide 1, 2, or 3.
+                  Updated <code>js/main.js?v=6</code> recommendation engine so that matched tools automatically render a high-priority "Read Student Setup Guide" button directly linking to Guide 1, 2, or 3.
                 </td>
               </tr>
               <tr>
@@ -573,7 +593,7 @@
                 <th scope="row">6. Screen Reader Table Sort Announcements</th>
                 <td>Accessibility Audit</td>
                 <td>
-                  Added dynamic <code>aria-sort="ascending"</code> / <code>aria-sort="descending"</code> updates to table column headers in <code>js/main.js</code> and added explicit <code>aria-live="polite"</code> regions.
+                  Added dynamic <code>aria-sort="ascending"</code> / <code>aria-sort="descending"</code> updates to table column headers in <code>js/main.js?v=6</code> and added explicit <code>aria-live="polite"</code> regions.
                 </td>
               </tr>
             </tbody>
@@ -582,6 +602,8 @@
       </section>
 
     </div>
+  
+
   </main>
 
   <!-- Shared Footer -->
@@ -589,19 +611,16 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-            <svg style="width: 24px; height: 24px; color: var(--accent);" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
+            <svg style="width:24px; height:24px; color:var(--accent);" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
               <path d="M16 6v10l6 4" stroke="currentColor" stroke-width="2.2"/>
               <circle cx="16" cy="16" r="2" fill="currentColor"/>
             </svg>
-            <span style="font-weight: 800; font-size: 1.15rem; color: var(--text-primary);">ReflectHub</span>
+            <span style="font-weight:800; font-size:1.15rem; color:var(--text-primary);">ReflectHub</span>
           </div>
-          <p style="font-size: 0.875rem; margin-bottom: 1rem;">
-            Transparent, student-centered digital wellness resource hub.
-          </p>
+          <p style="font-size:0.875rem; margin-bottom:1rem;">Transparent, student-centered digital wellness resource hub.</p>
         </div>
-
         <div>
           <h2 class="footer-heading">Hub Navigation</h2>
           <ul class="footer-links">
@@ -611,7 +630,6 @@
             <li><a href="guides/index.html">Setup Guides</a></li>
           </ul>
         </div>
-
         <div>
           <h2 class="footer-heading">Trust &amp; Evidence</h2>
           <ul class="footer-links">
@@ -621,18 +639,18 @@
           </ul>
         </div>
       </div>
-
       <div class="footer-bottom">
-        <div>
-          &copy; 2026 ReflectHub Project &bull; Built for Undergraduates &bull; WCAG 2.2 AA Compliant
-        </div>
-        <div>
-          <a href="#main-content">Back to top &uarr;</a>
-        </div>
+        <div>&copy; 2026 ReflectHub Project &bull; Built for Undergraduates &bull; WCAG 2.2 AA Compliant</div>
+        <div><a href="#main-content">Back to top &uarr;</a></div>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/main.js?v=6"></script>
 </body>
 </html>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%" fill="none" role="img" aria-label="Digital wellness balance illustration">
+  <defs>
+    <linearGradient id="cmp-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="cmp-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="cmp-card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <filter id="cmp-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background decorative grid &amp; glow -->
+  <rect width="600" height="360" rx="20" fill="url(#cmp-glow)"/>
+  <circle cx="300" cy="180" r="140" stroke="#0d9488" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.35"/>
+  <circle cx="300" cy="180" r="90" stroke="#0284c7" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+
+  <!-- Center Balance Fulcrum / Scales -->
+  <path d="M300 130 L300 250" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="270,265 330,265 300,240" fill="#0d9488"/>
+  <path d="M190 145 L410 145" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="300" cy="145" r="7" fill="#0284c7"/>
+
+  <!-- Left Scale Pan: Screen Time (Controlled &amp; Healthy) -->
+  <path d="M210 145 L170 210 L250 210 Z" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round"/>
+  <g transform="translate(170, 150)" filter="url(#cmp-shadow)">
+    <!-- Smartphone Card -->
+    <rect x="-20" y="40" width="70" height="110" rx="10" fill="#0f172a"/>
+    <rect x="-16" y="46" width="62" height="92" rx="6" fill="#ffffff"/>
+    <!-- Screen content: healthy screen time graph -->
+    <rect x="-10" y="54" width="50" height="18" rx="4" fill="#ccfbf1"/>
+    <text x="15" y="67" font-family="system-ui,sans-serif" font-size="9" font-weight="bold" fill="#0f766e" text-anchor="middle">2h 15m</text>
+    <path d="M-8 100 L4 88 L16 94 L30 80" stroke="#0d9488" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="30" cy="80" r="3" fill="#0d9488"/>
+    <!-- Home bar -->
+    <rect x="5" y="142" width="20" height="3" rx="1.5" fill="#94a3b8"/>
+  </g>
+
+  <!-- Right Scale Pan: Deep Focus &amp; Study Sprints -->
+  <path d="M390 145 L350 210 L430 210 Z" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round"/>
+  <g transform="translate(370, 140)" filter="url(#cmp-shadow)">
+    <!-- Laptop Card -->
+    <rect x="-35" y="50" width="90" height="60" rx="6" fill="#1e293b"/>
+    <rect x="-30" y="55" width="80" height="50" rx="4" fill="#f8fafc"/>
+    <!-- Laptop Screen: Focus timer &amp; clean code -->
+    <circle cx="10" cy="78" r="16" fill="url(#cmp-grad1)"/>
+    <text x="10" y="82" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">25:00</text>
+    <rect x="-25" y="60" width="22" height="4" rx="2" fill="#cbd5e1"/>
+    <!-- Laptop Base -->
+    <path d="M-45 110 L65 110 L55 116 L-35 116 Z" fill="#94a3b8"/>
+  </g>
+
+  <!-- Floating Wellness Badges -->
+  <g transform="translate(60, 40)" filter="url(#cmp-shadow)">
+    <rect width="130" height="42" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="22" cy="21" r="12" fill="#ecfdf5"/>
+    <path d="M16 21 L20 25 L28 17" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="42" y="19" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#0f172a">&#8377;0 Paywalls</text>
+    <text x="42" y="31" font-family="system-ui,sans-serif" font-size="8" fill="#64748b">100% Transparent</text>
+  </g>
+
+  <g transform="translate(410, 40)" filter="url(#cmp-shadow)">
+    <rect width="130" height="42" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="22" cy="21" r="12" fill="#eff6ff"/>
+    <path d="M22 13 L28 25 L16 25 Z" fill="#2563eb" opacity="0.8"/>
+    <text x="42" y="19" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#0f172a">11 Tools Audited</text>
+    <text x="42" y="31" font-family="system-ui,sans-serif" font-size="8" fill="#64748b">Android &amp; Windows</text>
+  </g>
+
+  <!-- Zen Stone stack at the bottom center -->
+  <ellipse cx="300" cy="305" rx="55" ry="14" fill="#cbd5e1"/>
+  <ellipse cx="300" cy="285" rx="42" ry="11" fill="#94a3b8"/>
+  <ellipse cx="300" cy="268" rx="28" ry="8" fill="#64748b"/>
+</svg>

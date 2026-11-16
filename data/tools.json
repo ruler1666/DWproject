@@ -13,14 +13,19 @@
     "main_limitation": "App timers can easily be paused or deleted in 2 taps when self-discipline falters; no password protection against your future self.",
     "best_for": "Students wanting a zero-cost, battery-friendly starting point for setting daily Instagram/YouTube limits and dimming blue light before sleep.",
     "not_for": "Students needing ironclad, unbreakable blocking during crunch exam revision sessions.",
-    "official_source": "https://wellbeing.google/",
+    "official_source": "https://support.google.com/android/answer/9346420",
     "date_checked": "2026-10-24",
     "quiz_tags": {
       "devices": ["android", "both"],
       "distractions": ["social-media", "bedtime", "procrastination"],
       "strictness": ["gentle", "moderate"],
       "budget": ["free-only", "freemium-ok"],
-      "privacy": ["strict", "standard"]
+      "privacy": ["strict", "standard"],
+      "goals": ["blocking", "tracking", "focus-habit"],
+      "targets": ["apps", "notifications", "combined"],
+      "schedules": ["scheduled", "daily-limits"],
+      "setup": ["simple"],
+      "feedback": ["reports", "reminders"]
     }
   },
   {
@@ -37,14 +42,19 @@
     "main_limitation": "Does not block distracting websites or desktop gaming apps—it only silences notifications and ticks a clock.",
     "best_for": "Students working on programming assignments or lab write-ups on laptops who get derailed by Discord/WhatsApp notification badges.",
     "not_for": "Students who compulsively open browser tabs or launch Steam when left to their own devices.",
-    "official_source": "https://support.microsoft.com/en-us/windows/how-to-use-focus-in-windows-11-cbcc9bb0-d796-412f-b40c-1bb39aa0375e",
+    "official_source": "https://support.microsoft.com/en-us/windows/experience/focus-stay-on-task-without-distractions-in-windows",
     "date_checked": "2026-10-24",
     "quiz_tags": {
       "devices": ["windows", "both"],
       "distractions": ["multitasking", "procrastination"],
       "strictness": ["gentle"],
       "budget": ["free-only", "freemium-ok"],
-      "privacy": ["strict", "standard"]
+      "privacy": ["strict", "standard"],
+      "goals": ["focus-habit"],
+      "targets": ["notifications"],
+      "schedules": ["scheduled", "on-demand"],
+      "setup": ["simple"],
+      "feedback": ["reminders", "minimal"]
     }
   },
   {
@@ -68,7 +78,12 @@
       "distractions": ["social-media", "procrastination"],
       "strictness": ["moderate", "strict"],
       "budget": ["free-only", "freemium-ok"],
-      "privacy": ["strict", "standard"]
+      "privacy": ["strict", "standard"],
+      "goals": ["blocking"],
+      "targets": ["websites", "combined"],
+      "schedules": ["scheduled", "on-demand"],
+      "setup": ["configurable"],
+      "feedback": ["minimal"]
     }
   },
   {
@@ -92,7 +107,12 @@
       "distractions": ["multitasking", "procrastination", "social-media"],
       "strictness": ["strict"],
       "budget": ["freemium-ok"],
-      "privacy": ["strict", "standard"]
+      "privacy": ["strict", "standard"],
+      "goals": ["blocking"],
+      "targets": ["websites", "apps", "combined"],
+      "schedules": ["scheduled"],
+      "setup": ["configurable"],
+      "feedback": ["minimal"]
     }
   },
   {
@@ -116,7 +136,12 @@
       "distractions": ["social-media", "procrastination"],
       "strictness": ["moderate"],
       "budget": ["free-only", "freemium-ok"],
-      "privacy": ["standard"]
+      "privacy": ["standard"],
+      "goals": ["blocking", "tracking"],
+      "targets": ["websites", "apps", "combined"],
+      "schedules": ["scheduled", "daily-limits"],
+      "setup": ["configurable", "cross-device"],
+      "feedback": ["reports", "reminders"]
     }
   },
   {
@@ -140,7 +165,12 @@
       "distractions": ["multitasking", "procrastination"],
       "strictness": ["gentle"],
       "budget": ["free-only", "freemium-ok"],
-      "privacy": ["strict"]
+      "privacy": ["strict"],
+      "goals": ["tracking"],
+      "targets": ["websites", "apps", "combined"],
+      "schedules": [],
+      "setup": ["configurable", "cross-device"],
+      "feedback": ["reports"]
     }
   },
   {
@@ -164,7 +194,12 @@
       "distractions": ["social-media", "procrastination"],
       "strictness": ["gentle"],
       "budget": ["freemium-ok"],
-      "privacy": ["strict", "standard"]
+      "privacy": ["strict", "standard"],
+      "goals": ["blocking", "focus-habit"],
+      "targets": ["websites", "apps", "combined"],
+      "schedules": ["on-demand"],
+      "setup": ["simple"],
+      "feedback": ["reminders"]
     }
   },
   {
@@ -188,7 +223,12 @@
       "distractions": ["social-media", "multitasking"],
       "strictness": ["gentle", "moderate"],
       "budget": ["free-only", "freemium-ok"],
-      "privacy": ["strict"]
+      "privacy": ["strict"],
+      "goals": ["blocking"],
+      "targets": ["websites"],
+      "schedules": [],
+      "setup": ["simple", "configurable"],
+      "feedback": ["minimal"]
     }
   },
   {
@@ -212,7 +252,12 @@
       "distractions": ["social-media", "bedtime", "procrastination"],
       "strictness": ["moderate"],
       "budget": ["freemium-ok"],
-      "privacy": ["standard"]
+      "privacy": ["standard"],
+      "goals": ["blocking", "focus-habit"],
+      "targets": ["apps"],
+      "schedules": ["scheduled", "daily-limits"],
+      "setup": ["simple"],
+      "feedback": ["reminders", "minimal"]
     }
   },
   {
@@ -236,7 +281,12 @@
       "distractions": ["procrastination", "social-media"],
       "strictness": ["gentle", "moderate"],
       "budget": ["freemium-ok"],
-      "privacy": ["standard"]
+      "privacy": ["standard"],
+      "goals": ["focus-habit"],
+      "targets": ["apps"],
+      "schedules": ["on-demand"],
+      "setup": ["simple"],
+      "feedback": ["reminders"]
     }
   },
   {
@@ -260,7 +310,12 @@
       "distractions": ["multitasking"],
       "strictness": ["gentle"],
       "budget": ["free-only", "freemium-ok"],
-      "privacy": ["strict"]
+      "privacy": ["strict"],
+      "goals": [],
+      "targets": [],
+      "schedules": [],
+      "setup": ["simple"],
+      "feedback": ["minimal"]
     }
   }
 ]

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%" fill="none" role="img" aria-label="Android bedtime mode and restorative sleep illustration">
+  <defs>
+    <linearGradient id="g2-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="240" rx="16" fill="url(#g2-bg)"/>
+  <!-- Stars in Night Sky -->
+  <circle cx="500" cy="50" r="1.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="560" cy="90" r="2" fill="#ffffff" opacity="0.6"/>
+  <circle cx="720" cy="60" r="1.5" fill="#ffffff" opacity="0.7"/>
+  <circle cx="680" cy="140" r="2" fill="#ffffff" opacity="0.5"/>
+  <circle cx="760" cy="110" r="1.5" fill="#ffffff" opacity="0.8"/>
+  <!-- Crescent Moon -->
+  <path d="M680 50 C680 75 660 95 635 95 C625 95 615 91 608 85 C620 95 638 98 650 90 C662 82 668 65 660 52 C672 50 680 50 680 50 Z" fill="#fef08a" opacity="0.9"/>
+  <!-- Smartphone in Bedtime Grayscale -->
+  <g transform="translate(630, 75)">
+    <rect width="90" height="145" rx="12" fill="#18181b" stroke="#3f3f46" stroke-width="2"/>
+    <rect x="6" y="8" width="78" height="129" rx="8" fill="#27272a"/>
+    <!-- Sleep icon on phone -->
+    <circle cx="45" cy="55" r="18" fill="#3f3f46"/>
+    <path d="M42 48 L48 48 L42 56 L48 56" stroke="#fafafa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="45" y="90" font-family="system-ui,sans-serif" font-size="9" font-weight="bold" fill="#a1a1aa" text-anchor="middle">Bedtime: ON</text>
+    <text x="45" y="104" font-family="system-ui,sans-serif" font-size="8" fill="#71717a" text-anchor="middle">Grayscale Active</text>
+  </g>
+  <!-- Left Content -->
+  <text x="50" y="70" font-family="system-ui,sans-serif" font-size="12" font-weight="800" fill="#a5b4fc" letter-spacing="1">GUIDE 02 &#8226; ANDROID SLEEP HEALTH</text>
+  <text x="50" y="105" font-family="system-ui,sans-serif" font-size="22" font-weight="900" fill="#ffffff">Android Bedtime Mode &amp; Grayscale</text>
+  <text x="50" y="135" font-family="system-ui,sans-serif" font-size="13" fill="#cbd5e1">Stop 2 AM doomscrolling with automated black-and-white displays &amp; DND</text>
+  <g transform="translate(50, 160)">
+    <rect width="90" height="28" rx="14" fill="#6366f1" opacity="0.25"/>
+    <text x="45" y="18" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#c7d2fe" text-anchor="middle">&#8987; 10m Setup</text>
+    <rect x="100" y="0" width="115" height="28" rx="14" fill="#10b981" opacity="0.25"/>
+    <text x="157" y="18" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#a7f3d0" text-anchor="middle">&#10003; Built-in Android</text>
+  </g>
+</svg>

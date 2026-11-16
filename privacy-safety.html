@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A practical guide for college students on smartphone permissions, focus app safety, browser trackers, and open-source password management.">
   <title>Privacy &amp; Digital Safety | ReflectHub</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+
   <!-- Accessible Skip to Content Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -26,13 +29,11 @@
           <span class="brand-tagline">Student Digital Wellness Guide</span>
         </div>
       </a>
-
       <div class="nav-and-tools">
         <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-nav">
-          <span aria-hidden="true">☰</span>
+          <span aria-hidden="true">&#9776;</span>
           <span>Menu</span>
         </button>
-
         <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Primary Navigation">
           <ul>
             <li><a href="index.html" class="nav-link">Home</a></li>
@@ -44,9 +45,8 @@
             <li><a href="about.html" class="nav-link">About &amp; Method</a></li>
           </ul>
         </nav>
-
         <button type="button" class="theme-toggle-btn" aria-pressed="false" aria-label="Switch to dark theme">
-          <span aria-hidden="true">🌙</span>
+          <span aria-hidden="true">&#9790;</span>
           <span>Dark Mode</span>
         </button>
       </div>
@@ -55,282 +55,233 @@
 
   <!-- Main Content -->
   <main id="main-content" role="main">
-    
+
     <!-- Page Hero Header -->
     <header class="page-hero" aria-labelledby="privacy-page-title">
       <div class="container">
-        <span class="hero-eyebrow">
-          <span>🛡️</span> Student Security &amp; Data Hygiene
-        </span>
-        <h1 id="privacy-page-title" class="page-hero-title">
-          Privacy, Permissions &amp;<br>
-          <span class="gradient-text">Safe Digital Wellness</span>
-        </h1>
-        <p class="lead" style="max-width: 780px;">
-          You shouldn't have to surrender your personal messages, web history, or phone battery just to reduce screen time. Here is a practical breakdown of how wellness apps work under the hood, what dangerous permissions to watch out for, and how to maintain healthy digital boundaries safely.
-        </p>
-
-        <!-- Security Stats Bar -->
-        <div class="hero-stats hero-stats-subpage">
+        <div class="hero-feature-grid">
           <div>
-            <span class="hero-stat-num">3</span>
-            <span class="hero-stat-label">System permissions demystified</span>
+            <span class="hero-eyebrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Student Security &amp; Data Hygiene
+            </span>
+            <h1 id="privacy-page-title" class="page-hero-title">
+              Privacy, Permissions &amp;<br>
+              <span class="gradient-text">Safe Digital Wellness</span>
+            </h1>
+            <p class="lead">
+              You shouldn't have to surrender your personal messages, web history, or phone battery just to reduce screen time. Here is a practical breakdown of how wellness apps work under the hood, what dangerous permissions to watch out for, and how to maintain healthy boundaries safely.
+            </p>
+            <div class="hero-stats hero-stats-subpage">
+              <div>
+                <span class="hero-stat-num">3</span>
+                <span class="hero-stat-label">Permissions demystified</span>
+              </div>
+              <div>
+                <span class="hero-stat-num">AES-256</span>
+                <span class="hero-stat-label">Bitwarden encryption</span>
+              </div>
+              <div>
+                <span class="hero-stat-num">0</span>
+                <span class="hero-stat-label">Cloud tracking required</span>
+              </div>
+              <div>
+                <span class="hero-stat-num">Local-First</span>
+                <span class="hero-stat-label">Privacy architecture</span>
+              </div>
+            </div>
           </div>
-          <div>
-            <span class="hero-stat-num">AES-256</span>
-            <span class="hero-stat-label">Zero-knowledge Bitwarden</span>
-          </div>
-          <div>
-            <span class="hero-stat-num">0</span>
-            <span class="hero-stat-label">Cloud tracking required</span>
-          </div>
-          <div>
-            <span class="hero-stat-num">Local-First</span>
-            <span class="hero-stat-label">Privacy architecture recommended</span>
+          <div class="page-feature-img-wrap reveal-scale" aria-hidden="true">
+            <img src="images/wellness-privacy.svg?v=5" alt="Student cybersecurity and digital wellness data privacy protection shield" class="page-feature-img" width="600" height="360" loading="eager">
           </div>
         </div>
       </div>
     </header>
 
-    <div class="container">
+    <div class="container" style="padding-top: 3rem;">
 
-      <!-- Section 1: Android Permissions Demystified -->
-      <section aria-labelledby="permissions-title" style="margin-bottom: 3.5rem;">
-        <div class="section-header" style="margin-bottom: 1.5rem;">
-          <span class="section-label">Device Security Baseline</span>
-          <h2 id="permissions-title" class="section-title">1. Android Permissions Demystified</h2>
-          <p class="section-desc">To intercept apps or enforce blocking, Android wellness tools ask for elevated system privileges. Knowing which permissions are legitimate and which pose security risks protects your academic and personal identity.</p>
+      <!-- Section 1: Android Permissions -->
+      <section class="content-section" aria-labelledby="permissions-title">
+        <div class="wellness-banner reveal">
+          <div class="wellness-banner-art" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="10" width="80" height="100" rx="10" stroke="currentColor" stroke-width="2.5" opacity="0.4"/>
+              <rect x="30" y="25" width="60" height="8" rx="4" fill="currentColor" opacity="0.2"/>
+              <rect x="30" y="40" width="45" height="8" rx="4" fill="currentColor" opacity="0.2"/>
+              <circle cx="60" cy="80" r="18" stroke="currentColor" stroke-width="2.5" opacity="0.4"/>
+              <path d="M51 80 L57 86 L70 73" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+            </svg>
+          </div>
+          <div class="wellness-banner-content">
+            <h2>1. Android Permissions Demystified</h2>
+            <p>To intercept apps or enforce blocking, Android wellness tools ask for elevated system privileges. Knowing which permissions are legitimate — and which pose risks — protects your academic data.</p>
+          </div>
         </div>
 
         <div class="perm-grid">
-          
-          <article class="card perm-card-risk-high" aria-labelledby="perm-acc-title">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.75rem;">
-              <h3 id="perm-acc-title" style="margin: 0; font-size: 1.15rem; color: var(--text-primary);">Accessibility Service</h3>
-              <span class="badge badge-paid">High Security Risk</span>
+          <div class="premium-card reveal">
+            <div class="premium-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
             </div>
-            <p style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6;">
-              <strong>What it does:</strong> Allows an application to read text on your screen and simulate user gestures. Tools like <em>one sec</em> or <em>StayFree</em> use this to detect the exact millisecond you tap Instagram and pop up a breathing exercise.
-            </p>
-            <div style="background: var(--paid-bg); border: 1px solid var(--paid-border); border-radius: var(--r-sm); padding: 0.75rem; margin-top: 1rem;">
-              <p style="font-size: 0.85rem; color: var(--paid-text); margin-bottom: 0; line-height: 1.5;">
-                <strong>⚠️ Safety Warning:</strong> A rogue app with Accessibility access can record keystrokes, capture bank OTPs, and read private messages. Never grant this permission to unverified APKs downloaded outside the official Google Play Store.
-              </p>
+            <span class="perm-risk low">&#10003; Low Risk</span>
+            <div class="perm-card-title">Usage Access (Android)</div>
+            <p class="perm-card-p" style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6; margin:0;">Allows an app to see which apps you've opened and for how long — but not what you typed or who you messaged. This is how StayFree and Digital Wellbeing count your screen time. Safe to grant to any reputable tool.</p>
+          </div>
+          <div class="premium-card reveal">
+            <div class="premium-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6s1-2 7-2 7 4 7 4-1 2-7 2-7-4-7-4z"/><path d="M1 18s1-2 7-2 7 4 7 4-1 2-7 2-7-4-7-4z"/></svg>
             </div>
-          </article>
-
-          <article class="card perm-card-risk-mod" aria-labelledby="perm-usage-title">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.75rem;">
-              <h3 id="perm-usage-title" style="margin: 0; font-size: 1.15rem; color: var(--text-primary);">Usage Access</h3>
-              <span class="badge badge-freemium">Moderate Risk</span>
+            <span class="perm-risk med">&#9888; Medium Risk</span>
+            <div class="perm-card-title">Accessibility Service</div>
+            <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6; margin:0;">Allows apps to monitor and interact with what's on-screen, intercept taps, and overlay UI elements. Necessary for blocking apps like StayFree to enforce limits. Only grant to open-source apps with published code — never to unknown apps.</p>
+          </div>
+          <div class="premium-card reveal">
+            <div class="premium-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
             </div>
-            <p style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6;">
-              <strong>What it does:</strong> Lets apps see which application package is running in the foreground, how frequently you open it, and your mobile network consumption.
-            </p>
-            <div style="background: var(--freemium-bg); border: 1px solid var(--freemium-border); border-radius: var(--r-sm); padding: 0.75rem; margin-top: 1rem;">
-              <p style="font-size: 0.85rem; color: var(--freemium-text); margin-bottom: 0; line-height: 1.5;">
-                <strong>✓ Safety Assessment:</strong> Standard requirement for timers (Forest, StayFree). It cannot see what you type or watch inside the app—only the app name and elapsed minutes.
-              </p>
-            </div>
-          </article>
-
-          <article class="card perm-card-risk-std" aria-labelledby="perm-overlay-title">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.75rem;">
-              <h3 id="perm-overlay-title" style="margin: 0; font-size: 1.15rem; color: var(--text-primary);">Display Over Other Apps</h3>
-              <span class="badge badge-platform">Standard Privilege</span>
-            </div>
-            <p style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6;">
-              <strong>What it does:</strong> Allows the focus app to draw a blocking screen or countdown timer directly on top of a restricted app when a time limit expires.
-            </p>
-            <div style="background: var(--free-bg); border: 1px solid var(--free-border); border-radius: var(--r-sm); padding: 0.75rem; margin-top: 1rem;">
-              <p style="font-size: 0.85rem; color: var(--free-text); margin-bottom: 0; line-height: 1.5;">
-                <strong>✓ Safety Assessment:</strong> Completely safe when granted to reputable tools. Used solely to render full-screen block notices when scheduled study blocks begin.
-              </p>
-            </div>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- Section 2: Browser Extension Safety -->
-      <section aria-labelledby="browser-safety-title" style="margin-bottom: 3.5rem;">
-        <div class="section-header" style="margin-bottom: 1.5rem;">
-          <span class="section-label">Laptop Defense</span>
-          <h2 id="browser-safety-title" class="section-title">2. Browser Extensions: What "Read All Web Traffic" Means</h2>
-          <p class="section-desc">When you install tools like LeechBlock NG or uBlock Origin, your browser warns: <em>"This extension can read and change all your data on websites you visit."</em> Here is what that warning actually means.</p>
-        </div>
-        
-        <div class="card" style="background: var(--bg-surface); border: 1px solid var(--border-weak); padding: 1.75rem; border-radius: var(--r-xl); box-shadow: var(--shadow-sm);">
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-            <div>
-              <h3 style="margin-top: 0; font-size: 1.15rem; color: var(--text-primary);">Why Blockers Request This Permission</h3>
-              <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.65;">
-                To determine whether a webpage is <code>youtube.com</code> or <code>lecture-notes.edu</code>, the browser extension must inspect the active tab URL. To hide distracting algorithmic recommendation sidebars, it must inject local CSS rules into the webpage document.
-              </p>
-            </div>
-            <div style="background: var(--bg-elevated); padding: 1.25rem; border-radius: var(--r-md); border: 1px solid var(--border-weak);">
-              <h3 style="margin-top: 0; font-size: 1.1rem; color: var(--accent);">Why Open Source Is Non-Negotiable</h3>
-              <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0;">
-                In closed-source proprietary extensions, an unscrupulous vendor could silently send your visited URLs to marketing servers. In open-source extensions like <strong>LeechBlock NG</strong> and <strong>uBlock Origin</strong>, the code is audited publicly by thousands of security researchers, guaranteeing that all filtering logic executes <strong>100% locally on your computer with zero external leaks</strong>.
-              </p>
-            </div>
+            <span class="perm-risk high">&#33; High Risk — Avoid</span>
+            <div class="perm-card-title">Device Admin / MDM</div>
+            <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6; margin:0;">Gives an app full control to remotely wipe your device, enforce screen locks, or disable features. Legitimate wellness apps never need Device Admin. If an app requests this, uninstall it immediately.</p>
           </div>
         </div>
       </section>
 
-      <!-- Section 3: Password Management as Digital Wellness -->
-      <section aria-labelledby="passwords-wellness-title" style="margin-bottom: 3.5rem;">
-        <div class="section-header" style="margin-bottom: 1.5rem;">
-          <span class="section-label">Cognitive Calm</span>
-          <h2 id="passwords-wellness-title" class="section-title">3. Why Password Hygiene Is a Digital Wellness Superpower</h2>
-          <p class="section-desc">Digital wellness is not only about setting timers; it is about reducing cognitive anxiety, eliminating mental fatigue, and protecting your academic career.</p>
+      <div class="section-divider"></div>
+
+      <!-- Section 2: Browser Trackers -->
+      <section class="content-section" aria-labelledby="browser-title">
+        <div class="section-header reveal">
+          <span class="section-label">Browser Safety</span>
+          <h2 id="browser-title" class="section-title">2. Browser Tracking &amp; How uBlock Origin Helps</h2>
+          <p class="section-desc">Commercial wellness content sites — unlike ReflectHub — often embed 3rd-party advertising trackers that profile your reading habits across the web. Here's what to watch for.</p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-          <div class="card" style="border-top: 3px solid #dc2626;">
-            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-              <span style="font-size: 1.25rem;" aria-hidden="true">⚠️</span>
-              <h3 style="margin: 0; font-size: 1.15rem; color: var(--text-primary);">The Cognitive Burden of Password Reuse</h3>
+        <div class="premium-2col reveal">
+          <div class="premium-card">
+            <div class="premium-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             </div>
-            <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.65;">
-              Most college students reuse the same two simple passwords across college portals, social accounts, GitHub, and campus Wi-Fi. When one low-security student society website gets breached, attackers use credential stuffing to compromise primary email accounts.
-            </p>
-            <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 0;">
-              Recovering hacked accounts causes immense academic panic, lost assignment files, and hours of administrative stress right before submission deadlines.
-            </p>
+            <strong style="font-size:0.95rem; color:var(--text-primary); display:block; margin-bottom:0.5rem;">What ReflectHub Does NOT Do</strong>
+            <ul style="font-size:0.875rem; color:var(--text-secondary); line-height:1.8; margin:0; padding-left:1.1rem;">
+              <li>No Google Analytics or Facebook Pixel</li>
+              <li>No affiliate tracking links</li>
+              <li>No cookies beyond theme preference</li>
+              <li>No form submissions or account creation</li>
+              <li>All data stays in your browser's localStorage</li>
+            </ul>
           </div>
-
-          <div class="card" style="border-top: 3px solid var(--accent);">
-            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-              <span style="font-size: 1.25rem;" aria-hidden="true">🛡️</span>
-              <h3 style="margin: 0; font-size: 1.15rem; color: var(--accent);">The Solution: Zero-Knowledge Bitwarden</h3>
+          <div class="premium-card">
+            <div class="premium-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
             </div>
-            <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.65;">
-              We recommend <strong>Bitwarden</strong> because it is 100% open source, operates end-to-end encryption (AES-256), and provides unlimited password syncing across Android phones and Windows laptops for ₹0.
-            </p>
-            <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 0;">
-              You only remember one strong master passphrase. Bitwarden handles the rest, eliminating cognitive fatigue and shielding you from fraudulent phishing websites.
-            </p>
+            <strong style="font-size:0.95rem; color:var(--text-primary); display:block; margin-bottom:0.5rem;">How uBlock Origin Protects You Everywhere</strong>
+            <ul style="font-size:0.875rem; color:var(--text-secondary); line-height:1.8; margin:0; padding-left:1.1rem;">
+              <li>Blocks 100k+ ad &amp; tracker domains by default</li>
+              <li>Prevents fingerprinting scripts from loading</li>
+              <li>Open-source: anyone can inspect the code</li>
+              <li>Reduces page load times significantly</li>
+              <li>Works in Firefox, Chrome, and Edge</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <!-- Section 4: Safe Focus Practices Checklist -->
-      <section aria-labelledby="safe-practices-title" style="margin-bottom: 3.5rem;">
-        <div class="section-header" style="margin-bottom: 1.5rem;">
-          <span class="section-label">Practical Playbook</span>
-          <h2 id="safe-practices-title" class="section-title">Five Student Rules for Safe Focus App Usage</h2>
-          <p class="section-desc">Protect your phone's battery life, operating system integrity, and academic contacts with these core rules.</p>
-        </div>
+      <div class="section-divider"></div>
 
-        <div class="rule-card">
-          <div class="rule-num" aria-hidden="true">01</div>
-          <div>
-            <h3 style="font-size: 1.05rem; margin: 0 0 0.35rem 0; color: var(--text-primary);">Use Built-In Operating System Tools First</h3>
-            <p style="margin: 0; font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6;">
-              Before installing third-party apps, maximize native operating system tools (Android Bedtime Mode, Windows Focus Sessions). They require zero third-party trust, collect zero telemetry, and consume zero background battery.
-            </p>
+      <!-- Section 3: Password Safety -->
+      <section class="content-section" aria-labelledby="password-title">
+        <div class="wellness-banner reveal" style="background: linear-gradient(135deg, var(--bg-elevated) 0%, rgba(2,132,199,0.08) 100%);">
+          <div class="wellness-banner-art" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="25" y="50" width="70" height="55" rx="8" stroke="currentColor" stroke-width="2.5" opacity="0.4"/>
+              <path d="M42 50 L42 38 C42 26 78 26 78 38 L78 50" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+              <circle cx="60" cy="77" r="8" fill="currentColor" opacity="0.3"/>
+              <rect x="57" y="77" width="6" height="12" rx="3" fill="currentColor" opacity="0.5"/>
+            </svg>
+          </div>
+          <div class="wellness-banner-content">
+            <h2>3. Keeping Your Accounts Safe with Bitwarden</h2>
+            <p>Reusing simple passwords across your college email, banking, and social apps is the most common way students get hacked. Bitwarden solves this with zero-knowledge AES-256 encryption — your master password never leaves your device.</p>
           </div>
         </div>
 
-        <div class="rule-card">
-          <div class="rule-num" aria-hidden="true">02</div>
-          <div>
-            <h3 style="font-size: 1.05rem; margin: 0 0 0.35rem 0; color: var(--text-primary);">Avoid Modified APKs ("Modded Pro" Apps)</h3>
-            <p style="margin: 0; font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6;">
-              Never download pirated APKs from Telegram channels claiming to unlock "Forest Pro" or "Freedom Premium". These cracked files routinely bundle Trojan click-fraud malware or cryptominers that overheat phones and degrade battery longevity.
-            </p>
+        <div class="premium-3col reveal">
+          <div class="premium-card">
+            <div class="step-badge" style="margin-bottom:0.75rem;">1</div>
+            <strong style="font-size:0.95rem; color:var(--text-primary); display:block; margin-bottom:0.4rem;">Zero-Knowledge Architecture</strong>
+            <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6; margin:0;">Bitwarden's servers only ever store an encrypted blob — mathematically impossible to decrypt without your master password, which never leaves your device.</p>
           </div>
-        </div>
-
-        <div class="rule-card">
-          <div class="rule-num" aria-hidden="true">03</div>
-          <div>
-            <h3 style="font-size: 1.05rem; margin: 0 0 0.35rem 0; color: var(--text-primary);">Audit Permissions Periodically</h3>
-            <p style="margin: 0; font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6;">
-              On Android, navigate to <em>Settings &gt; Privacy &gt; Permission manager</em> at the start of each semester to revoke accessibility and usage permissions from apps you no longer actively use.
-            </p>
+          <div class="premium-card">
+            <div class="step-badge" style="margin-bottom:0.75rem;">2</div>
+            <strong style="font-size:0.95rem; color:var(--text-primary); display:block; margin-bottom:0.4rem;">Third-Party Audited</strong>
+            <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6; margin:0;">Bitwarden publishes third-party cryptographic audit reports publicly at bitwarden.com/compliance — a transparency standard most password managers fail to meet.</p>
           </div>
-        </div>
-
-        <div class="rule-card">
-          <div class="rule-num" aria-hidden="true">04</div>
-          <div>
-            <h3 style="font-size: 1.05rem; margin: 0 0 0.35rem 0; color: var(--text-primary);">Favor Local-First Tools</h3>
-            <p style="margin: 0; font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6;">
-              Tools like <em>ActivityWatch</em> record time strictly to <code>localhost</code>. If an app requires creating a cloud account to record basic daily minutes, treat that requirement with skepticism.
-            </p>
-          </div>
-        </div>
-
-        <div class="rule-card">
-          <div class="rule-num" aria-hidden="true">05</div>
-          <div>
-            <h3 style="font-size: 1.05rem; margin: 0 0 0.35rem 0; color: var(--text-primary);">Keep Emergency Call Channels Open</h3>
-            <p style="margin: 0; font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6;">
-              Always configure Do Not Disturb bypass rules for starred family contacts and repeat callers as detailed in <a href="guides/guide-2.html">Setup Guide 2</a>, ensuring wellness restrictions never block real family emergencies.
-            </p>
+          <div class="premium-card">
+            <div class="step-badge" style="margin-bottom:0.75rem;">3</div>
+            <strong style="font-size:0.95rem; color:var(--text-primary); display:block; margin-bottom:0.4rem;">100% Free for Students</strong>
+            <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6; margin:0;">Unlimited passwords, unlimited devices, browser extension, and Android app — all completely free. No credit card required.</p>
           </div>
         </div>
       </section>
 
-      <!-- Section 5: Official Security Resources -->
-      <section aria-labelledby="resources-links-title" style="margin-bottom: 2rem;">
-        <div class="section-header" style="margin-bottom: 1.5rem;">
-          <span class="section-label">External Knowledge Base</span>
-          <h2 id="resources-links-title" class="section-title">Official Security &amp; Privacy Resources</h2>
-          <p class="section-desc">Deepen your digital self-defense knowledge with these official, non-profit security portals:</p>
+      <div class="section-divider"></div>
+
+      <!-- Section 4: Recommended Resources -->
+      <section class="content-section" aria-labelledby="resources-title">
+        <div class="section-header reveal">
+          <span class="section-label">Verified External Guides</span>
+          <h2 id="resources-title" class="section-title">4. Official Privacy Resources</h2>
+          <p class="section-desc">These are the primary sources we used while researching this guide — all official documentation, no affiliate links.</p>
         </div>
 
-        <div class="resource-grid">
-          
+        <div class="resource-grid reveal">
           <article class="resource-card">
             <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                <span class="badge badge-oss">EFF Non-Profit</span>
-                <span style="font-size: 0.8rem; color: var(--text-tertiary);">ssd.eff.org</span>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
+                <span class="badge badge-platform">Android Developers</span>
+                <span style="font-size:0.8rem; color:var(--text-tertiary);">developer.android.com</span>
               </div>
               <h3 class="resource-card-title">
-                <a href="https://ssd.eff.org/" target="_blank" rel="noopener noreferrer">
-                  Electronic Frontier Foundation: Surveillance Self-Defense
+                <a href="https://developer.android.com/training/permissions/requesting" target="_blank" rel="noopener noreferrer">
+                  Request App Permissions — Android Official Guide
                   <span class="sr-only">(opens in new window)</span>
                 </a>
               </h3>
-              <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                Step-by-step digital safety and communications privacy guides for students and journalists facing surveillance or digital tracking.
-              </p>
+              <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6; margin:0;">Complete official Android documentation explaining runtime permissions, dangerous permissions, and best practices for evaluating what access apps request.</p>
             </div>
-            <div style="margin-top: 1rem; font-size: 0.825rem; color: var(--accent); font-weight: 600;">
-              Visit Official Guide &rarr;
+            <div style="margin-top:1rem;">
+              <a href="https://developer.android.com/training/permissions/requesting" target="_blank" rel="noopener noreferrer" class="resource-card-cta">
+                Read Android Docs &rarr; <span class="sr-only">(opens in new window)</span>
+              </a>
             </div>
           </article>
 
           <article class="resource-card">
             <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                <span class="badge badge-platform">Google Android Docs</span>
-                <span style="font-size: 0.8rem; color: var(--text-tertiary);">developer.android.com</span>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
+                <span class="badge badge-oss">Open Source</span>
+                <span style="font-size:0.8rem; color:var(--text-tertiary);">github.com</span>
               </div>
               <h3 class="resource-card-title">
-                <a href="https://developer.android.com/privacy-and-security" target="_blank" rel="noopener noreferrer">
-                  Android Developer Official Security Documentation
+                <a href="https://github.com/gorhill/uBlock" target="_blank" rel="noopener noreferrer">
+                  uBlock Origin Source Code Repository
                   <span class="sr-only">(opens in new window)</span>
                 </a>
               </h3>
-              <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                Technical explanation of Android permission sandboxing, accessibility limitations, and storage scopes from Google engineers.
-              </p>
+              <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6; margin:0;">The complete open-source codebase for uBlock Origin. You can inspect exactly what the extension does and does not do — no proprietary black boxes.</p>
             </div>
-            <div style="margin-top: 1rem; font-size: 0.825rem; color: var(--accent); font-weight: 600;">
-              Visit Official Docs &rarr;
+            <div style="margin-top:1rem;">
+              <a href="https://github.com/gorhill/uBlock" target="_blank" rel="noopener noreferrer" class="resource-card-cta">
+                View Source Code &rarr; <span class="sr-only">(opens in new window)</span>
+              </a>
             </div>
           </article>
 
           <article class="resource-card">
             <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
                 <span class="badge badge-platform">Mozilla Support</span>
-                <span style="font-size: 0.8rem; color: var(--text-tertiary);">support.mozilla.org</span>
+                <span style="font-size:0.8rem; color:var(--text-tertiary);">support.mozilla.org</span>
               </div>
               <h3 class="resource-card-title">
                 <a href="https://support.mozilla.org/en-US/kb/tips-assessing-safety-extension" target="_blank" rel="noopener noreferrer">
@@ -338,36 +289,35 @@
                   <span class="sr-only">(opens in new window)</span>
                 </a>
               </h3>
-              <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                How to inspect add-on permissions, developer authenticity, and review history before installing any browser extension.
-              </p>
+              <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6; margin:0;">How to inspect add-on permissions, developer authenticity, and review history before installing any browser extension.</p>
             </div>
-            <div style="margin-top: 1rem; font-size: 0.825rem; color: var(--accent); font-weight: 600;">
-              Visit Official Guide &rarr;
+            <div style="margin-top:1rem;">
+              <a href="https://support.mozilla.org/en-US/kb/tips-assessing-safety-extension" target="_blank" rel="noopener noreferrer" class="resource-card-cta">
+                Visit Official Guide &rarr; <span class="sr-only">(opens in new window)</span>
+              </a>
             </div>
           </article>
 
           <article class="resource-card">
             <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
                 <span class="badge badge-oss">Third-Party Audit</span>
-                <span style="font-size: 0.8rem; color: var(--text-tertiary);">bitwarden.com</span>
+                <span style="font-size:0.8rem; color:var(--text-tertiary);">bitwarden.com</span>
               </div>
               <h3 class="resource-card-title">
-                <a href="https://bitwarden.com/compliance-and-security/" target="_blank" rel="noopener noreferrer">
+                <a href="https://bitwarden.com/compliance/" target="_blank" rel="noopener noreferrer">
                   Bitwarden Zero-Knowledge Cryptography Audits
                   <span class="sr-only">(opens in new window)</span>
                 </a>
               </h3>
-              <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                Third-party cryptographic audits verifying Bitwarden's end-to-end encrypted password architecture and zero-knowledge posture.
-              </p>
+              <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6; margin:0;">Third-party cryptographic audits verifying Bitwarden's end-to-end encrypted password architecture and zero-knowledge security posture.</p>
             </div>
-            <div style="margin-top: 1rem; font-size: 0.825rem; color: var(--accent); font-weight: 600;">
-              Read Security Audit &rarr;
+            <div style="margin-top:1rem;">
+              <a href="https://bitwarden.com/compliance/" target="_blank" rel="noopener noreferrer" class="resource-card-cta">
+                Read Security Audit &rarr; <span class="sr-only">(opens in new window)</span>
+              </a>
             </div>
           </article>
-
         </div>
       </section>
 
@@ -379,19 +329,16 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-            <svg style="width: 24px; height: 24px; color: var(--accent);" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
+            <svg style="width:24px; height:24px; color:var(--accent);" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
               <path d="M16 6v10l6 4" stroke="currentColor" stroke-width="2.2"/>
               <circle cx="16" cy="16" r="2" fill="currentColor"/>
             </svg>
-            <span style="font-weight: 800; font-size: 1.15rem; color: var(--text-primary);">ReflectHub</span>
+            <span style="font-weight:800; font-size:1.15rem; color:var(--text-primary);">ReflectHub</span>
           </div>
-          <p style="font-size: 0.875rem; margin-bottom: 1rem;">
-            Transparent, student-centered digital wellness resource hub.
-          </p>
+          <p style="font-size:0.875rem; margin-bottom:1rem;">Transparent, student-centered digital wellness resource hub.</p>
         </div>
-
         <div>
           <h2 class="footer-heading">Hub Navigation</h2>
           <ul class="footer-links">
@@ -401,7 +348,6 @@
             <li><a href="guides/index.html">Setup Guides</a></li>
           </ul>
         </div>
-
         <div>
           <h2 class="footer-heading">Trust &amp; Evidence</h2>
           <ul class="footer-links">
@@ -411,18 +357,18 @@
           </ul>
         </div>
       </div>
-
       <div class="footer-bottom">
-        <div>
-          &copy; 2026 ReflectHub Project &bull; Built for Undergraduates &bull; WCAG 2.2 AA Compliant
-        </div>
-        <div>
-          <a href="#main-content">Back to top &uarr;</a>
-        </div>
+        <div>&copy; 2026 ReflectHub Project &bull; Built for Undergraduates &bull; WCAG 2.2 AA Compliant</div>
+        <div><a href="#main-content">Back to top &uarr;</a></div>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/main.js?v=6"></script>
 </body>
 </html>

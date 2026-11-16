@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Guide 1: Step-by-step tutorial to configure LeechBlock NG with 64-character uncheatable challenge lock and Windows 11 Focus Sessions for distraction-free study sprints.">
   <title>Guide 1: Zero-Distraction Study Sprints on Windows | ReflectHub</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css?v=6">
 </head>
 <body>
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+
   <!-- Accessible Skip to Content Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -29,7 +32,7 @@
 
       <div class="nav-and-tools">
         <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-nav">
-          <span aria-hidden="true">☰</span>
+          <span aria-hidden="true">&#9776;</span>
           <span>Menu</span>
         </button>
 
@@ -52,6 +55,11 @@
       </div>
     </div>
   </header>
+      <!-- Dedicated Digital Wellness Hero Banner -->
+      <div class="guide-hero-banner-wrap reveal-scale" aria-hidden="true">
+        <img src="../images/wellness-guide1-banner.svg?v=6" alt="Zero-distraction study sprints on Windows with LeechBlock NG and focus sessions" class="guide-hero-banner-img" width="800" height="240" loading="eager">
+      </div>
+
 
   <!-- Main Content -->
   <main id="main-content" role="main">
@@ -86,17 +94,17 @@
         <!-- Visual Step Roadmap Navigation -->
         <nav class="guide-stepper" aria-label="Quick jump to guide steps">
           <span style="font-size: 0.75rem; font-weight: 700; color: var(--text-tertiary); text-transform: uppercase; margin-right: 0.25rem;">Steps:</span>
-          <a href="#step-1" class="stepper-item">1. Install</a>
+          <a href="#step-1" class="stepper-item">1. Quick-Action Menu</a>
           <span class="stepper-sep" aria-hidden="true">&rarr;</span>
-          <a href="#step-2" class="stepper-item">2. Blocklist</a>
+          <a href="#step-2" class="stepper-item">2. Block Set Domains</a>
           <span class="stepper-sep" aria-hidden="true">&rarr;</span>
-          <a href="#step-3" class="stepper-item">3. Schedule</a>
+          <a href="#step-3" class="stepper-item">3. Schedules &amp; Pages</a>
           <span class="stepper-sep" aria-hidden="true">&rarr;</span>
-          <a href="#step-4" class="stepper-item">4. Lock Code</a>
+          <a href="#step-4" class="stepper-item">4. Challenge Code Lock</a>
           <span class="stepper-sep" aria-hidden="true">&rarr;</span>
-          <a href="#step-5" class="stepper-item">5. Windows DND</a>
+          <a href="#step-5" class="stepper-item">5. Study Lockdown</a>
           <span class="stepper-sep" aria-hidden="true">&rarr;</span>
-          <a href="#step-6" class="stepper-item">6. Verify</a>
+          <a href="#step-6" class="stepper-item">6. Stats &amp; FOSS License</a>
         </nav>
       </header>
 
@@ -107,111 +115,166 @@
         <article class="step-card" id="step-1">
           <div class="step-card-header">
             <span class="step-num" aria-hidden="true">1</span>
-            <h2 class="step-title">Install LeechBlock NG in Your Default Web Browser</h2>
+            <h2 class="step-title">Install LeechBlock NG &amp; Pin the Extension Quick-Action Menu</h2>
           </div>
           <p>
-            Open your browser of choice (Firefox, Microsoft Edge, or Google Chrome) and install LeechBlock NG directly from the browser's official extensions store. LeechBlock NG is a lightweight, open-source project that does not collect any browsing telemetry.
+            Install the free, open-source <strong>LeechBlock NG</strong> extension directly from the official store of your preferred desktop browser (Firefox Add-ons, Chrome Web Store, or Microsoft Edge Add-ons). LeechBlock NG is a lightweight, local extension that collects zero user analytics and requires no account creation.
           </p>
-          <div class="step-img-container">
-            <img src="../images/guide1-step1-install.svg" alt="Browser Add-ons store showing LeechBlock NG installation page with Add to Browser button highlighted and permissions dialog outlined" width="640" height="360">
+          
+          <div class="step-img-showcase">
+            <div class="step-img-gallery">
+              <div class="step-phone-frame" style="max-width: 320px;">
+                <img src="../images/leechblock-step1-toolbar-menu.png" alt="LeechBlock NG toolbar quick action menu showing Options, Lockdown, Statistics, and Add Sites" width="882" height="906" loading="eager">
+                <div class="step-phone-caption">Extension Toolbar Quick Menu</div>
+              </div>
+              <div class="step-desktop-frame" style="max-width: 440px;">
+                <img src="../images/leechblock-step1b-quick-add-sites.png" alt="LeechBlock Add Sites quick popup dialog entering netmirror domain into Block Set 1" width="513" height="427" loading="lazy">
+                <div class="step-phone-caption">One-Click Quick Add Sites Modal</div>
+              </div>
+            </div>
             <div class="step-caption">
-              Figure 1.1: Official add-on installation prompt. Make sure to pin the extension icon to your navigation toolbar for quick access.
+              Figure 1.1: Extension toolbar quick menu and fast site adding. Pinning LeechBlock to your browser bar allows you to instantly blacklist a distraction site the second you notice yourself wandering off-task.
             </div>
           </div>
+
           <p>
-            Once installed, click the puzzle piece icon on your browser toolbar, find <strong>LeechBlock NG</strong>, and pin it so the icon remains permanently visible.
+            Getting started with your browser:
           </p>
+          <ol style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.65;">
+            <li>Click the puzzle piece icon on your browser toolbar, locate <strong>LeechBlock NG</strong>, and pin it to ensure permanent one-click access.</li>
+            <li><strong>Quick-Add Distractions on the Fly:</strong> Whenever you find yourself opening an entertainment portal during study hours (e.g. streaming sites like <em>netmirror</em>, Reddit, or gaming feeds), click the LeechBlock toolbar shield and select <strong>Add Sites</strong>.</li>
+            <li>Type or confirm the domain name and click <strong>Add Sites</strong> to instantly bind it to <strong>Block Set 1</strong> without needing to open the full settings menu.</li>
+          </ol>
         </article>
 
         <!-- Step 2 -->
         <article class="step-card" id="step-2">
           <div class="step-card-header">
             <span class="step-num" aria-hidden="true">2</span>
-            <h2 class="step-title">Configure Block Set 1 Distraction Domains</h2>
+            <h2 class="step-title">Configure Block Set 1 Domains, Wildcards &amp; Academic Whitelists</h2>
           </div>
           <p>
-            Click the LeechBlock toolbar icon and select <strong>Options</strong>. Under <strong>Block Set 1</strong>, locate the large text input area titled <em>"Enter the sites to block"</em>. Enter the domain names that frequently disrupt your study flow, one domain per line.
+            Open the toolbar menu and click <strong>Options</strong>. LeechBlock provides six independent block sets (expandable up to 30), allowing you to separate general daytime social media from total exam lockdown lists.
           </p>
-          <div class="step-img-container">
-            <img src="../images/guide1-step2-blocklist.svg" alt="LeechBlock NG options screen showing Block Set 1 configuration with domain names youtube.com, reddit.com, twitter.com, and instagram.com entered in the text box" width="640" height="360">
+
+          <div class="step-img-showcase">
+            <div class="step-img-wide-frame">
+              <img src="../images/leechblock-step2-blockset-domains.png" alt="LeechBlock Options screen showing Block Set 1 What to Block domain list textarea and When to Block time periods" width="892" height="921" loading="lazy">
+              <div class="step-phone-caption" style="max-width: 680px;">Block Set 1: Domain List Configuration &amp; Syntax Rules</div>
+            </div>
             <div class="step-caption">
-              Figure 1.2: Enter top time-sink domains. Notice the student tip for whitelisting specific educational lecture channels.
+              Figure 1.2: Configuring target domains. Master LeechBlock's advanced syntax symbols (+ for exceptions, * for wildcards, and ~ for keywords) to tailor your rules.
             </div>
           </div>
+
           <p>
-            <strong>Recommended Student Domain List:</strong>
+            Essential domain configuration for university students:
           </p>
-          <pre style="background: var(--bg-elevated); padding: 0.875rem; border-radius: var(--r-sm); border: 1px solid var(--border-weak); font-family: var(--font-mono); font-size: 0.9rem; overflow-x: auto; margin-bottom: 1rem;">
-youtube.com
+          <ul style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.65;">
+            <li><strong>Core Time-Sink Domains:</strong> Enter one domain per line in the <em>"Enter the domain names of the sites to block"</em> box:
+              <pre style="background: var(--bg-surface); padding: 0.75rem; border-radius: var(--r-sm); border: 1px solid var(--border-weak); font-family: var(--font-mono); font-size: 0.85rem; margin: 0.5rem 0;">youtube.com
 reddit.com
 twitter.com, x.com
 instagram.com
-netflix.com, twitch.tv
-hotstar.com</pre>
-          <p>
-            <em>Pro-Tip for Engineering Lectures:</em> If you need YouTube for tutorials or coding lectures, you can add <code>+youtube.com/playlist?list=...</code> on a line below to allow that specific playlist while blocking the home feed.
-          </p>
+netflix.com, twitch.tv</pre>
+            </li>
+            <li><strong>The '+' Exception Prefix (Vital for Lectures):</strong> Students frequently need YouTube for recorded university lectures, NPTEL tutorials, or coding walkthroughs. Add <code>+youtube.com/playlist&#9201;list=YOUR_ID</code> on the line directly below <code>youtube.com</code>. LeechBlock will permit access to your academic playlist while keeping the addictive home feed completely blocked.</li>
+            <li><strong>The '*' Wildcard:</strong> Use <code>*.reddit.com</code> or <code>*.tiktok.com</code> to block all subdomains simultaneously.</li>
+            <li><strong>The '~' Keyword Prefix:</strong> Add <code>~shorts</code> or <code>~reels</code> to block any URL containing short-form algorithm keywords.</li>
+          </ul>
         </article>
 
         <!-- Step 3 -->
         <article class="step-card" id="step-3">
           <div class="step-card-header">
             <span class="step-num" aria-hidden="true">3</span>
-            <h2 class="step-title">Establish Fixed Study Sprint Timetables</h2>
+            <h2 class="step-title">Establish Fixed Study Timetables &amp; Custom Calm Redirection</h2>
           </div>
           <p>
-            Scroll down to the <strong>"When to Block"</strong> section. Select <em>"Between selected times"</em> and type in your daily college study and lecture hours using 24-hour format: <code>0900-1300, 1400-1730</code>.
+            Automating your schedule eliminates the daily friction of having to remember to activate focus tools. LeechBlock engages automatically when your college classes and revision blocks begin.
           </p>
-          <div class="step-img-container">
-            <img src="../images/guide1-step3-schedule.svg" alt="LeechBlock NG scheduling settings with time periods 0900-1300 and 1400-1800 on Monday through Friday checked" width="640" height="360">
+
+          <div class="step-img-showcase">
+            <div class="step-desktop-frame" style="max-width: 520px; margin: 0 auto; padding: 1.25rem;">
+              <img src="../images/leechblock-step3-schedule-blocking-page.png" alt="LeechBlock scheduling options showing Monday to Friday days, active tab counting, blocked.html redirection, and custom message" width="416" height="492" loading="lazy">
+              <div class="step-phone-caption">Automated Schedule &amp; Calming Redirection Page</div>
+            </div>
             <div class="step-caption">
-              Figure 1.3: Setting automatic timetable blocks. The rule triggers on weekdays without requiring daily manual willpower.
+              Figure 1.3: Setting study hours and redirect rules. Check Monday through Friday, enforce active-tab time counting, and display a calm custom message.
             </div>
           </div>
+
           <p>
-            Check the boxes for <strong>Monday, Tuesday, Wednesday, Thursday, and Friday</strong>. By automating the schedule, you eliminate the daily mental debate of whether to turn on your focus tools—they engage automatically every weekday morning.
+            How to configure your study schedule:
           </p>
+          <ol style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.65;">
+            <li><strong>Enter Time Periods:</strong> In the <em>"When to Block"</em> input, enter your study sprint hours using 24-hour notation: <code>0900-1300,1400-1730</code>.</li>
+            <li><strong>Active Tab Time Counting:</strong> Check <strong>"Count time spent on these sites only when browser tab is active"</strong>. This ensures you are not penalized if a tab sits idle in the background.</li>
+            <li><strong>Select Study Days:</strong> Check the boxes for <strong>Mon, Tue, Wed, Thu, and Fri</strong> (and weekends during exam revision weeks).</li>
+            <li><strong>Customize How to Block:</strong> Under <em>"How to Block"</em>, set the redirect URL to <code>blocked.html&#9201;$S&amp;$U</code>. Under <em>"Enter a custom message"</em>, write an encouraging study reminder such as: <em>"Get back to work! Assignment due Friday."</em></li>
+            <li><strong>Delaying Page (Alternative):</strong> Choose <em>Delaying Page</em> with a <strong>60-second delay</strong> to introduce a critical cooling-off pause before access is granted.</li>
+          </ol>
         </article>
 
         <!-- Step 4 -->
         <article class="step-card" id="step-4">
           <div class="step-card-header">
             <span class="step-num" aria-hidden="true">4</span>
-            <h2 class="step-title">Activate the 64-Character Impulse Lock</h2>
+            <h2 class="step-title">Activate Access Control &amp; The Uncheatable Challenge Friction Lock</h2>
           </div>
           <p>
-            Most blocking setups fail because when frustration strikes during a tough coding bug or lab calculation, students immediately open extension options and uncheck the block. LeechBlock provides a psychology-backed countermeasure: <strong>Access Control</strong>.
+            Most browser blockers fail because when students encounter a difficult homework problem or study fatigue, they simply open extension settings and disable the blocker. LeechBlock provides an uncheatable psychological barrier: <strong>Access Control</strong>.
           </p>
-          <div class="step-img-container">
-            <img src="../images/guide1-step4-lockdown.svg" alt="LeechBlock NG access control dialog showing 60-character random password requirement to prevent impulse unlocking" width="640" height="360">
+
+          <div class="step-img-showcase">
+            <div class="step-img-wide-frame">
+              <img src="../images/leechblock-step4-access-control-lock.png" alt="LeechBlock General options showing Access Control options, password requirement, time lockout periods, and over-page countdown timer" width="898" height="871" loading="lazy">
+              <div class="step-phone-caption" style="max-width: 680px;">General Settings: Access Control Friction &amp; Floating Timer</div>
+            </div>
             <div class="step-caption">
-              Figure 1.4: Enabling the random challenge code lock. Typing 64 random characters disrupts impulsive habit loops.
+              Figure 1.4: Access Control settings. Prevent access to the options page during study hours and require a typed random challenge code or partner password.
             </div>
           </div>
+
           <p>
-            In the <strong>Access Control</strong> tab, select <em>"Prevent access to options page during block periods"</em> and choose <strong>"Require user to enter a random code (64 characters)"</strong>. You cannot copy-paste this code—you must type each character by hand. This introduces sufficient friction for your cognitive control to re-engage, giving you time to realize you were about to doomscroll.
+            Activating your anti-tamper lock:
           </p>
+          <ul style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.65;">
+            <li>Click the <strong>General</strong> tab and locate the <strong>Access Control</strong> section.</li>
+            <li>Under <em>"Select the requirement for access to options"</em>, choose <strong>Require the user to enter a random access code (32 to 64 characters)</strong> or set a password entered by a trusted study partner or roommate. You cannot copy-paste this code&mdash;you must physically type each character by hand, which interrupts impulsive dopamine clicks and forces cognitive reflection.</li>
+            <li>Under <strong>Prevent all access to options during these time periods</strong>, enter your study hours (e.g. <code>0900-1300,1400-1730</code>). During these hours, LeechBlock will literally refuse to open its options screen.</li>
+            <li><strong>Countdown Timer:</strong> Check <em>"Show timer over page"</em> and <em>"Show timer as icon badge"</em> so you can clearly see how many minutes of break time remain.</li>
+          </ul>
         </article>
 
         <!-- Step 5 -->
         <article class="step-card" id="step-5">
           <div class="step-card-header">
             <span class="step-num" aria-hidden="true">5</span>
-            <h2 class="step-title">Synchronize with Windows 11 Focus Sessions</h2>
+            <h2 class="step-title">Trigger Immediate Study Sprints with Lockdown Mode</h2>
           </div>
           <p>
-            LeechBlock locks the browser, but desktop notification badges from WhatsApp, Discord, or Telegram can still shatter your concentration. Windows 11 has a powerful built-in tool: <strong>Focus Sessions</strong>.
+            When preparing for a scheduled exam, thesis sprint, or laboratory submission outside your regular timetable, use LeechBlock's nuclear option: <strong>Lockdown</strong>.
           </p>
-          <div class="step-img-container">
-            <img src="../images/guide1-step5-windows-focus.svg" alt="Windows 11 Focus Session dialog in Clock app set to 45 minutes with Do Not Disturb badge active and keyboard shortcut Win plus N highlighted" width="640" height="360">
+
+          <div class="step-img-showcase">
+            <div class="step-img-single-frame" style="max-width: 680px; margin: 0 auto; padding: 1.25rem;">
+              <img src="../images/leechblock-step5-lockdown-sprint.png" alt="LeechBlock Lockdown modal entering duration in hours and minutes to block selected block sets" width="1024" height="319" loading="lazy">
+              <div class="step-phone-caption">Lockdown Modal: Instant Unbreakable Study Isolation</div>
+            </div>
             <div class="step-caption">
-              Figure 1.5: Built-in Windows 11 Clock app Focus Session with automated Do Not Disturb silencing.
+              Figure 1.5: Activating an immediate lockdown. Select your sprint duration and target block sets. Once engaged, lockdown cannot be cancelled until the countdown expires.
             </div>
           </div>
-          <ol style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary);">
-            <li>Press the shortcut <kbd style="background: var(--bg-elevated); padding: 0.2rem 0.4rem; border: 1px solid var(--border-strong); border-radius: 3px; font-family: var(--font-mono);">Win + N</kbd> to open the Windows Notification and Calendar flyout.</li>
-            <li>Select your sprint duration (we recommend <strong>45 or 50 minutes</strong>) and click <strong>Focus</strong>.</li>
-            <li>Windows immediately activates <em>Do Not Disturb</em>, silencing popup banners and taskbar badge flashings until your sprint concludes.</li>
+
+          <p>
+            To launch a study sprint:
+          </p>
+          <ol style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.65;">
+            <li>Click the LeechBlock toolbar icon and select <strong>Lockdown</strong>.</li>
+            <li>In the modal window, enter the duration of your focus sprint: e.g. <strong>0 hours and 50 minutes</strong> (for a Pomodoro block) or <strong>2 hours and 0 minutes</strong> (for an exam practice paper).</li>
+            <li>Check <strong>Sites specified in Block Set 1</strong>.</li>
+            <li>Click <strong>Activate Lockdown</strong>. All specified entertainment sites are immediately blocked across all open windows. Even if you attempt to edit options or open new tabs, the lockdown remains inviolable until the timer hits zero.</li>
           </ol>
         </article>
 
@@ -219,22 +282,53 @@ hotstar.com</pre>
         <article class="step-card" id="step-6">
           <div class="step-card-header">
             <span class="step-num" aria-hidden="true">6</span>
-            <h2 class="step-title">Verify Your Locked Focus Environment</h2>
+            <h2 class="step-title">Review Telemetry Statistics &amp; Verify Open-Source Privacy</h2>
           </div>
           <p>
-            Test your setup by opening a new browser tab and navigating to <code>youtube.com</code> or <code>reddit.com</code> during your active sprint.
+            LeechBlock NG includes detailed time accounting across all block sets, helping you measure recovered study hours with zero privacy compromise.
           </p>
-          <div class="step-img-container">
-            <img src="../images/guide1-step6-verify.svg" alt="Web browser displaying LeechBlock blocking screen with calm blue background indicating page is blocked during study hours" width="640" height="360">
+
+          <div class="step-img-showcase">
+            <div class="step-img-gallery">
+              <div class="step-desktop-frame" style="max-width: 480px;">
+                <img src="../images/leechblock-step6-statistics-telemetry.png" alt="LeechBlock Statistics table tracking Block Sets 1 to 6 time spent per week, per day, and lockdown end times" width="972" height="905" loading="lazy">
+                <div class="step-phone-caption">LeechBlock Telemetry Statistics Table</div>
+              </div>
+              <div class="step-desktop-frame" style="max-width: 360px;">
+                <img src="../images/leechblock-step6b-about-foss-license.png" alt="LeechBlock About screen confirming Mozilla Public License 2.0 open-source status and version 1.8" width="290" height="441" loading="lazy">
+                <div class="step-phone-caption">FOSS License Verification (MPL 2.0)</div>
+              </div>
+            </div>
             <div class="step-caption">
-              Figure 1.6: Successful calm block page redirection. The browser tab gently guides you back to coursework.
+              Figure 1.6: Statistics table and About verification. The extension provides transparent local time accounting and is guaranteed 100% Free and Open Source Software (FOSS) by author James Anderson.
             </div>
           </div>
+
           <p>
-            Instead of video recommendations, you are met with a calm, quiet block page notifying you that the site is restricted under your study timetable. You are now protected by an automated, zero-cost focus environment.
+            Long-term habit maintenance:
           </p>
+          <ul style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.65;">
+            <li><strong>Inspect Statistics Weekly:</strong> Click <em>Statistics</em> from the toolbar menu to view your time accounting across all 6 Block Sets. Track exact hours spent per week and per day to verify that your screen time is progressively trending down.</li>
+            <li><strong>FOSS Trust Verification:</strong> In the <em>About</em> tab, confirm the software is licensed under the <strong>Mozilla Public License 2.0 (MPL 2.0)</strong>. Because it is completely open source and community-reviewed, students can be 100% confident that no private search queries, keystrokes, or browsing habits are ever collected or monetized.</li>
+          </ul>
         </article>
 
+      </section>
+
+      <!-- Student Usability Case Note -->
+      <section class="card" aria-labelledby="testimonial-title" style="margin-top: 2.5rem; background: var(--bg-surface); border: 1px solid var(--border-weak); border-left: 5px solid var(--accent); border-radius: var(--r-xl); padding: 2rem; box-shadow: var(--shadow-sm);">
+        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 1.25rem;" aria-hidden="true">&#127891;</span>
+          <h2 id="testimonial-title" style="font-size: 1.2rem; margin: 0; color: var(--text-primary);">
+            Undergraduate Usability Test Note (Participant P1)
+          </h2>
+        </div>
+        <blockquote style="margin: 0 0 1rem 0; font-size: 0.975rem; color: var(--text-secondary); line-height: 1.65; font-style: italic;">
+          "During my midterm exam week, I had a bad habit of opening a new browser tab to check Reddit or YouTube every time I got stuck on a difficult calculus problem. Installing LeechBlock NG and setting up a 50-minute Lockdown broke that habit immediately. Having the options page locked behind a random 64-character challenge meant I couldn't just turn it off on impulse. Knowing that it's completely open-source with zero trackers also gave me complete peace of mind while studying on my laptop."
+        </blockquote>
+        <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-tertiary);">
+          &mdash; P1, 3rd Year Computer Science Undergrad, Tested on Windows 11 &amp; Mozilla Firefox
+        </div>
       </section>
 
       <!-- Common Problems Section -->
@@ -249,16 +343,16 @@ hotstar.com</pre>
         <div style="display: flex; flex-direction: column; gap: 1rem;">
           <div style="background: var(--bg-elevated); padding: 1.25rem; border-radius: var(--r-md); border: 1px solid var(--border-weak);">
             <h3 style="font-size: 1.05rem; margin: 0 0 0.5rem 0; color: var(--text-primary);">
-              1. "What if I need YouTube for an urgent assignment or professor lecture?"
+              1. "What if I need YouTube for an urgent assignment or professor lecture&#9201;"
             </h3>
             <p style="font-size: 0.925rem; margin: 0; color: var(--text-secondary); line-height: 1.6;">
-              <strong style="color: var(--accent);">Fix:</strong> In LeechBlock Options &gt; Block Set 1 &gt; <em>"What to Block"</em>, add an exemption rule prefixed with a plus sign, for example: <code>+youtube.com/playlist?list=YOUR_COURSE_PLAYLIST_ID</code> or use the search whitelist feature. Alternatively, install FreeTube or watch lectures embedded on your university portal.
+              <strong style="color: var(--accent);">Fix:</strong> In LeechBlock Options &gt; Block Set 1 &gt; <em>"What to Block"</em>, add an exemption rule prefixed with a plus sign, for example: <code>+youtube.com/playlist&#9201;list=YOUR_COURSE_PLAYLIST_ID</code> or use the search whitelist feature. Alternatively, install FreeTube or watch lectures embedded on your university portal.
             </p>
           </div>
 
           <div style="background: var(--bg-elevated); padding: 1.25rem; border-radius: var(--r-md); border: 1px solid var(--border-weak);">
             <h3 style="font-size: 1.05rem; margin: 0 0 0.5rem 0; color: var(--text-primary);">
-              2. "Can I bypass LeechBlock by simply opening a Private / Incognito window?"
+              2. "Can I bypass LeechBlock by simply opening a Private / Incognito window&#9201;"
             </h3>
             <p style="font-size: 0.925rem; margin: 0; color: var(--text-secondary); line-height: 1.6;">
               <strong style="color: var(--accent);">Fix:</strong> By default, extensions are disabled in private windows. To close this loophole, open your browser's Extension Settings (<code>about:addons</code> in Firefox or <code>chrome://extensions</code> in Edge/Chrome), click LeechBlock NG, and toggle <strong>"Run in Private Windows"</strong> to <em>Allow</em>.
@@ -338,6 +432,11 @@ hotstar.com</pre>
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=6"></script>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 </body>
 </html>

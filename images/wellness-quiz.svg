@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%" fill="none" role="img" aria-label="Personalized digital wellness decision aid">
+  <defs>
+    <linearGradient id="qz-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="qz-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdfa"/>
+      <stop offset="100%" stop-color="#e0e7ff"/>
+    </linearGradient>
+    <filter id="qz-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="360" rx="20" fill="url(#qz-bg)"/>
+
+  <!-- Compass Background Dial -->
+  <g transform="translate(300, 170)">
+    <circle r="120" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8 8" opacity="0.6"/>
+    <circle r="95" stroke="#94a3b8" stroke-width="1.5" opacity="0.4"/>
+    <circle r="60" fill="#ffffff" filter="url(#qz-shadow)"/>
+    <!-- Cardinal Directions -->
+    <text x="0" y="-102" font-family="system-ui,sans-serif" font-size="11" font-weight="900" fill="#0d9488" text-anchor="middle">FOCUS</text>
+    <text x="0" y="112" font-family="system-ui,sans-serif" font-size="11" font-weight="900" fill="#6366f1" text-anchor="middle">SLEEP</text>
+    <text x="108" y="4" font-family="system-ui,sans-serif" font-size="10" font-weight="900" fill="#0284c7" text-anchor="middle">PRIVACY</text>
+    <text x="-108" y="4" font-family="system-ui,sans-serif" font-size="10" font-weight="900" fill="#0f766e" text-anchor="middle">BUDGET</text>
+
+    <!-- Compass Needle -->
+    <polygon points="0,-45 10,0 0,6 -10,0" fill="#0d9488"/>
+    <polygon points="0,45 10,0 0,-6 -10,0" fill="#6366f1"/>
+    <circle r="8" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+    <circle r="3" fill="#0d9488"/>
+  </g>
+
+  <!-- Left: Student Decision Aid Card -->
+  <g transform="translate(50, 90)" filter="url(#qz-shadow)">
+    <rect width="160" height="160" rx="14" fill="#ffffff"/>
+    <rect x="15" y="18" width="55" height="18" rx="9" fill="#ccfbf1"/>
+    <text x="42" y="30" font-family="system-ui,sans-serif" font-size="9" font-weight="bold" fill="#0f766e" text-anchor="middle">Step 1</text>
+    <text x="15" y="60" font-family="system-ui,sans-serif" font-size="13" font-weight="800" fill="#0f172a">Hardware Setup</text>
+    <rect x="15" y="75" width="130" height="24" rx="6" fill="#f8fafc" stroke="#0d9488" stroke-width="1.5"/>
+    <circle cx="28" cy="87" r="5" fill="#0d9488"/>
+    <text x="42" y="91" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#0f172a">Android + Windows</text>
+    <rect x="15" y="108" width="130" height="24" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="28" cy="120" r="5" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="42" y="124" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">Budget: &#8377;0 Free</text>
+  </g>
+
+  <!-- Right: Match Result Card -->
+  <g transform="translate(390, 85)" filter="url(#qz-shadow)">
+    <rect width="160" height="170" rx="14" fill="#ffffff"/>
+    <rect x="15" y="18" width="70" height="18" rx="9" fill="#ecfdf5"/>
+    <text x="50" y="30" font-family="system-ui,sans-serif" font-size="9" font-weight="bold" fill="#059669" text-anchor="middle">&#10003; 98% Match</text>
+    <text x="15" y="60" font-family="system-ui,sans-serif" font-size="13" font-weight="800" fill="#0f172a">Your Ideal Tool</text>
+    <text x="15" y="78" font-family="system-ui,sans-serif" font-size="11" font-weight="bold" fill="#0d9488">StayFree + LeechBlock</text>
+    <p x="15" y="95" font-family="system-ui,sans-serif" font-size="9" fill="#64748b">Zero cost, cross-device screen tracking &amp; focus sprint locks.</p>
+    <rect x="15" y="122" width="130" height="28" rx="8" fill="url(#qz-grad)"/>
+    <text x="80" y="140" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">View Recommended &#8594;</text>
+  </g>
+</svg>

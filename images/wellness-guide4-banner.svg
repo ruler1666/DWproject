@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%" fill="none" role="img" aria-label="Cross-device screen time analytics with StayFree illustration">
+  <defs>
+    <linearGradient id="g4-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="240" rx="16" fill="url(#g4-bg)"/>
+  <!-- Sync Wave -->
+  <path d="M520 120 C560 90 600 150 640 120 C680 90 720 150 760 120" stroke="#10b981" stroke-width="2" stroke-dasharray="4 4" opacity="0.4"/>
+  <!-- Devices in Sync -->
+  <g transform="translate(510, 50)">
+    <!-- Smartphone -->
+    <rect width="70" height="125" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="6" y="8" width="58" height="109" rx="6" fill="#0f172a"/>
+    <text x="35" y="30" font-family="system-ui,sans-serif" font-size="8" font-weight="bold" fill="#6ee7b7" text-anchor="middle">PHONE</text>
+    <text x="35" y="55" font-family="system-ui,sans-serif" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">1h 45m</text>
+    <!-- Mini chart bars -->
+    <rect x="12" y="80" width="8" height="25" fill="#10b981" rx="2"/>
+    <rect x="24" y="88" width="8" height="17" fill="#10b981" rx="2"/>
+    <rect x="36" y="70" width="8" height="35" fill="#34d399" rx="2"/>
+    <rect x="48" y="92" width="8" height="13" fill="#10b981" rx="2"/>
+  </g>
+  <g transform="translate(620, 60)">
+    <!-- Laptop -->
+    <rect width="140" height="95" rx="6" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <rect x="6" y="6" width="128" height="83" rx="4" fill="#0f172a"/>
+    <text x="70" y="28" font-family="system-ui,sans-serif" font-size="8" font-weight="bold" fill="#6ee7b7" text-anchor="middle">WINDOWS PC</text>
+    <text x="70" y="52" font-family="system-ui,sans-serif" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">2h 10m</text>
+    <text x="70" y="72" font-family="system-ui,sans-serif" font-size="7.5" fill="#a7f3d0" text-anchor="middle">&#10003; 42% under budget</text>
+    <!-- Base -->
+    <path d="M-15 100 L155 100 L140 108 L0 108 Z" fill="#64748b"/>
+  </g>
+  <!-- Left Content -->
+  <text x="50" y="70" font-family="system-ui,sans-serif" font-size="12" font-weight="800" fill="#34d399" letter-spacing="1">GUIDE 04 &#8226; CROSS-DEVICE ANALYTICS</text>
+  <text x="50" y="105" font-family="system-ui,sans-serif" font-size="22" font-weight="900" fill="#ffffff">StayFree Screen Time Tracking</text>
+  <text x="50" y="135" font-family="system-ui,sans-serif" font-size="13" fill="#94a3b8">Unify your phone &amp; laptop screen stats to see where your hours really go</text>
+  <g transform="translate(50, 160)">
+    <rect width="90" height="28" rx="14" fill="#10b981" opacity="0.25"/>
+    <text x="45" y="18" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#6ee7b7" text-anchor="middle">&#8987; 10m Setup</text>
+    <rect x="100" y="0" width="140" height="28" rx="14" fill="#0284c7" opacity="0.25"/>
+    <text x="170" y="18" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#38bdf8" text-anchor="middle">&#128241; Android + &#128187; Windows</text>
+  </g>
+</svg>

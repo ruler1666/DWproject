@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%" fill="none" role="img" aria-label="Minimalist phone launcher and dopamine detox illustration">
+  <defs>
+    <linearGradient id="g5-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="240" rx="16" fill="url(#g5-bg)"/>
+  <!-- Monochrome Smartphone -->
+  <g transform="translate(570, 30)">
+    <rect width="115" height="185" rx="16" fill="#09090b" stroke="#27272a" stroke-width="2.5"/>
+    <rect x="6" y="8" width="103" height="169" rx="10" fill="#000000"/>
+    <!-- Minimalist phone text launcher UI -->
+    <text x="18" y="35" font-family="system-ui,sans-serif" font-size="14" font-weight="300" fill="#ffffff">09:41</text>
+    <text x="18" y="48" font-family="system-ui,sans-serif" font-size="7" fill="#71717a">Wednesday, 28 Oct</text>
+    <!-- Text-only app list -->
+    <text x="18" y="80" font-family="system-ui,sans-serif" font-size="11" font-weight="500" fill="#f4f4f5">phone</text>
+    <text x="18" y="100" font-family="system-ui,sans-serif" font-size="11" font-weight="500" fill="#f4f4f5">messages</text>
+    <text x="18" y="120" font-family="system-ui,sans-serif" font-size="11" font-weight="500" fill="#f4f4f5">notes</text>
+    <text x="18" y="140" font-family="system-ui,sans-serif" font-size="11" font-weight="500" fill="#f4f4f5">calendar</text>
+    <!-- Mindful Pause Prompt -->
+    <rect x="12" y="152" width="90" height="16" rx="4" fill="#27272a"/>
+    <text x="57" y="163" font-family="system-ui,sans-serif" font-size="6.5" font-weight="bold" fill="#a1a1aa" text-anchor="middle">15s pause before opening</text>
+  </g>
+  <!-- Left Content -->
+  <text x="50" y="70" font-family="system-ui,sans-serif" font-size="12" font-weight="800" fill="#e4e4e7" letter-spacing="1">GUIDE 05 &#8226; MINIMALIST INTERFACE</text>
+  <text x="50" y="105" font-family="system-ui,sans-serif" font-size="22" font-weight="900" fill="#ffffff">minimalist phone &amp; Dopamine Reset</text>
+  <text x="50" y="135" font-family="system-ui,sans-serif" font-size="13" fill="#a1a1aa">Replace glowing slot-machine app icons with a calm, text-only monochrome launcher</text>
+  <g transform="translate(50, 160)">
+    <rect width="90" height="28" rx="14" fill="#3f3f46" opacity="0.6"/>
+    <text x="45" y="18" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">&#8987; 8m Setup</text>
+    <rect x="100" y="0" width="130" height="28" rx="14" fill="#27272a" stroke="#52525b" stroke-width="1"/>
+    <text x="165" y="18" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#e4e4e7" text-anchor="middle">&#128241; Android 6.0+</text>
+  </g>
+</svg>

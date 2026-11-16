@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%" fill="none" role="img" aria-label="Windows study sprints illustration">
+  <defs>
+    <linearGradient id="g1-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="g1-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="240" rx="16" fill="url(#g1-bg)"/>
+  <!-- Focus Halo -->
+  <circle cx="650" cy="120" r="100" stroke="#0d9488" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.3"/>
+  <circle cx="650" cy="120" r="70" fill="#0d9488" opacity="0.15"/>
+  <!-- Laptop Illustration -->
+  <g transform="translate(560, 45)">
+    <rect width="180" height="115" rx="8" fill="#334155" stroke="#475569" stroke-width="2"/>
+    <rect x="8" y="8" width="164" height="99" rx="4" fill="#0f172a"/>
+    <!-- Focus session countdown -->
+    <circle cx="90" cy="50" r="28" stroke="#0d9488" stroke-width="4" stroke-dasharray="140 30"/>
+    <text x="90" y="55" font-family="system-ui,sans-serif" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">45:00</text>
+    <text x="90" y="85" font-family="system-ui,sans-serif" font-size="8" font-weight="bold" fill="#2dd4bf" text-anchor="middle">FOCUS ACTIVE</text>
+    <!-- Base -->
+    <path d="M-20 120 L200 120 L180 130 L-0 130 Z" fill="#64748b"/>
+  </g>
+  <!-- Text Info on Left -->
+  <text x="50" y="70" font-family="system-ui,sans-serif" font-size="12" font-weight="800" fill="#2dd4bf" letter-spacing="1">GUIDE 01 &#8226; WINDOWS 10 / 11</text>
+  <text x="50" y="105" font-family="system-ui,sans-serif" font-size="22" font-weight="900" fill="#ffffff">Zero-Distraction Study Sprints</text>
+  <text x="50" y="135" font-family="system-ui,sans-serif" font-size="13" fill="#94a3b8">LeechBlock NG 64-char friction lock + Native Windows Focus Sessions</text>
+  <g transform="translate(50, 160)">
+    <rect width="90" height="28" rx="14" fill="#14b8a6" opacity="0.2"/>
+    <text x="45" y="18" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#2dd4bf" text-anchor="middle">&#8987; 12m Setup</text>
+    <rect x="100" y="0" width="100" height="28" rx="14" fill="#0284c7" opacity="0.2"/>
+    <text x="150" y="18" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#38bdf8" text-anchor="middle">&#8377;0 Free / OSS</text>
+  </g>
+</svg>

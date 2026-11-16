@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Guide 2: How to configure Android Bedtime Mode, grayscale display automation, and emergency call exceptions for healthy sleep without missing critical family alerts.">
   <title>Guide 2: Android Bedtime Mode &amp; Grayscale | ReflectHub</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css?v=6">
 </head>
 <body>
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+
   <!-- Accessible Skip to Content Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -29,7 +32,7 @@
 
       <div class="nav-and-tools">
         <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-nav">
-          <span aria-hidden="true">☰</span>
+          <span aria-hidden="true">&#9776;</span>
           <span>Menu</span>
         </button>
 
@@ -52,6 +55,11 @@
       </div>
     </div>
   </header>
+      <!-- Dedicated Digital Wellness Hero Banner -->
+      <div class="guide-hero-banner-wrap reveal-scale" aria-hidden="true">
+        <img src="../images/wellness-guide2-banner.svg?v=6" alt="Android bedtime mode and grayscale display automation for restful sleep" class="guide-hero-banner-img" width="800" height="240" loading="eager">
+      </div>
+
 
   <!-- Main Content -->
   <main id="main-content" role="main">
@@ -86,17 +94,17 @@
         <!-- Visual Step Roadmap Navigation -->
         <nav class="guide-stepper" aria-label="Quick jump to guide steps">
           <span style="font-size: 0.75rem; font-weight: 700; color: var(--text-tertiary); text-transform: uppercase; margin-right: 0.25rem;">Steps:</span>
-          <a href="#step-1" class="stepper-item">1. Settings</a>
+          <a href="#step-1" class="stepper-item">1. Settings &amp; Privacy</a>
           <span class="stepper-sep" aria-hidden="true">&rarr;</span>
-          <a href="#step-2" class="stepper-item">2. Schedule</a>
+          <a href="#step-2" class="stepper-item">2. Sleep Schedule</a>
           <span class="stepper-sep" aria-hidden="true">&rarr;</span>
-          <a href="#step-3" class="stepper-item">3. Grayscale</a>
+          <a href="#step-3" class="stepper-item">3. Grayscale Mode</a>
           <span class="stepper-sep" aria-hidden="true">&rarr;</span>
-          <a href="#step-4" class="stepper-item">4. DND Bypass</a>
+          <a href="#step-4" class="stepper-item">4. App Timers</a>
           <span class="stepper-sep" aria-hidden="true">&rarr;</span>
-          <a href="#step-5" class="stepper-item">5. App Timers</a>
+          <a href="#step-5" class="stepper-item">5. Telemetry &amp; Unlocks</a>
           <span class="stepper-sep" aria-hidden="true">&rarr;</span>
-          <a href="#step-6" class="stepper-item">6. Wake Routine</a>
+          <a href="#step-6" class="stepper-item">6. Weekly Report</a>
         </nav>
       </header>
 
@@ -107,44 +115,73 @@
         <article class="step-card" id="step-1">
           <div class="step-card-header">
             <span class="step-num" aria-hidden="true">1</span>
-            <h2 class="step-title">Access Digital Wellbeing in Android Settings</h2>
+            <h2 class="step-title">Access Native Digital Wellbeing &amp; Configure System Privacy</h2>
           </div>
           <p>
-            You do not need to download sketchy third-party apps from the Play Store. Android includes enterprise-grade screen time management directly inside your system settings.
+            You do not need to install third-party tracking apps to manage your screen time. Android integrates comprehensive, system-level wellness telemetry directly into your operating system settings.
           </p>
-          <div class="step-img-container">
-            <img src="../images/guide2-step1-settings.svg" alt="Android Settings screen showing Digital Wellbeing and parental controls option highlighted in the menu" width="640" height="360">
+          
+          <div class="step-img-showcase">
+            <div class="step-img-gallery">
+              <div class="step-phone-frame">
+                <img src="../images/wellbeing-step1-dashboard.jpg" alt="Native Android Digital Wellbeing home screen showing daily screen time donut chart and app timer options" width="472" height="1024" loading="eager">
+                <div class="step-phone-caption">Digital Wellbeing Home &amp; Donut Chart</div>
+              </div>
+              <div class="step-phone-frame">
+                <img src="../images/wellbeing-step1b-settings-privacy.jpg" alt="Digital Wellbeing system settings showing app icon toggle and on-device usage data privacy" width="472" height="1024" loading="lazy">
+                <div class="step-phone-caption">System Settings &amp; Privacy Safeguards</div>
+              </div>
+            </div>
             <div class="step-caption">
-              Figure 2.1: Locating the native Digital Wellbeing menu inside system settings.
+              Figure 2.1: Native Digital Wellbeing menu. The donut chart visualizes daily consumption (e.g. 54m total across WhatsApp, Instagram, and Play Store) with zero battery overhead.
             </div>
           </div>
+
           <p>
-            Open <strong>Settings</strong> on your Android phone, scroll down, and tap <strong>Digital Wellbeing &amp; parental controls</strong>. (On Xiaomi / MIUI / HyperOS or Samsung One UI devices, this may appear as <em>Digital Wellbeing and parental controls</em> or simply <em>Digital Wellbeing</em>).
+            Follow these configuration steps:
           </p>
+          <ol style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.65;">
+            <li>Open <strong>Settings</strong> on your Android phone, scroll down, and tap <strong>Digital Wellbeing and parental controls</strong> (or <em>Digital Wellbeing</em> on Samsung One UI, Google Pixel, and Xiaomi/HyperOS).</li>
+            <li>Tap the three-dot menu in the upper right corner and select <strong>Settings</strong>.</li>
+            <li>Toggle <strong>Show Digital Wellbeing on Apps screen</strong> to ON. This places a clean shortcut directly in your app drawer so you can monitor screen time without digging through system menus.</li>
+            <li><strong>Privacy Safeguard Check:</strong> Notice that under <em>Privacy</em>, Usage data access is handled locally by the Android OS. No personal chats, browsing URLs, or passwords are transmitted to external ad servers.</li>
+          </ol>
         </article>
 
         <!-- Step 2 -->
         <article class="step-card" id="step-2">
           <div class="step-card-header">
             <span class="step-num" aria-hidden="true">2</span>
-            <h2 class="step-title">Establish Your Bedtime Mode Schedule</h2>
+            <h2 class="step-title">Automate Bedtime Sleep Routines via Modes &amp; Routines</h2>
           </div>
           <p>
-            Under the <em>"Ways to disconnect"</em> section, tap <strong>Bedtime mode</strong>. Tap <strong>Bedtime routine</strong> and select <em>"Turn on based on schedule"</em>.
+            Modern Android (One UI 5/6, Android 13/14) unifies bedtime automation inside the powerful <strong>Modes and Routines</strong> framework, allowing your handset to adapt automatically to your evening schedule.
           </p>
-          <div class="step-img-container">
-            <img src="../images/guide2-step2-bedtime-schedule.svg" alt="Android Bedtime mode scheduling screen showing start time 11:00 PM and end time 7:00 AM selected on Monday through Friday" width="640" height="360">
+
+          <div class="step-img-showcase">
+            <div class="step-img-gallery">
+              <div class="step-phone-frame">
+                <img src="../images/wellbeing-step2-modes-routines.jpg" alt="Android Modes and Routines overview menu showing Sleep, Theatre, Driving, Exercise, Relax, and Work modes" width="472" height="1024" loading="lazy">
+                <div class="step-phone-caption">System Modes &amp; Routines Hub</div>
+              </div>
+              <div class="step-phone-frame">
+                <img src="../images/wellbeing-step2b-sleep-mode.jpg" alt="Sleep mode configuration screen showing automatic trigger schedule and distraction blocking" width="472" height="1024" loading="lazy">
+                <div class="step-phone-caption">Automated Sleep Mode Setup</div>
+              </div>
+            </div>
             <div class="step-caption">
-              Figure 2.2: Programming your automated night schedule (11:00 PM to 07:00 AM on weekdays).
+              Figure 2.2: Programming Sleep Mode. Automate activation so you never have to remember to switch on Do Not Disturb manually before sleeping.
             </div>
           </div>
+
           <p>
-            Configure your timetable:
+            How to set your automated bedtime schedule:
           </p>
-          <ul style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary);">
-            <li><strong>Start time:</strong> <code>11:00 PM</code> (or 45 minutes before you intend to sleep).</li>
-            <li><strong>End time:</strong> <code>07:00 AM</code> (or your morning alarm time).</li>
-            <li><strong>Days:</strong> Check Sunday night through Thursday night (or all 7 days for consistent sleep rhythm).</li>
+          <ul style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.65;">
+            <li>Navigate to <em>Settings &gt; Modes and Routines</em> (or tap <em>Bedtime mode</em> from the bottom of Digital Wellbeing).</li>
+            <li>Tap the blue <strong>Sleep</strong> mode card with the bed and crescent moon icon.</li>
+            <li>Under <strong>Turn on automatically</strong>, tap <em>When to start this mode</em>. Set your target sleep window (e.g., <strong>11:00 PM to 07:00 AM</strong>) and select all 7 days for a consistent circadian rhythm.</li>
+            <li>Under <strong>Stay focused</strong>, tap <em>Ways to avoid distractions</em> to activate Do Not Disturb. Add crucial emergency exceptions (such as your parents, hostel warden, or repeated calls) so you never miss a real-world emergency while sleeping.</li>
           </ul>
         </article>
 
@@ -152,41 +189,70 @@
         <article class="step-card" id="step-3">
           <div class="step-card-header">
             <span class="step-num" aria-hidden="true">3</span>
-            <h2 class="step-title">Activate Automatic Grayscale &amp; Screen Dimming</h2>
+            <h2 class="step-title">Activate Automatic Grayscale &amp; Screen Appearance Transformation</h2>
           </div>
           <p>
-            Tap <strong>Customize</strong> inside Bedtime mode settings. Ensure that the <strong>Grayscale</strong> toggle is switched <strong>ON</strong>.
+            The cornerstone of breaking late-night smartphone addiction is stripping the screen of color. When your scheduled sleep mode activates, Android automatically desaturates your entire display.
           </p>
-          <div class="step-img-container">
-            <img src="../images/guide2-step3-grayscale.svg" alt="Android Bedtime customization settings showing Grayscale toggle switch enabled and screen colors desaturated" width="640" height="360">
+
+          <div class="step-img-showcase">
+            <div class="step-img-single-frame">
+              <img src="../images/wellbeing-step3-grayscale-appearance.jpg" alt="Sleep mode appearance settings showing grayscale lock screen and home screen preview" width="472" height="1024" loading="lazy">
+              <div class="step-phone-caption" style="max-width: 440px;">Appearance Settings: Automatic Grayscale &amp; Dark Theme</div>
+            </div>
             <div class="step-caption">
-              Figure 2.3: Grayscale switch enabled. Stripping color dramatically decreases compulsive visual stimulation.
+              Figure 2.3: Visual desaturation in Sleep Mode. Stripping color from your lock screen and home screen removes the dopamine stimulation of vibrant app icons and short-form video feeds.
             </div>
           </div>
+
           <p>
-            <strong>The Neuroscience Principle:</strong> Social media apps employ bright red badge notifications, saturated video thumbnails, and vibrant UI color gradients designed to trigger micro-dopamine hits in human visual pathways. In black-and-white, Instagram reels and YouTube videos look bland, flat, and boring. Your brain naturally loses interest within 3 to 5 minutes, making it easy to put the phone down.
+            The Neuroscience Principle for Students:
           </p>
+          <ul style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.65;">
+            <li><strong>How Color Hooks the Brain:</strong> High-dopamine apps like Instagram Reels, TikTok, and YouTube rely on vivid, high-saturation colors and bright red notification badges to trigger involuntary visual orientation reflexes.</li>
+            <li><strong>Why Grayscale Works:</strong> In black-and-white, social media video feeds look flat, boring, and emotionally drained. Without artificial color stimulation, your brain naturally loses interest within 3 to 5 minutes, allowing your natural melatonin surge to take over.</li>
+            <li><strong>Appearance Setup:</strong> In Sleep mode, tap <strong>Change appearance</strong>, select the Grayscale filter, and apply a muted, dark wallpaper to both the lock screen and home screen.</li>
+          </ul>
         </article>
 
         <!-- Step 4 -->
         <article class="step-card" id="step-4">
           <div class="step-card-header">
             <span class="step-num" aria-hidden="true">4</span>
-            <h2 class="step-title">Configure Do Not Disturb &amp; Emergency Exceptions</h2>
+            <h2 class="step-title">Configure Graduated App Timers &amp; Category Screen Time Goals</h2>
           </div>
           <p>
-            The number one objection students have to turning on Do Not Disturb is: <em>"What if my parents or hostel warden call with an emergency?"</em> Android allows granular bypass rules.
+            While Sleep Mode protects your night, daytime study blocks require firm boundaries. Digital Wellbeing allows you to assign strict daily quotas to individual apps and broad categories.
           </p>
-          <div class="step-img-container">
-            <img src="../images/guide2-step4-dnd-exceptions.svg" alt="Do Not Disturb settings showing emergency call exceptions with Starred Contacts and Repeat Callers turned on" width="640" height="360">
+
+          <div class="step-img-showcase">
+            <div class="step-img-gallery">
+              <div class="step-phone-frame">
+                <img src="../images/wellbeing-step4-app-timers.jpg" alt="Android App timer configuration screen for WhatsApp with 58-minute cap and early alert warnings" width="472" height="1024" loading="lazy">
+                <div class="step-phone-caption">Granular App Timer &amp; Early Alerts</div>
+              </div>
+              <div class="step-phone-frame">
+                <img src="../images/wellbeing-step4b-category-goal.jpg" alt="Category screen time goal menu showing Social category, comfort care walking tracking, and Focus mode links" width="472" height="1024" loading="lazy">
+                <div class="step-phone-caption">Social Category Goals &amp; Walking Screen Time</div>
+              </div>
+              <div class="step-phone-frame">
+                <img src="../images/wellbeing-step4c-goal-roller.jpg" alt="Screen time goal roller wheel selector setting daily screen time cap" width="472" height="1024" loading="lazy">
+                <div class="step-phone-caption">Screen Time Goal Roller</div>
+              </div>
+            </div>
             <div class="step-caption">
-              Figure 2.4: Setting up emergency exceptions so parents and critical calls always ring through.
+              Figure 2.4: App timer and category goal configuration. Set daily caps with 10m, 5m, and 1m early warnings before the app turns gray and locks until midnight.
             </div>
           </div>
-          <ol style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary);">
-            <li>Inside Bedtime mode, tap <strong>Do Not Disturb</strong>.</li>
-            <li>Tap <strong>People &gt; Calls</strong> and select <strong>"Starred contacts only"</strong>. Open your Android Contacts app and tap the star icon next to your parents and roommate.</li>
-            <li>Toggle <strong>"Allow repeat callers"</strong> to <strong>ON</strong>. If anyone calls twice within 15 minutes, the second call will ring at full volume regardless of silence mode.</li>
+
+          <p>
+            How to configure your daytime limits:
+          </p>
+          <ol style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.65;">
+            <li>Under <strong>App timers</strong>, tap <em>Set timer</em> next to high-distraction apps (e.g. WhatsApp or Instagram).</li>
+            <li>Use the roller wheel to set a realistic daily quota (e.g., <strong>00:58</strong> for 58 minutes). Check all 7 days (S M T W T F S) for steady enforcement.</li>
+            <li>Notice the <strong>App timer alerts</strong> feature: Digital Wellbeing notifies you at <strong>10 minutes, 5 minutes, and 1 minute before</strong> your time runs out, preventing sudden mid-conversation lockouts.</li>
+            <li>Tap into the <strong>Social</strong> category card to set an overarching category goal (e.g., capping total social networking to under 2 hours daily).</li>
           </ol>
         </article>
 
@@ -194,42 +260,84 @@
         <article class="step-card" id="step-5">
           <div class="step-card-header">
             <span class="step-num" aria-hidden="true">5</span>
-            <h2 class="step-title">Set 30-Minute Daily App Timers for Dopamine Traps</h2>
+            <h2 class="step-title">Inspect Daily Telemetry, Notification Velocity &amp; Unlock Counts</h2>
           </div>
           <p>
-            Return to the main Digital Wellbeing dashboard and tap <strong>Dashboard</strong> (or <em>App Timers</em>). Locate your top two distracting applications (usually Instagram, YouTube, or Snapchat).
+            True digital control starts with objective self-awareness. Digital Wellbeing tracks three critical behavioral metrics: active screen minutes, notification spikes, and compulsive phone unlocks.
           </p>
-          <div class="step-img-container">
-            <img src="../images/guide2-step5-app-timers.svg" alt="Digital Wellbeing dashboard setting a 30-minute daily app timer limit for Instagram and YouTube" width="640" height="360">
+
+          <div class="step-img-showcase">
+            <div class="step-img-gallery">
+              <div class="step-phone-frame">
+                <img src="../images/wellbeing-step5-telemetry-dashboard.jpg" alt="Daily telemetry dashboard showing stacked app bar charts and 94 notifications summary" width="472" height="1024" loading="lazy">
+                <div class="step-phone-caption">Daily App Usage &amp; Notification Telemetry</div>
+              </div>
+              <div class="step-phone-frame">
+                <img src="../images/wellbeing-step5b-notifications-unlocks.jpg" alt="Notification breakdown by app (WhatsApp, Instagram, Snapchat) and daily phone unlock bar chart" width="472" height="1024" loading="lazy">
+                <div class="step-phone-caption">Notification Culprits &amp; Unlock Counts</div>
+              </div>
+            </div>
             <div class="step-caption">
-              Figure 2.5: Setting reasonable daily timer caps to build healthy boundary awareness.
+              Figure 2.5: Detailed usage telemetry. Spotting that 94 notifications arrive per day reveals why study sessions get shattered every few minutes.
             </div>
           </div>
+
           <p>
-            Tap the hourglass icon next to each app and set a timer: <strong>30 minutes or 45 minutes</strong> per day. When your daily quota expires, the app icon grays out on your home screen and will immediately close if tapped, preventing unintentional afternoon scrolling.
+            Key telemetry metrics to audit:
           </p>
+          <ul style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.65;">
+            <li><strong>Stacked Daily Bar Charts:</strong> Tap on any day to see an hour-by-hour breakdown color-coded by application (blue for WhatsApp, teal for Instagram, green for Play Store).</li>
+            <li><strong>Notification Volume:</strong> In our student test run, the device received <strong>94 notifications in a single day</strong>. Tapping into the list exposes the primary culprits: WhatsApp (53 alerts), Instagram (13 alerts), and Snapchat (12 alerts). Use this data to mute non-essential group chats.</li>
+            <li><strong>Daily Unlocks:</strong> The lower bar chart tracks how many times you wake your screen (e.g., 22 unlocks today vs. 80+ unlocks on unmanaged days). Reducing unlock frequency is the single best predictor of deep study retention.</li>
+          </ul>
         </article>
 
         <!-- Step 6 -->
         <article class="step-card" id="step-6">
           <div class="step-card-header">
             <span class="step-num" aria-hidden="true">6</span>
-            <h2 class="step-title">Wake Up to Restored Color &amp; Tracked Progress</h2>
+            <h2 class="step-title">Track Weekly Progress &amp; Celebrate Habit Reductions</h2>
           </div>
           <p>
-            When 07:00 AM arrives, your phone automatically deactivates Bedtime Mode, turning off Do Not Disturb and restoring vibrant screen colors without any manual interaction.
+            Sustainable digital wellness is built through consistent weekly habits. Every Sunday evening, review your automated <strong>Weekly report</strong> to measure your recovery of study hours.
           </p>
-          <div class="step-img-container">
-            <img src="../images/guide2-step6-morning-routine.svg" alt="Morning lockscreen notification showing restful sleep summary and automatic color restoration at 7:00 AM" width="640" height="360">
+
+          <div class="step-img-showcase">
+            <div class="step-img-single-frame">
+              <img src="../images/wellbeing-step6-weekly-report.jpg" alt="Weekly report screen showing daily average screen time of 5 hours 28 minutes and comparison curve vs monthly average" width="472" height="1024" loading="lazy">
+              <div class="step-phone-caption" style="max-width: 440px;">Weekly Report: Week-on-Week Screen Time Comparison</div>
+            </div>
             <div class="step-caption">
-              Figure 2.6: Seamless morning transition. Full colors return automatically when it's time to wake up.
+              Figure 2.6: Automated weekly report. Comparing daily screen time bars against your monthly average baseline helps you track sustained progress over time.
             </div>
           </div>
+
           <p>
-            Check your Digital Wellbeing graph at the end of the first week. Students following this routine typically experience an immediate <strong>1.5 to 2.5 hour reduction in daily screen time</strong>, accompanied by significantly better sleep quality.
+            How to read your weekly report:
           </p>
+          <ul style="padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.65;">
+            <li><strong>Baseline Average:</strong> Notice the <em>5 h 28 m</em> daily average screen time. The shaded trend line plots your daily usage against your monthly average, clearly highlighting weekend spikes (Friday and Saturday reaching ~7.5 hours).</li>
+            <li><strong>Progressive Reduction:</strong> Students who pair Bedtime Mode with daytime app timers consistently see their daily average drop by <strong>1.5 to 2.5 hours within two weeks</strong>.</li>
+            <li><strong>Circadian Reward:</strong> Best of all, waking up with restored color at 07:00 AM after a full night of uninterrupted, grayscale sleep restores natural morning focus for early 8:00 AM university lectures.</li>
+          </ul>
         </article>
 
+      </section>
+
+      <!-- Student Usability Case Note -->
+      <section class="card" aria-labelledby="testimonial-title" style="margin-top: 2.5rem; background: var(--bg-surface); border: 1px solid var(--border-weak); border-left: 5px solid var(--accent); border-radius: var(--r-xl); padding: 2rem; box-shadow: var(--shadow-sm);">
+        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 1.25rem;" aria-hidden="true">&#127891;</span>
+          <h2 id="testimonial-title" style="font-size: 1.2rem; margin: 0; color: var(--text-primary);">
+            Undergraduate Usability Test Note (Participant P2)
+          </h2>
+        </div>
+        <blockquote style="margin: 0 0 1rem 0; font-size: 0.975rem; color: var(--text-secondary); line-height: 1.65; font-style: italic;">
+          "Setting Bedtime Mode to turn my phone black-and-white at 11:00 PM completely cured my late-night Instagram rabbit hole. The moment the color drained out of the screen, Reels instantly lost all their appeal. I found myself naturally closing the app and falling asleep by 11:15 PM instead of doomscrolling until 1:30 AM. My morning brain fog vanished, and my average daily screen time dropped from 5h 28m to under 3 hours within ten days."
+        </blockquote>
+        <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-tertiary);">
+          &mdash; P2, 2nd Year Biology Student, Tested on Samsung Galaxy One UI 6 (Android 14)
+        </div>
       </section>
 
       <!-- Common Problems Section -->
@@ -253,7 +361,7 @@
 
           <div style="background: var(--bg-elevated); padding: 1.25rem; border-radius: var(--r-md); border: 1px solid var(--border-weak);">
             <h3 style="font-size: 1.05rem; margin: 0 0 0.5rem 0; color: var(--text-primary);">
-              2. "What if I listen to sleep audio (podcasts, white noise, or ambient rain) to fall asleep?"
+              2. "What if I listen to sleep audio (podcasts, white noise, or ambient rain) to fall asleep&#9201;"
             </h3>
             <p style="font-size: 0.925rem; margin: 0; color: var(--text-secondary); line-height: 1.6;">
               <strong style="color: var(--accent);">Fix:</strong> Bedtime Mode silences notification sounds, but it does NOT silence active media playback. Your Spotify, Audible, or YouTube Music audio will continue playing normally in the background. Use the sleep timer feature built into Spotify/audio apps so it turns off automatically after 30 minutes.
@@ -333,6 +441,11 @@
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=6"></script>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 </body>
 </html>

@@ -1,293 +1,1202 @@
 <!DOCTYPE html>
+
+
+
 <html lang="en">
+
+
+
 <head>
+
+
+
   <meta charset="UTF-8">
+
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
   <meta name="description" content="Step-by-step student setup guides for digital wellness: zero-distraction study sprints on Windows, Android bedtime grayscale automation, and algorithmic feed elimination.">
+
+
+
   <title>Setup Guides Index | ReflectHub</title>
-  <link rel="stylesheet" href="../css/style.css">
+
+
+
+  <link rel="stylesheet" href="../css/style.css?v=6">
+
+
+
 </head>
+
+
+
 <body>
+
+
+
+  <!-- Scroll progress bar -->
+
+
+
+  <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+
+
+
+
+
+
+
   <!-- Accessible Skip to Content Link -->
+
+
+
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
+
+
+
+
+
+
   <!-- Shared Header -->
+
+
+
   <header class="site-header" role="banner">
+
+
+
     <div class="container header-inner">
+
+
+
       <a href="../index.html" class="brand-link" aria-label="ReflectHub Home">
+
+
+
         <svg class="brand-logo-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+
+
           <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+
+
+
           <path d="M16 6v10l6 4" stroke="currentColor" stroke-width="2.2"/>
+
+
+
           <path d="M12 21a5 5 0 0 0 8-3" stroke="currentColor" stroke-width="2"/>
+
+
+
           <circle cx="16" cy="16" r="2" fill="currentColor"/>
+
+
+
         </svg>
+
+
+
         <div>
+
+
+
           <span class="brand-name">ReflectHub</span>
+
+
+
           <span class="brand-tagline">Student Digital Wellness Guide</span>
+
+
+
         </div>
+
+
+
       </a>
 
+
+
       <div class="nav-and-tools">
+
+
+
         <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-nav">
-          <span aria-hidden="true">☰</span>
+
+
+
+          <span aria-hidden="true">&#9776;</span>
+
+
+
           <span>Menu</span>
+
+
+
         </button>
+
+
 
         <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Primary Navigation">
+
+
+
           <ul>
+
+
+
             <li><a href="../index.html" class="nav-link">Home</a></li>
+
+
+
             <li><a href="../find-my-tool.html" class="nav-link">Find My Tool</a></li>
+
+
+
             <li><a href="../compare.html" class="nav-link">Compare Tools</a></li>
+
+
+
             <li><a href="index.html" class="nav-link" aria-current="page">Setup Guides</a></li>
+
+
+
             <li><a href="../privacy-safety.html" class="nav-link">Privacy &amp; Safety</a></li>
+
+
+
             <li><a href="../testing.html" class="nav-link">Testing &amp; Evidence</a></li>
+
+
+
             <li><a href="../about.html" class="nav-link">About &amp; Method</a></li>
+
+
+
           </ul>
+
+
+
         </nav>
 
+
+
         <button type="button" class="theme-toggle-btn" aria-pressed="false" aria-label="Switch to dark theme">
-          <span aria-hidden="true">🌙</span>
+
+
+
+          <span aria-hidden="true">&#9790;</span>
+
+
+
           <span>Dark Mode</span>
+
+
+
         </button>
+
+
+
       </div>
+
+
+
     </div>
+
+
+
   </header>
 
+
+
+
+
+
+
   <!-- Main Content -->
+
+
+
   <main id="main-content" role="main">
 
-    <!-- Page Hero Header -->
-    <header class="page-hero" aria-labelledby="guides-page-title">
-      <div class="container">
-        <span class="hero-eyebrow">
-          <span>📖</span> Practical Walkthroughs
-        </span>
-        <h1 id="guides-page-title" class="page-hero-title">
-          Student-Tested<br>
-          <span class="gradient-text">Setup Guides</span>
-        </h1>
-        <p class="lead" style="max-width: 780px;">
-          Three detailed, field-tested guides designed to solve the three biggest digital friction points reported by engineering undergraduates: deep study distraction on Windows laptops, late-night phone doomscrolling before sleep, and algorithmic clickbait rabbit holes on browsers.
-        </p>
 
-        <!-- Guide Stats Bar -->
-        <div class="hero-stats hero-stats-subpage">
+
+
+
+
+
+    <!-- Page Hero Header -->
+
+
+
+    <header class="page-hero" aria-labelledby="guides-page-title">
+
+
+
+      <div class="container">
+
+
+
+        <div class="hero-feature-grid">
+
+
+
           <div>
-            <span class="hero-stat-num">3</span>
-            <span class="hero-stat-label">Complete walkthroughs</span>
+
+
+
+            <span class="hero-eyebrow">
+
+
+
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+
+
+
+              Practical Walkthroughs
+
+
+
+            </span>
+
+
+
+            <h1 id="guides-page-title" class="page-hero-title">
+
+
+
+              Student-Tested<br>
+
+
+
+              <span class="gradient-text">Setup Guides</span>
+
+
+
+            </h1>
+
+
+
+            <p class="lead">
+
+
+
+              Five detailed, field-tested guides designed to solve the biggest digital friction points reported by undergraduates: deep study distraction on Windows, late-night doomscrolling, algorithmic rabbit holes, cross-device screen time, and compulsive phone checking.
+
+
+
+            </p>
+
+
+
+            <div class="hero-stats hero-stats-subpage">
+
+
+
+              <div>
+
+
+
+                <span class="hero-stat-num">5</span>
+
+
+
+                <span class="hero-stat-label">Complete walkthroughs</span>
+
+
+
+              </div>
+
+
+
+              <div>
+
+
+
+                <span class="hero-stat-num">30</span>
+
+
+
+                <span class="hero-stat-label">Wireframe screenshots</span>
+
+
+
+              </div>
+
+
+
+              <div>
+
+
+
+                <span class="hero-stat-num">&#8377;0</span>
+
+
+
+                <span class="hero-stat-label">Cost to implement</span>
+
+
+
+              </div>
+
+
+
+              <div>
+
+
+
+                <span class="hero-stat-num">~10m</span>
+
+
+
+                <span class="hero-stat-label">Average setup time</span>
+
+
+
+              </div>
+
+
+
+            </div>
+
+
+
           </div>
-          <div>
-            <span class="hero-stat-num">18</span>
-            <span class="hero-stat-label">Wireframe screenshots</span>
+
+
+
+          <div class="page-feature-img-wrap reveal-scale" aria-hidden="true">
+
+
+
+            <img src="../images/wellness-guides.svg?v=5" alt="Five step-by-step student digital wellness setup guides roadmap" class="page-feature-img" width="600" height="360" loading="eager">
+
+
+
           </div>
-          <div>
-            <span class="hero-stat-num">₹0</span>
-            <span class="hero-stat-label">Cost to implement</span>
-          </div>
-          <div>
-            <span class="hero-stat-num">~10m</span>
-            <span class="hero-stat-label">Average setup time</span>
-          </div>
+
+
+
         </div>
+
+
+
       </div>
+
+
+
     </header>
 
-    <div class="container">
-      
+
+
+
+
+
+
+    <div class="container" style="padding-top: 2.5rem;">
+
+
+
+
+
+
+
       <!-- Quick recommendation prompt banner -->
-      <div class="card" style="margin-bottom: 2.5rem; background: var(--bg-surface); border: 1px solid var(--border-weak); border-left: 4px solid var(--accent); padding: 1.5rem 1.75rem; box-shadow: var(--shadow-sm);">
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+
+
+
+      <div class="callout-premium reveal" style="margin-bottom:2.5rem;">
+
+
+
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+
+
+
           <div>
-            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
-              <span aria-hidden="true">🎯</span>
-              <h2 style="font-size: 1.15rem; margin: 0; color: var(--text-primary);">Not sure which setup you need first?</h2>
+
+
+
+            <div class="callout-premium-title">
+
+
+
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+
+
+
+              Not sure which guide to start with?
+
+
+
             </div>
-            <p style="margin: 0; font-size: 0.9rem; color: var(--text-secondary);">Answer 5 quick questions about your hardware, distraction habits, and budget to get a tailored recommendation.</p>
+
+
+
+            <p style="margin:0.4rem 0 0; font-size:0.9rem; color:var(--text-secondary);">Take the 3-minute quiz to get a personalized recommendation based on your devices, habits, and biggest distractions.</p>
+
+
+
           </div>
-          <a href="../find-my-tool.html" class="btn btn-primary btn-sm">Take 60-Sec Quiz &rarr;</a>
+
+
+
+          <a href="../find-my-tool.html" class="btn btn-primary" style="white-space:nowrap;">Take the Quiz &rarr;</a>
+
+
+
         </div>
-      </div>
 
-      <div style="display: flex; flex-direction: column; gap: 2rem;">
-        
-        <!-- Guide 1 Card -->
-        <article class="card" aria-labelledby="g1-title" style="border-left: 5px solid var(--accent);">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
-            <div>
-              <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.4rem;">
-                <svg class="category-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="width: 22px; height: 22px;">
-                  <circle cx="24" cy="26" r="16"/>
-                  <path d="M24 10V6M20 6h8M35 15l3-3"/>
-                  <path d="M24 26l7 4"/>
-                  <circle cx="24" cy="26" r="2" fill="currentColor"/>
-                  <path d="M24 14v2"/>
-                </svg>
-                <span class="hero-eyebrow" style="font-size: 0.72rem; padding: 0.2rem 0.65rem; margin-bottom: 0;">Guide 01 &bull; Windows Deep Work</span>
-              </div>
-              <h2 id="g1-title" style="margin: 0.25rem 0 0.5rem 0; font-size: 1.45rem;">
-                <a href="guide-1.html" style="text-decoration: none; color: inherit;">Zero-Distraction Study Sprints on Windows with LeechBlock NG &amp; Focus Sessions</a>
-              </h2>
-            </div>
-            <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
-              <span class="badge badge-platform">⏱ 12 mins setup</span>
-              <span class="badge badge-platform">💻 Windows 10/11</span>
-              <span class="badge badge-free">100% Free</span>
-            </div>
-          </div>
-          <p style="font-size: 0.95rem; line-height: 1.6;">
-            Learn how to lock down distracting websites (YouTube, Reddit, Twitter) during scheduled lecture and study periods using open-source LeechBlock NG with a 64-character uncheatable challenge code, and combine it with native Windows 11 Focus Sessions to silence notification banners.
-          </p>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0 0.5rem 0;">
-            <span class="badge badge-platform">Step 1: Browser Add-on</span>
-            <span class="badge badge-platform">Step 2: Domain Rules</span>
-            <span class="badge badge-platform">Step 3: Auto-Schedule</span>
-            <span class="badge badge-platform">Step 4: 64-Char Lock</span>
-            <span class="badge badge-platform">Step 5: Windows DND</span>
-            <span class="badge badge-platform">Step 6: Live Test</span>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-weak);">
-            <div style="font-size: 0.85rem; color: var(--text-tertiary);">
-              6 numbered steps &bull; Includes 6 SVG wireframe screenshots &bull; Troubleshooting included
-            </div>
-            <a href="guide-1.html" class="btn btn-primary btn-sm">Read Complete Guide 1 &rarr;</a>
-          </div>
-        </article>
 
-        <!-- Guide 2 Card -->
-        <article class="card" aria-labelledby="g2-title" style="border-left: 5px solid var(--accent);">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
-            <div>
-              <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.4rem;">
-                <svg class="category-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="width: 22px; height: 22px;">
-                  <path d="M30 8A18 18 0 1 0 41 34 18 18 0 0 1 30 8Z"/>
-                  <path d="M36 10v6m-3-3h6"/>
-                  <path d="M40 22v4m-2-2h4"/>
-                </svg>
-                <span class="hero-eyebrow" style="font-size: 0.72rem; padding: 0.2rem 0.65rem; margin-bottom: 0;">Guide 02 &bull; Sleep Hygiene</span>
-              </div>
-              <h2 id="g2-title" style="margin: 0.25rem 0 0.5rem 0; font-size: 1.45rem;">
-                <a href="guide-2.html" style="text-decoration: none; color: inherit;">Configuring Android Bedtime Mode &amp; Grayscale Automation for Restful Sleep</a>
-              </h2>
-            </div>
-            <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
-              <span class="badge badge-platform">⏱ 8 mins setup</span>
-              <span class="badge badge-platform">📱 Android 9+</span>
-              <span class="badge badge-free">Native OS</span>
-            </div>
-          </div>
-          <p style="font-size: 0.95rem; line-height: 1.6;">
-            Automate a scheduled grayscale screen shift at 11:00 PM to eliminate dopamine-triggering colors from bedtime phone use, silence midnight WhatsApp notifications, configure essential family contact bypasses, and set firm 30-minute daily caps on Instagram and YouTube.
-          </p>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0 0.5rem 0;">
-            <span class="badge badge-platform">Step 1: Digital Wellbeing</span>
-            <span class="badge badge-platform">Step 2: Bedtime Schedule</span>
-            <span class="badge badge-platform">Step 3: Grayscale Screen</span>
-            <span class="badge badge-platform">Step 4: DND Exceptions</span>
-            <span class="badge badge-platform">Step 5: App Quotas</span>
-            <span class="badge badge-platform">Step 6: Morning Alarms</span>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-weak);">
-            <div style="font-size: 0.85rem; color: var(--text-tertiary);">
-              6 numbered steps &bull; Includes 6 SVG wireframe screenshots &bull; Emergency bypass instructions
-            </div>
-            <a href="guide-2.html" class="btn btn-primary btn-sm">Read Complete Guide 2 &rarr;</a>
-          </div>
-        </article>
-
-        <!-- Guide 3 Card -->
-        <article class="card" aria-labelledby="g3-title" style="border-left: 5px solid var(--accent);">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
-            <div>
-              <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.4rem;">
-                <svg class="category-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="width: 22px; height: 22px;">
-                  <path d="M24 6L10 12v11c0 11.5 6 18.5 14 21 8-2.5 14-9.5 14-21V12L24 6Z"/>
-                  <path d="M18 24l4 4 8-9"/>
-                </svg>
-                <span class="hero-eyebrow" style="font-size: 0.72rem; padding: 0.2rem 0.65rem; margin-bottom: 0;">Guide 03 &bull; Browser Cleanse</span>
-              </div>
-              <h2 id="g3-title" style="margin: 0.25rem 0 0.5rem 0; font-size: 1.45rem;">
-                <a href="guide-3.html" style="text-decoration: none; color: inherit;">Eliminating Algorithmic Infinite Feeds and Ad Traps with uBlock Origin &amp; Firefox</a>
-              </h2>
-            </div>
-            <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
-              <span class="badge badge-platform">⏱ 10 mins setup</span>
-              <span class="badge badge-platform">🌐 Windows &amp; Android</span>
-              <span class="badge badge-os">Open Source</span>
-            </div>
-          </div>
-          <p style="font-size: 0.95rem; line-height: 1.6;">
-            Use Raymond Hill's open-source uBlock Origin on Firefox to surgically remove algorithmic hooks—such as YouTube Shorts shelves, toxic comment threads, auto-playing video players, and annoying cookie popups—while keeping educational lecture videos fully accessible.
-          </p>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0 0.5rem 0;">
-            <span class="badge badge-platform">Step 1: Install Extension</span>
-            <span class="badge badge-platform">Step 2: Open Dashboard</span>
-            <span class="badge badge-platform">Step 3: Paste Shorts Filter</span>
-            <span class="badge badge-platform">Step 4: Hide Comments</span>
-            <span class="badge badge-platform">Step 5: Annoyance Lists</span>
-            <span class="badge badge-platform">Step 6: Quiet Browsing</span>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-weak);">
-            <div style="font-size: 0.85rem; color: var(--text-tertiary);">
-              6 numbered steps &bull; Includes copy-paste filter syntax &bull; Zero telemetry guaranteed
-            </div>
-            <a href="guide-3.html" class="btn btn-primary btn-sm">Read Complete Guide 3 &rarr;</a>
-          </div>
-        </article>
 
       </div>
+
+
+
+
+
+
+
+      <!-- Guide Cards Grid -->
+
+
+
+      <div class="guide-cards" aria-label="Available setup guides" id="guides-list">
+
+
+
+
+
+
+
+        <!-- Guide 1 -->
+
+
+
+        <article class="guide-index-card reveal" aria-labelledby="g1-title">
+
+
+
+          <div class="guide-card-eyebrow">
+
+
+
+            <div class="guide-card-num" aria-hidden="true">01</div>
+
+
+
+            Guide 01 &bull; Windows Laptop Productivity
+
+
+
+          </div>
+
+
+
+          <h2 id="g1-title">
+
+
+
+            <a href="guide-1.html" class="guide-card-title">Zero-Distraction Study Sprints on Windows with LeechBlock NG &amp; Focus Sessions</a>
+
+
+
+          </h2>
+
+
+
+          <p class="guide-card-desc">Stop losing study hours to YouTube rabbit holes and Discord chatter. Lock down your browser with open-source LeechBlock NG using a 64-character friction lock, paired with native Windows 11 Focus Sessions to silence notifications.</p>
+
+
+
+          <div style="display:flex; gap:0.4rem; flex-wrap:wrap; margin-top:0.25rem;">
+
+
+
+            <span class="badge badge-platform">&#128187; Windows 10/11</span>
+
+
+
+            <span class="badge badge-free">Free &amp; Open Source</span>
+
+
+
+            <span class="badge badge-platform">&#8987; 12 mins setup</span>
+
+
+
+          </div>
+
+
+
+          <div class="guide-card-steps">
+            <span class="guide-card-step-pill">1. Quick-Action Menu</span>
+            <span class="guide-card-step-pill">2. Block Set Domains</span>
+            <span class="guide-card-step-pill">3. Schedules &amp; Pages</span>
+            <span class="guide-card-step-pill">4. Challenge Code Lock</span>
+            <span class="guide-card-step-pill">5. Study Lockdown</span>
+            <span class="guide-card-step-pill">6. Stats &amp; FOSS License</span>
+          </div>
+
+
+
+          <div class="guide-card-footer">
+
+
+
+            <span class="guide-card-meta">6 steps &bull; 8 real browser extension screenshots &bull; FOSS focus sprint walkthrough</span>
+
+
+
+            <a href="guide-1.html" class="btn btn-primary btn-sm">Read Guide 1 &rarr;</a>
+
+
+
+          </div>
+
+
+
+        </article>
+
+
+
+
+
+
+
+        <!-- Guide 2 -->
+
+
+
+        <article class="guide-index-card reveal" aria-labelledby="g2-title">
+
+
+
+          <div class="guide-card-eyebrow">
+
+
+
+            <div class="guide-card-num" aria-hidden="true">02</div>
+
+
+
+            Guide 02 &bull; Android Sleep Routine
+
+
+
+          </div>
+
+
+
+          <h2 id="g2-title">
+
+
+
+            <a href="guide-2.html" class="guide-card-title">Android Bedtime Grayscale &amp; Scheduled App Blocking for Restorative Sleep</a>
+
+
+
+          </h2>
+
+
+
+          <p class="guide-card-desc">Stop doomscrolling until 2 AM. Use Android's built-in Bedtime Mode, Digital Wellbeing App Timers, and manual grayscale shortcuts to create an automatic wind-down routine that your phone enforces for you.</p>
+
+
+
+          <div style="display:flex; gap:0.4rem; flex-wrap:wrap; margin-top:0.25rem;">
+
+
+
+            <span class="badge badge-platform">&#128241; Android 9+</span>
+
+
+
+            <span class="badge badge-free">Built-in (Free)</span>
+
+
+
+            <span class="badge badge-platform">&#8987; 10 mins setup</span>
+
+
+
+          </div>
+
+
+
+          <div class="guide-card-steps">
+            <span class="guide-card-step-pill">1. Settings &amp; Privacy</span>
+            <span class="guide-card-step-pill">2. Sleep Schedule</span>
+            <span class="guide-card-step-pill">3. Grayscale Mode</span>
+            <span class="guide-card-step-pill">4. App Timers</span>
+            <span class="guide-card-step-pill">5. Telemetry &amp; Unlocks</span>
+            <span class="guide-card-step-pill">6. Weekly Report</span>
+          </div>
+
+
+
+          <div class="guide-card-footer">
+
+
+
+            <span class="guide-card-meta">6 steps &bull; 11 real Android screenshots &bull; Native Digital Wellbeing walkthrough</span>
+
+
+
+            <a href="guide-2.html" class="btn btn-primary btn-sm">Read Guide 2 &rarr;</a>
+
+
+
+          </div>
+
+
+
+        </article>
+
+
+
+
+
+
+
+        <!-- Guide 3 -->
+
+
+
+        <article class="guide-index-card reveal" aria-labelledby="g3-title">
+
+
+
+          <div class="guide-card-eyebrow">
+
+
+
+            <div class="guide-card-num" aria-hidden="true">03</div>
+
+
+
+            Guide 03 &bull; Browser Feed Elimination
+
+
+
+          </div>
+
+
+
+          <h2 id="g3-title">
+
+
+
+            <a href="guide-3.html" class="guide-card-title">Eliminate Algorithmic Feeds with uBlock Origin &amp; Firefox Custom Rules</a>
+
+
+
+          </h2>
+
+
+
+          <p class="guide-card-desc">Remove YouTube's recommendation sidebar, Instagram's Explore tab, Twitter's trending panel, and Reddit's front page algorithm using uBlock Origin's custom filter syntax — without blocking content you actually need.</p>
+
+
+
+          <div style="display:flex; gap:0.4rem; flex-wrap:wrap; margin-top:0.25rem;">
+
+
+
+            <span class="badge badge-platform">&#127760; Firefox / Chrome / Edge</span>
+
+
+
+            <span class="badge badge-free">Free &amp; Open Source</span>
+
+
+
+            <span class="badge badge-platform">&#8987; 8 mins setup</span>
+
+
+
+          </div>
+
+
+
+          <div class="guide-card-steps">
+            <span class="guide-card-step-pill">1. Install &amp; Toolbar</span>
+            <span class="guide-card-step-pill">2. Filtering Modes</span>
+            <span class="guide-card-step-pill">3. Core &amp; Regional Lists</span>
+            <span class="guide-card-step-pill">4. Annoyance Blockers</span>
+            <span class="guide-card-step-pill">5. Element Zapper &amp; Rules</span>
+            <span class="guide-card-step-pill">6. FOSS GPLv3 &amp; Speed</span>
+          </div>
+
+
+
+          <div class="guide-card-footer">
+
+
+
+            <span class="guide-card-meta">6 steps &bull; 9 real browser extension screenshots &bull; Feed cleanse &amp; element zapper walkthrough</span>
+
+
+
+            <a href="guide-3.html" class="btn btn-primary btn-sm">Read Guide 3 &rarr;</a>
+
+
+
+          </div>
+
+
+
+        </article>
+
+
+
+
+
+
+
+        <!-- Guide 4 -->
+
+
+
+        <article class="guide-index-card reveal" aria-labelledby="g4-title">
+
+
+
+          <div class="guide-card-eyebrow">
+
+
+
+            <div class="guide-card-num" aria-hidden="true">04</div>
+
+
+
+            Guide 04 &bull; Cross-Device Screen Time Tracking
+
+
+
+          </div>
+
+
+
+          <h2 id="g4-title">
+
+
+
+            <a href="guide-4.html" class="guide-card-title">Tracking &amp; Reducing Screen Time Across Android and Windows with StayFree</a>
+
+
+
+          </h2>
+
+
+
+          <p class="guide-card-desc">Get a unified picture of your daily screen time across your Android phone AND Windows laptop. StayFree's cross-device dashboard helps you spot where your hours actually go, with optional app blocking when you go over your limits.</p>
+
+
+
+          <div style="display:flex; gap:0.4rem; flex-wrap:wrap; margin-top:0.25rem;">
+
+
+
+            <span class="badge badge-platform">&#128241; Android + &#128187; Windows</span>
+
+
+
+            <span class="badge badge-free">Free Core Features</span>
+
+
+
+            <span class="badge badge-platform">&#8987; 10 mins setup</span>
+
+
+
+          </div>
+
+
+
+          <div class="guide-card-steps">
+
+
+
+            <span class="guide-card-step-pill">1. Permissions</span>
+
+
+
+            <span class="guide-card-step-pill">2. Goals &amp; Audit</span>
+
+
+
+            <span class="guide-card-step-pill">3. Usage Stats</span>
+
+
+
+            <span class="guide-card-step-pill">4. App Limits</span>
+
+
+
+            <span class="guide-card-step-pill">5. In-App Blocking</span>
+
+
+
+            <span class="guide-card-step-pill">6. Sync &amp; Friction</span>
+
+
+
+          </div>
+
+
+
+          <div class="guide-card-footer">
+
+
+
+            <span class="guide-card-meta">6 steps &bull; 9 real Android screenshots &bull; On-device setup &amp; in-app blocking</span>
+
+
+
+            <a href="guide-4.html" class="btn btn-primary btn-sm">Read Guide 4 &rarr;</a>
+
+
+
+          </div>
+
+
+
+        </article>
+
+
+
+
+
+
+
+        <!-- Guide 5 -->
+
+
+
+        <article class="guide-index-card reveal" aria-labelledby="g5-title">
+
+
+
+          <div class="guide-card-eyebrow">
+
+
+
+            <div class="guide-card-num" aria-hidden="true">05</div>
+
+
+
+            Guide 05 &bull; Minimalist Android Interface
+
+
+
+          </div>
+
+
+
+          <h2 id="g5-title">
+
+
+
+            <a href="guide-5.html" class="guide-card-title">Reclaiming Focus &amp; Dopamine Baselines with minimalist phone Launcher</a>
+
+
+
+          </h2>
+
+
+
+          <p class="guide-card-desc">Transform your smartphone from a glowing digital slot machine into a quiet, text-only monochrome workstation. Set minimalist phone as your default launcher, curate 4–6 essential study tools, hide addictive apps, and activate 15-second mindful breathing pauses.</p>
+
+
+
+          <div style="display:flex; gap:0.4rem; flex-wrap:wrap; margin-top:0.25rem;">
+
+
+
+            <span class="badge badge-platform">&#128241; Android 6.0+</span>
+
+
+
+            <span class="badge badge-free">Free Core Features</span>
+
+
+
+            <span class="badge badge-platform">&#8987; 8 mins setup</span>
+
+
+
+          </div>
+
+
+
+          <div class="guide-card-steps">
+
+
+
+            <span class="guide-card-step-pill">1. Welcome &amp; Rationale</span>
+
+
+
+            <span class="guide-card-step-pill">2. Cost &amp; Targets</span>
+
+
+
+            <span class="guide-card-step-pill">3. Feature Toolkit</span>
+
+
+
+            <span class="guide-card-step-pill">4. Default Launcher</span>
+
+
+
+            <span class="guide-card-step-pill">5. Text Interface</span>
+
+
+
+            <span class="guide-card-step-pill">6. Pricing &amp; Trial</span>
+
+
+
+          </div>
+
+
+
+          <div class="guide-card-footer">
+
+
+
+            <span class="guide-card-meta">6 steps &bull; 10 real Android screenshots &bull; Anti-dopamine launcher walkthrough</span>
+
+
+
+            <a href="guide-5.html" class="btn btn-primary btn-sm">Read Guide 5 &rarr;</a>
+
+
+
+          </div>
+
+
+
+        </article>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
 
     </div>
+
+
+
   </main>
 
+
+
+
+
+
+
   <!-- Shared Footer -->
+
+
+
   <footer class="site-footer" role="contentinfo">
+
+
+
     <div class="container">
+
+
+
       <div class="footer-grid">
+
+
+
         <div>
-          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-            <svg style="width: 24px; height: 24px; color: var(--accent);" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+
+
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
+
+
+
+            <svg style="width:24px; height:24px; color:var(--accent);" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+
+
               <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+
+
+
               <path d="M16 6v10l6 4" stroke="currentColor" stroke-width="2.2"/>
+
+
+
               <circle cx="16" cy="16" r="2" fill="currentColor"/>
+
+
+
             </svg>
-            <span style="font-weight: 800; font-size: 1.15rem; color: var(--text-primary);">ReflectHub</span>
+
+
+
+            <span style="font-weight:800; font-size:1.15rem; color:var(--text-primary);">ReflectHub</span>
+
+
+
           </div>
-          <p style="font-size: 0.875rem; margin-bottom: 1rem;">
-            Step-by-step digital wellness setups for student productivity and restorative sleep.
-          </p>
+
+
+
+          <p style="font-size:0.875rem; margin-bottom:1rem;">Step-by-step digital wellness setups for student productivity and restorative sleep.</p>
+
+
+
         </div>
 
+
+
         <div>
+
+
+
           <h2 class="footer-heading">Hub Navigation</h2>
+
+
+
           <ul class="footer-links">
+
+
+
             <li><a href="../index.html">Home</a></li>
+
+
+
             <li><a href="../find-my-tool.html">Find My Tool Quiz</a></li>
+
+
+
             <li><a href="../compare.html">Compare Tools Table</a></li>
+
+
+
             <li><a href="index.html">Setup Guides</a></li>
+
+
+
           </ul>
+
+
+
         </div>
 
+
+
         <div>
+
+
+
           <h2 class="footer-heading">Trust &amp; Evidence</h2>
+
+
+
           <ul class="footer-links">
+
+
+
             <li><a href="../privacy-safety.html">Privacy &amp; Permissions</a></li>
+
+
+
             <li><a href="../testing.html">Testing &amp; Accessibility Checklist</a></li>
+
+
+
             <li><a href="../about.html">Methodology &amp; Criteria</a></li>
+
+
+
           </ul>
+
+
+
         </div>
+
+
+
       </div>
+
+
 
       <div class="footer-bottom">
-        <div>
-          &copy; 2026 ReflectHub Project &bull; Built for Undergraduates &bull; WCAG 2.2 AA Compliant
-        </div>
-        <div>
-          <a href="#main-content">Back to top &uarr;</a>
-        </div>
+
+
+
+        <div>&copy; 2026 ReflectHub Project &bull; Built for Undergraduates &bull; WCAG 2.2 AA Compliant</div>
+
+
+
+        <div><a href="#main-content">Back to top &uarr;</a></div>
+
+
+
       </div>
+
+
+
     </div>
+
+
+
   </footer>
 
-  <script src="../js/main.js"></script>
+
+
+
+
+
+
+  <!-- Back to top button -->
+
+
+
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+
+
+
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+
+
+
+  </button>
+
+
+
+
+
+
+
+  <script src="../js/main.js?v=6"></script>
+
+
+
 </body>
+
+
+
 </html>

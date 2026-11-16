@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%" fill="none" role="img" aria-label="Eliminating algorithmic feeds illustration">
+  <defs>
+    <linearGradient id="g3-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#042f2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="240" rx="16" fill="url(#g3-bg)"/>
+  <!-- Browser Window: Feeds Blocked -->
+  <g transform="translate(520, 35)">
+    <rect width="230" height="165" rx="10" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <!-- Window controls -->
+    <circle cx="16" cy="14" r="4" fill="#ef4444"/>
+    <circle cx="28" cy="14" r="4" fill="#f59e0b"/>
+    <circle cx="40" cy="14" r="4" fill="#10b981"/>
+    <!-- URL bar -->
+    <rect x="55" y="8" width="160" height="13" rx="4" fill="#0f172a"/>
+    <text x="65" y="18" font-family="system-ui,sans-serif" font-size="7" fill="#64748b">youtube.com (clean mode)</text>
+    <!-- Content area: Clean minimal search only -->
+    <rect x="12" y="28" width="206" height="125" rx="6" fill="#0f172a"/>
+    <rect x="45" y="55" width="140" height="20" rx="10" fill="#1e293b" stroke="#0d9488" stroke-width="1.5"/>
+    <text x="115" y="68" font-family="system-ui,sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">&#128269; Search lectures only</text>
+    <rect x="50" y="90" width="130" height="12" rx="4" fill="#ccfbf1" opacity="0.2"/>
+    <text x="115" y="99" font-family="system-ui,sans-serif" font-size="7.5" font-weight="bold" fill="#2dd4bf" text-anchor="middle">&#10003; Shorts &amp; Feeds Removed</text>
+  </g>
+  <!-- Left Content -->
+  <text x="50" y="70" font-family="system-ui,sans-serif" font-size="12" font-weight="800" fill="#2dd4bf" letter-spacing="1">GUIDE 03 &#8226; BROWSER ATTENTION DETOX</text>
+  <text x="50" y="105" font-family="system-ui,sans-serif" font-size="22" font-weight="900" fill="#ffffff">Eliminate Algorithmic Feeds</text>
+  <text x="50" y="135" font-family="system-ui,sans-serif" font-size="13" fill="#94a3b8">Strip YouTube Shorts, Instagram Explore &amp; Twitter Trends with uBlock</text>
+  <g transform="translate(50, 160)">
+    <rect width="90" height="28" rx="14" fill="#0d9488" opacity="0.25"/>
+    <text x="45" y="18" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#2dd4bf" text-anchor="middle">&#8987; 8m Setup</text>
+    <rect x="100" y="0" width="130" height="28" rx="14" fill="#0284c7" opacity="0.25"/>
+    <text x="165" y="18" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#38bdf8" text-anchor="middle">&#10003; 100% Free &amp; OSS</text>
+  </g>
+</svg>

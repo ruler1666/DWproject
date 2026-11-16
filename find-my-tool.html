@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Find My Tool: Answer 5 practical questions to get personalized, free or low-cost digital wellness tool recommendations for your student devices.">
+  <meta name="description" content="Answer 10 practical questions to get personalized digital wellness tool recommendations for your devices, habits, budget, and privacy needs.">
   <title>Find My Tool Quiz | ReflectHub</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+
   <!-- Accessible Skip to Content Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -26,13 +29,11 @@
           <span class="brand-tagline">Student Digital Wellness Guide</span>
         </div>
       </a>
-
       <div class="nav-and-tools">
         <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-nav">
-          <span aria-hidden="true">☰</span>
+          <span aria-hidden="true">&#9776;</span>
           <span>Menu</span>
         </button>
-
         <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Primary Navigation">
           <ul>
             <li><a href="index.html" class="nav-link">Home</a></li>
@@ -44,9 +45,8 @@
             <li><a href="about.html" class="nav-link">About &amp; Method</a></li>
           </ul>
         </nav>
-
         <button type="button" class="theme-toggle-btn" aria-pressed="false" aria-label="Switch to dark theme">
-          <span aria-hidden="true">🌙</span>
+          <span aria-hidden="true">&#9790;</span>
           <span>Dark Mode</span>
         </button>
       </div>
@@ -56,43 +56,49 @@
   <!-- Main Content -->
   <main id="main-content" role="main">
 
-    <!-- Page Hero Header -->
+    <!-- Page Hero Header with Feature Image Grid -->
     <header class="page-hero" aria-labelledby="quiz-page-title">
-      <div class="container" style="text-align: center;">
-        <span class="hero-eyebrow">
-          <span>🎯</span> Personalized Decision Support
-        </span>
-        <h1 id="quiz-page-title" class="page-hero-title">
-          Find Your Ideal Wellness Tool<br>
-          <span class="gradient-text">In 60 Seconds</span>
-        </h1>
-        <p class="lead" style="max-width: 720px; margin-inline: auto;">
-          Answer 5 brief questions about your devices, distraction challenges, preferred level of structure, budget, and privacy. Get tailored recommendations from our reviewed directory, plus practical first steps and honest trade-offs.
-        </p>
-
-        <!-- Quiz Stats Bar -->
-        <div class="hero-stats hero-stats-subpage" style="justify-content: center;">
+      <div class="container">
+        <div class="hero-feature-grid">
           <div>
-            <span class="hero-stat-num">5</span>
-            <span class="hero-stat-label">Honest questions</span>
+            <span class="hero-eyebrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              Personalized Decision Support
+            </span>
+            <h1 id="quiz-page-title" class="page-hero-title">
+              Find Your Ideal Wellness Tool<br>
+              <span class="gradient-text">In 3 Minutes</span>
+            </h1>
+            <p class="lead">
+              Answer 10 brief questions about your devices, study habits, friction points, and budget. Get an instant, mathematically grounded recommendation matched from our reviewed directory with honest trade-offs.
+            </p>
+            <div class="hero-stats hero-stats-subpage">
+              <div>
+                <span class="hero-stat-num">10</span>
+                <span class="hero-stat-label">Diagnostic questions</span>
+              </div>
+              <div>
+                <span class="hero-stat-num">~3 min</span>
+                <span class="hero-stat-label">Completion time</span>
+              </div>
+              <div>
+                <span class="hero-stat-num">11</span>
+                <span class="hero-stat-label">Reviewed options</span>
+              </div>
+              <div>
+                <span class="hero-stat-num">0</span>
+                <span class="hero-stat-label">Trackers or logins</span>
+              </div>
+            </div>
           </div>
-          <div>
-            <span class="hero-stat-num">60s</span>
-            <span class="hero-stat-label">Decision aid</span>
-          </div>
-          <div>
-            <span class="hero-stat-num">11</span>
-            <span class="hero-stat-label">Evaluated tools</span>
-          </div>
-          <div>
-            <span class="hero-stat-num">0</span>
-            <span class="hero-stat-label">Ad tracking cookies</span>
+          <div class="page-feature-img-wrap reveal-scale" aria-hidden="true">
+            <img src="images/wellness-quiz.svg?v=5" alt="Personalized digital wellness recommendation compass illustration" class="page-feature-img" width="600" height="360" loading="eager">
           </div>
         </div>
       </div>
     </header>
 
-    <div class="container">
+    <div class="container" style="padding-top: 2.5rem;">
 
       <!-- Noscript Fallback -->
       <noscript>
@@ -105,24 +111,27 @@
       </noscript>
 
       <div class="quiz-container">
-        
+
         <!-- Live Quiz Progress Bar -->
-        <div class="quiz-progress-bar-wrap" aria-hidden="true">
-          <div class="quiz-progress-header">
-            <span>Quiz Progress</span>
-            <span id="quiz-progress-text">0 of 5 answered (0%)</span>
+        <div class="quiz-progress-bar-container" style="margin-bottom: 2rem;" aria-label="Quiz progress">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; font-size: 0.85rem;">
+            <span id="quiz-progress-text" style="color: var(--text-secondary); font-weight: 600;">
+              0 of 10 questions answered (0%)
+            </span>
+            <span style="color: var(--text-tertiary); font-size: 0.78rem;">
+              Local evaluation &bull; Zero tracking
+            </span>
           </div>
-          <div class="quiz-progress-track">
-            <div id="quiz-progress-fill" class="quiz-progress-fill"></div>
+          <div class="quiz-progress-track" style="height: 8px; background: var(--bg-elevated); border: 1px solid var(--border-weak); border-radius: var(--r-pill); overflow: hidden;">
+            <div id="quiz-progress-fill" style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--accent), #0284c7); border-radius: var(--r-pill); transition: width var(--dur-base) var(--ease);"></div>
           </div>
         </div>
 
-        <!-- Interactive Quiz Form -->
-        <form id="quiz-form" class="quiz-card" aria-label="Digital Wellness Tool Recommendation Quiz">
+<form id="quiz-form" class="quiz-card" aria-label="Digital Wellness Tool Recommendation Quiz">
           
           <!-- Question 1: Devices -->
           <fieldset>
-            <span class="quiz-step-label">Question 1 of 5 &bull; Hardware Setup</span>
+            <span class="quiz-step-label">Question 1 of 10 &bull; Hardware Setup</span>
             <legend>What hardware do you primarily use for daily college work?</legend>
             <div class="legend-hint">
               Select the setup where distractions impact your productivity or sleep the most.
@@ -159,7 +168,7 @@
 
           <!-- Question 2: Distraction -->
           <fieldset>
-            <span class="quiz-step-label">Question 2 of 5 &bull; Core Problem</span>
+            <span class="quiz-step-label">Question 2 of 10 &bull; Core Problem</span>
             <legend>What is your single biggest digital wellness struggle right now?</legend>
             <div class="legend-hint">
               Choose the problem that drains the most hours or harms your health the most.
@@ -204,10 +213,10 @@
 
           <!-- Question 3: Strictness -->
           <fieldset>
-            <span class="quiz-step-label">Question 3 of 5 &bull; Enforcement Style</span>
+            <span class="quiz-step-label">Question 3 of 10 &bull; Enforcement Style</span>
             <legend>What level of strictness or friction works best for your personality?</legend>
             <div class="legend-hint">
-              Be honest with yourself—some students thrive with gentle nudges, while others need unbreakable locks.
+              Be honest with yourself�?"some students thrive with gentle nudges, while others need unbreakable locks.
             </div>
 
             <div class="quiz-options">
@@ -241,7 +250,7 @@
 
           <!-- Question 4: Budget -->
           <fieldset>
-            <span class="quiz-step-label">Question 4 of 5 &bull; Financial Constraints</span>
+            <span class="quiz-step-label">Question 4 of 10 &bull; Financial Constraints</span>
             <legend>What is your budget for digital wellness tools?</legend>
             <div class="legend-hint">
               We never recommend apps where essential features are silently locked behind unexpected paywalls.
@@ -251,7 +260,7 @@
               <label class="quiz-option-label">
                 <input type="radio" name="q_budget" value="free-only" required>
                 <div class="quiz-option-text">
-                  <span class="quiz-option-title">Strictly ₹0 / 100% Free or Open Source Only</span>
+                  <span class="quiz-option-title">Strictly �,10 / 100% Free or Open Source Only</span>
                   <span class="quiz-option-desc">I cannot or do not want to spend money on subscriptions. Everything must be totally free forever.</span>
                 </div>
               </label>
@@ -260,7 +269,7 @@
                 <input type="radio" name="q_budget" value="freemium-ok" required>
                 <div class="quiz-option-text">
                   <span class="quiz-option-title">Freemium Is Acceptable If Core Features Work Free</span>
-                  <span class="quiz-option-desc">I'm fine with apps that offer optional paid upgrades, as long as daily blocking and timers are fully usable for ₹0.</span>
+                  <span class="quiz-option-desc">I'm fine with apps that offer optional paid upgrades, as long as daily blocking and timers are fully usable for �,10.</span>
                 </div>
               </label>
             </div>
@@ -270,7 +279,7 @@
 
           <!-- Question 5: Privacy -->
           <fieldset>
-            <span class="quiz-step-label">Question 5 of 5 &bull; Privacy &amp; Data Sensitivity</span>
+            <span class="quiz-step-label">Question 5 of 10 &bull; Privacy &amp; Data Sensitivity</span>
             <legend>How do you feel about app permissions and data privacy?</legend>
             <div class="legend-hint">
               Wellness apps sometimes inspect your open windows or browser URLs to enforce limits.
@@ -295,6 +304,179 @@
             </div>
           </fieldset>
 
+          <hr style="border: 0; border-top: 1px solid var(--border-weak); margin: 1.75rem 0;">
+
+          <fieldset>
+            <span class="quiz-step-label">Question 6 of 10 &bull; Main Goal</span>
+            <legend>What outcome would make the biggest difference for you?</legend>
+            <div class="legend-hint">Choose the result you most want from a tool.</div>
+            <div class="quiz-options">
+              <label class="quiz-option-label">
+                <input type="radio" name="q_goal" value="blocking" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Block or limit distracting apps and sites</span>
+                  <span class="quiz-option-desc">I want fewer opportunities to drift into distracting content.</span>
+                </div>
+              </label>
+              <label class="quiz-option-label">
+                <input type="radio" name="q_goal" value="tracking" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Understand where my screen time goes</span>
+                  <span class="quiz-option-desc">I want clear usage history before deciding what to change.</span>
+                </div>
+              </label>
+              <label class="quiz-option-label">
+                <input type="radio" name="q_goal" value="focus-habit" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Build a steadier focus or wind-down routine</span>
+                  <span class="quiz-option-desc">I want support for starting a study session or ending screen time at night.</span>
+                </div>
+              </label>
+            </div>
+          </fieldset>
+
+          <hr style="border: 0; border-top: 1px solid var(--border-weak); margin: 1.75rem 0;">
+
+          <fieldset>
+            <span class="quiz-step-label">Question 7 of 10 &bull; Where It Happens</span>
+            <legend>Where do most of your distractions happen?</legend>
+            <div class="legend-hint">Think about the place or type of interruption you want to address first.</div>
+            <div class="quiz-options">
+              <label class="quiz-option-label">
+                <input type="radio" name="q_target" value="websites" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Websites in my browser</span>
+                  <span class="quiz-option-desc">Video sites, social feeds, news, or other tabs pull me away.</span>
+                </div>
+              </label>
+              <label class="quiz-option-label">
+                <input type="radio" name="q_target" value="apps" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Apps on my phone or computer</span>
+                  <span class="quiz-option-desc">I lose time inside apps or desktop programs.</span>
+                </div>
+              </label>
+              <label class="quiz-option-label">
+                <input type="radio" name="q_target" value="notifications" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Notifications and incoming messages</span>
+                  <span class="quiz-option-desc">Pings and badges break my concentration even when I am working.</span>
+                </div>
+              </label>
+              <label class="quiz-option-label">
+                <input type="radio" name="q_target" value="combined" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">A mix of websites, apps, and notifications</span>
+                  <span class="quiz-option-desc">My distraction pattern changes across devices and situations.</span>
+                </div>
+              </label>
+            </div>
+          </fieldset>
+
+          <hr style="border: 0; border-top: 1px solid var(--border-weak); margin: 1.75rem 0;">
+
+          <fieldset>
+            <span class="quiz-step-label">Question 8 of 10 &bull; Timing</span>
+            <legend>When should your tool step in?</legend>
+            <div class="legend-hint">Choose the kind of control you are most likely to keep using.</div>
+            <div class="quiz-options">
+              <label class="quiz-option-label">
+                <input type="radio" name="q_schedule" value="scheduled" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">At set times, such as study hours or bedtime</span>
+                  <span class="quiz-option-desc">I want a predictable schedule that runs automatically.</span>
+                </div>
+              </label>
+              <label class="quiz-option-label">
+                <input type="radio" name="q_schedule" value="daily-limits" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">After I reach a daily time limit</span>
+                  <span class="quiz-option-desc">I want room to use an app, with a boundary when my allowance is up.</span>
+                </div>
+              </label>
+              <label class="quiz-option-label">
+                <input type="radio" name="q_schedule" value="on-demand" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Only when I choose to start a focus session</span>
+                  <span class="quiz-option-desc">I prefer control in the moment rather than an always-on schedule.</span>
+                </div>
+              </label>
+            </div>
+          </fieldset>
+
+          <hr style="border: 0; border-top: 1px solid var(--border-weak); margin: 1.75rem 0;">
+
+          <fieldset>
+            <span class="quiz-step-label">Question 9 of 10 &bull; Setup Preference</span>
+            <legend>How much setup and customization feels comfortable?</legend>
+            <div class="legend-hint">There is no wrong answer�?"choose a level you will actually maintain.</div>
+            <div class="quiz-options">
+              <label class="quiz-option-label">
+                <input type="radio" name="q_setup" value="simple" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Keep it simple with built-in or default settings</span>
+                  <span class="quiz-option-desc">I want something quick to start and easy to understand.</span>
+                </div>
+              </label>
+              <label class="quiz-option-label">
+                <input type="radio" name="q_setup" value="configurable" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">I am comfortable configuring rules and permissions</span>
+                  <span class="quiz-option-desc">More control is worth spending time on setup.</span>
+                </div>
+              </label>
+              <label class="quiz-option-label">
+                <input type="radio" name="q_setup" value="cross-device" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">I want a consistent approach across my devices</span>
+                  <span class="quiz-option-desc">I would rather coordinate my phone and computer than manage separate routines.</span>
+                </div>
+              </label>
+            </div>
+          </fieldset>
+
+          <hr style="border: 0; border-top: 1px solid var(--border-weak); margin: 1.75rem 0;">
+
+          <fieldset>
+            <span class="quiz-step-label">Question 10 of 10 &bull; Feedback Style</span>
+            <legend>What kind of feedback would help without becoming distracting?</legend>
+            <div class="legend-hint">Pick the style that would encourage you to continue.</div>
+            <div class="quiz-options">
+              <label class="quiz-option-label">
+                <input type="radio" name="q_feedback" value="reports" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Usage reports and progress history</span>
+                  <span class="quiz-option-desc">I like reviewing trends and seeing how my habits change.</span>
+                </div>
+              </label>
+              <label class="quiz-option-label">
+                <input type="radio" name="q_feedback" value="reminders" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Gentle reminders or a pause before opening an app</span>
+                  <span class="quiz-option-desc">A timely nudge helps me make a more deliberate choice.</span>
+                </div>
+              </label>
+              <label class="quiz-option-label">
+                <input type="radio" name="q_feedback" value="minimal" required>
+                <div class="quiz-option-text">
+                  <span class="quiz-option-title">Minimal feedback�?"just enforce the settings I choose</span>
+                  <span class="quiz-option-desc">I do not want extra prompts, streaks, or reports.</span>
+                </div>
+              </label>
+            </div>
+          </fieldset>
+
+          <div id="quiz-load-error" class="callout callout-warn" role="alert" tabindex="-1" hidden>
+            <strong>We couldn't load the recommendation catalog.</strong>
+            <p id="quiz-load-error-message" style="margin: 0.5rem 0 0;">
+              If you opened this page directly from your files, close it and double-click
+              <code>run-site.bat</code> in the website folder. Wait for the local server to start;
+              the launcher opens the site home page, where all pages are available in the navigation.
+              If starting the server manually, keep the terminal open while using the site, then open
+              <a href="http://127.0.0.1:8000/index.html">http://127.0.0.1:8000/index.html</a>.
+            </p>
+          </div>
+
           <div style="margin-top: 2rem; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
             <button type="submit" class="btn btn-primary" style="font-size: 1.1rem; padding: 0.75rem 1.75rem;">
               Calculate My Recommendations &rarr;
@@ -302,9 +484,7 @@
             <button type="reset" class="btn btn-secondary btn-sm">Clear Form</button>
           </div>
         </form>
-
-        <!-- Quiz Results Container (Initially Hidden) -->
-        <section id="quiz-results" style="display: none;" aria-live="polite">
+<section id="quiz-results" style="display: none;" aria-live="polite">
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
             <div>
               <span class="hero-eyebrow">Personalized Strategy</span>
@@ -316,7 +496,7 @@
           </div>
 
           <p class="quiz-method-note">
-            Recommendations come from our reviewed directory, not a live search of the whole internet. Ranking favors your device, main concern, and preferred structure; strict free-only and local-first choices limit which tools can appear. Compare costs, permissions, and limitations before choosing.
+            Recommendations come from our reviewed directory, not a live search of the whole internet. Ranking considers all 10 answers; strict free-only and local-first choices limit which tools can appear. Compare costs, permissions, and limitations before choosing.
           </p>
 
           <!-- Dynamic Diagnostic Assessment Box -->
@@ -324,7 +504,7 @@
 
           <!-- Dynamic Recommendations List -->
           <div id="recommendations-list">
-            <!-- Populated dynamically via js/main.js -->
+            <!-- Populated dynamically via js/main.js?v=6 -->
           </div>
 
           <!-- Instant Tool Search & Exploration Box -->
@@ -341,18 +521,18 @@
             </p>
             
             <div class="search-input-wrap" style="margin-bottom: 1rem;">
-              <span class="search-icon" aria-hidden="true">🔍</span>
+              <span class="search-icon" aria-hidden="true">dY"?</span>
               <input type="search" id="quiz-tool-search" class="search-input" placeholder="Type a keyword e.g. YouTube, Bedtime, Timer, Android, Open Source..." aria-label="Search verified wellness tools">
             </div>
 
             <div style="display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.5rem;" id="quiz-quick-tags" aria-label="Quick category filters">
-              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="YouTube">🎬 YouTube &amp; Shorts</button>
-              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Bedtime">🌙 Bedtime Routines</button>
-              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Timer">⏱️ Focus Timers</button>
-              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Open Source">🔓 Open Source</button>
-              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Free">💰 100% Free</button>
-              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Android">📱 Android Only</button>
-              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Windows">💻 Windows Only</button>
+              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="YouTube">dYZ� YouTube &amp; Shorts</button>
+              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Bedtime">dYOT Bedtime Routines</button>
+              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Timer">�?�,? Focus Timers</button>
+              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Open Source">dY"" Open Source</button>
+              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Free">dY'� 100% Free</button>
+              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Android">dY"� Android Only</button>
+              <button type="button" class="badge badge-platform quiz-filter-pill" data-query="Windows">dY'� Windows Only</button>
             </div>
 
             <div id="quiz-search-results" style="display: none;">
@@ -373,7 +553,6 @@
         </section>
 
       </div>
-
     </div>
   </main>
 
@@ -382,19 +561,16 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-            <svg style="width: 24px; height: 24px; color: var(--accent);" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
+            <svg style="width:24px; height:24px; color:var(--accent);" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
               <path d="M16 6v10l6 4" stroke="currentColor" stroke-width="2.2"/>
               <circle cx="16" cy="16" r="2" fill="currentColor"/>
             </svg>
-            <span style="font-weight: 800; font-size: 1.15rem; color: var(--text-primary);">ReflectHub</span>
+            <span style="font-weight:800; font-size:1.15rem; color:var(--text-primary);">ReflectHub</span>
           </div>
-          <p style="font-size: 0.875rem; margin-bottom: 1rem;">
-            An interactive decision aid for engineering students balancing screen time on Android and Windows devices.
-          </p>
+          <p style="font-size:0.875rem; margin-bottom:1rem;">An interactive decision aid for engineering students balancing screen time on Android and Windows devices.</p>
         </div>
-
         <div>
           <h2 class="footer-heading">Hub Navigation</h2>
           <ul class="footer-links">
@@ -404,7 +580,6 @@
             <li><a href="guides/index.html">Setup Guides</a></li>
           </ul>
         </div>
-
         <div>
           <h2 class="footer-heading">Trust &amp; Evidence</h2>
           <ul class="footer-links">
@@ -414,18 +589,18 @@
           </ul>
         </div>
       </div>
-
       <div class="footer-bottom">
-        <div>
-          &copy; 2026 ReflectHub Project &bull; Built for Undergraduates &bull; WCAG 2.2 AA Compliant
-        </div>
-        <div>
-          <a href="#main-content">Back to top &uarr;</a>
-        </div>
+        <div>&copy; 2026 ReflectHub Project &bull; Built for Undergraduates &bull; WCAG 2.2 AA Compliant</div>
+        <div><a href="#main-content">Back to top &uarr;</a></div>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/main.js?v=6"></script>
 </body>
 </html>
